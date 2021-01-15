@@ -1,6 +1,6 @@
 ---
 templateKey: 'about-page'
-path: /about
+path: /om-foretaget
 title: About our values
 ---
 ### Shade-grown coffee
