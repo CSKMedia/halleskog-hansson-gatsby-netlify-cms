@@ -1,6 +1,6 @@
 ---
 team:
-  - name: Casper
+  - name: Casper Karlsson
     position: Software developer
     photo: /img/tutorials.png
 ---
