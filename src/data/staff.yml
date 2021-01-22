@@ -5,6 +5,9 @@ staff:
   - name: Billy Karlsson
     position: Salesman
     photo: /img/billy.jpeg
-  - name: Jon Doe
-    position: Relaxer
-    photo: /img/musk.jpg
+  - name: Per Halleskog
+    position: Grundare
+    photo: /img/per.jpg
+  - name: Joakim Hansson
+    position: Grundare
+    photo: /img/joakim.jpg
