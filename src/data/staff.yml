@@ -2,15 +2,25 @@ staff:
   - name: Casper Karlsson
     position: Webbutvecklare
     photo: /img/casper.jpeg
+    phone: 1212133
+    email: csk87@live.se
   - name: Billy Karlsson
     position: Salesman
     photo: /img/billy.jpeg
+    email: mail kommer
+    phone: 1235
   - name: Per Halleskog
     position: Grundare
     photo: /img/per.jpg
+    phone: 123
+    email: mail kommer
   - name: Joakim Hansson
     position: Grundare
     photo: /img/joakim.jpg
+    email: joakim@hhrental.se
+    phone: 723161210
   - name: Alexander Olsson
     position: Projektledare/Arbetsledare
     photo: /img/alexander.jpg
+    phone: 1212133
+    email: mail kommer
