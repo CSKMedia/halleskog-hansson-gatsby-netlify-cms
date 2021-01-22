@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import Staff from '../../components/Staff'
 
 function encode(data) {
   return Object.keys(data)
@@ -107,9 +108,12 @@ export default class Index extends React.Component {
                 </div>
               </form>
             </div>
+            <Staff />
           </div>
         </section>
       </Layout>
     )
   }
 }
+
+

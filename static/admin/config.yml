@@ -65,11 +65,18 @@ collections:
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
 
-  - name: "settings"
-    label: "settings"
+  - name:  "staff"
+    label: "Anställda"
     files:
-      - label: "contact Info"
-        name: "contact_info"
-        file: "src/data/contact_info.md"
+      - file: "src/data/staff.yml"
+        label: "staff"
+        name: "staff"
         fields:
-          - { label: "Phone", name: "phone", widget: "string"}
+          - {name: templateKey, label: Template Key, widget: hidden, default: staff}
+          - label: Anställda
+            name: "staff"
+            widget: list
+            fields:
+              - {label: Namn, name: name, widget: string}
+              - {label: Roll, name: position, widget: string}
+              - {label: bild, name: photo, widget: image}
