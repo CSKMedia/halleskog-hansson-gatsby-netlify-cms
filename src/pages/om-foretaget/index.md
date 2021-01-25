@@ -2,6 +2,7 @@
 templateKey: about-page
 path: /om-foretaget
 title: Vår historia
+image: /img/products-grid1.jpg
 ---
 I februari 2009 grundades Halleskogs TA-planer och etableringar. Ett företag som snabbt etablerade sig på marknaden och som fortfarande växer!\
 \
