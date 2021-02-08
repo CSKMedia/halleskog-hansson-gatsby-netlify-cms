@@ -17,6 +17,15 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   knowledge to anyone.
 intro:
   blurbs:
+    - image: /img/front2.jpg
+      text: >
+        Välkommen till Halleskogs!
+
+
+        Med Halleskogs som samarbetspartner blir projekteringen lättare och kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka tillstånd som krävs för att projekten kan utföras på rätt sätt inom utlovad tid.
+
+
+        Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på. Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
     - image: /img/blog-index.jpg
       text: >
         Halleskog sköter tillstånden
@@ -28,12 +37,6 @@ intro:
 
 
         Halleskogs sköter tillståndsansökningar och upprättar trafikanordnings- och APD-planer för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme, fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation av fastigheter gator m.m.
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
     - image: /img/tutorials.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
