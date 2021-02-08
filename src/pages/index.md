@@ -11,20 +11,23 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/blog-index.jpg
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Halleskog sköter tillstånden
+
+        Vi på Halleskogs hjälper er med tillståndsansökningar i form av ta-planer, polistillstånd, schaktlov Ltf-Ansökningar, dispenser m.m. Vi kan även erbjuda en helhetslösning genom systerbolaget Halleskog&Hansson Rental AB.
+
+
+        Staden tillhör oss alla och nästan alla platser utomhus i Stockholms stad där allmänheten kan röra sig är offentlig plats: trottoaren, torget och parken. Även en del ytor inomhus är offentlig plats, till exempel passager i inomhusgallerior. Om en offentlig plats skall användas till något annat än vad som sägs i detaljplanen behövs polistillstånd.
+
+
+        Halleskogs sköter tillståndsansökningar och upprättar trafikanordnings- och APD-planer för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme, fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation av fastigheter gator m.m.
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
