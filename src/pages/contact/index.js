@@ -40,6 +40,13 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
+              <div className="columns is-desktop">
+              <div className="column is-half"><img src={`/img/map.jpg`} is-square/></div>
+              <div className="column is-half">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+              </div>
+            </div>
+
+            <div className="content">
               <h1>Contact</h1>
               <form
                 name="contact"

@@ -4,16 +4,18 @@
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #b60f1d
 $kaldi-red-invert: #fff
-$kaldi-orange: #e1b72d;
+$kaldi-orange: #e1b72d
 
 // Halleskog vars
 $family-monts: Montserrat
+$halleskog-gray: #6c757d
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
-$link: $kaldi-orange
+$link: $kaldi-red
+
 
 $family-primary: $family-monts
 
@@ -108,6 +110,10 @@ footer.footer
 $navbar-background-color: $primary
 $navbar-item-color: $white-ter
 $navbar-item-hover-background-color: transparent
+$navbar-item-hover-color: $kaldi-orange
+
+// dropdown
+$navbar-dropdown-background-color: $primary
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -148,11 +154,13 @@ $menu-label-color: $white-ter
   margin: 0 1.5em 0 0;
 
 
+$card-shadow: 0;
+
 @import "~bulma"
 
-/* OVerride Bulma sass here*/
 body
   margin-top: 70px;
+
 
 
 // responsiveness

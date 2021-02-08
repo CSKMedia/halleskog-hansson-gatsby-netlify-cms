@@ -59,38 +59,69 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/om-foretaget">
-                Om företaget
-              </Link>
+
+          <div className="navbar-end has-text-centered">
+            <Link className="navbar-item" to="/om-foretaget">
+              Om företaget
+            </Link>
+            <div className="navbar-item has-dropdown is-hoverable">
               <Link className="navbar-item" to="/tjanster">
-                Tjänster
+              Tjänster
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Kontakta oss
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
+              <div className="navbar-dropdown" >
+                <div style={{
+                  padding: 30, //display: "flex"
+                }}>
+                  <div>
+                    <p className="has-text-left has-text-weight-bold">
+                      Tjänster
+                    </p>
+                    <Link className="navbar-item" to="/">
+                      Transporter
+                    </Link>
+                    <Link className="navbar-item" to="/">
+                      Tillsyn av arbetsplats
+                    </Link>
+                  </div>
+
+                  <div>
+                    <p className="has-text-left has-text-weight-bold">
+                      Produkter
+                    </p>
+                    <Link className="navbar-item" to="/">
+                      en bra produkt
+                    </Link>
+                    <Link className="navbar-item" to="/">
+                      en bättre produkt
+                    </Link>
+                  </div>
+
+
+                  <div>
+                    <p className="has-text-left has-text-weight-bold">
+                      Info
+                    </p>
+                    <Link className="navbar-item" to="/">
+                      hjälp
+                    </Link>
+                    <Link className="navbar-item" to="/">
+                      kontakta oss
+                    </Link>
+                  </div>
+
+                </div>
+              </div>
             </div>
-            {/* <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div> */}
+            <Link className="navbar-item" to="/blog">
+              Blog
+            </Link>
+            <Link className="navbar-item" to="/contact">
+              Kontakta oss
+            </Link>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     )
   }
 }
