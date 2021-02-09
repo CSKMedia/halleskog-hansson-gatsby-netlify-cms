@@ -30,7 +30,6 @@ intro:
 
 
         Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
-      heading: Välkommen till Halleskogs!
     - image: /img/front2.jpg
       heading: Halleskog sköter tillstånden
       text: >
@@ -44,7 +43,6 @@ intro:
 
 
         Halleskogs sköter tillståndsansökningar och upprättar trafikanordnings- och APD-planer för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme, fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation av fastigheter gator m.m.
-      heading: Halleskog sköter tillstånden
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
