@@ -18,18 +18,15 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
 intro:
   blurbs:
     - image: /img/banner-solution.jpg
+      heading: Välkommen till Halleskogs!
       text: >
         Välkommen till Halleskogs!
-
-
         Med Halleskogs som samarbetspartner blir projekteringen lättare och kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka tillstånd som krävs för att projekten kan utföras på rätt sätt inom utlovad tid.
-
 
         Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på. Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
     - image: /img/front2.jpg
+      heading: Halleskog sköter tillstånden
       text: >
-        Halleskog sköter tillstånden
-
         Vi på Halleskogs hjälper er med tillståndsansökningar i form av ta-planer, polistillstånd, schaktlov Ltf-Ansökningar, dispenser m.m. Vi kan även erbjuda en helhetslösning genom systerbolaget Halleskog&Hansson Rental AB.
 
 

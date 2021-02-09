@@ -41,13 +41,35 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="content">
               <div className="columns is-desktop">
-              <div className="column is-half"><img src={`/img/map.jpg`} is-square/></div>
-              <div className="column is-half">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-              </div>
+              {this.props.data.allDataYaml.nodes.map(obj => (
+              <>
+                <div className="column is-half"><img src={obj.mapImage} is-square/></div>
+                  <div className="column is-half is-flex is-justify-content-center is-align-items-center">
+                    <div>
+                      <h1>Logga Här!</h1>
+                      <br />
+                      <p>
+                        Mail: <a href={`mailto:${obj.mail}`}>{obj.mail}</a> <br />
+                        Kontoret: {obj.phone}
+                        <br />
+                        <br />
+                        <b>Besöksadress:</b>
+                        <br />
+                        {obj.visitAddress}
+                        <br />
+                        <br />
+                        <b>Postadress:</b>
+                        <br /> {obj.postaddress}
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+              </>
+              ))}
             </div>
-
+            </div>
             <div className="content">
-              <h1>Contact</h1>
+              <h1>Kontaktformulär</h1>
               <form
                 name="contact"
                 method="post"
@@ -66,7 +88,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    Namn/Företag
                   </label>
                   <div className="control">
                     <input
@@ -96,7 +118,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'message'}>
-                    Message
+                    Meddelande
                   </label>
                   <div className="control">
                     <textarea
@@ -110,7 +132,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    Skicka
                   </button>
                 </div>
               </form>
@@ -122,5 +144,21 @@ export default class Index extends React.Component {
     )
   }
 }
+export const query = graphql`
+  query ContactInfoQuery {
+    allDataYaml(filter: {id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}}) {
+      nodes {
+        mapImage
+        id
+        phone
+        mail
+        postaddress
+        visitAddress
+      }
+    }
+  }
+`
+
+
 
 

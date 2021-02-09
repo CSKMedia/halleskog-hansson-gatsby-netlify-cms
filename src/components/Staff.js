@@ -26,9 +26,9 @@ export default () => (
         <div className="container">
           <div className="content has-text-centered">
             <h1>Teamet</h1>
-            {data.allDataYaml.edges.map(({node}) => (
+            {data && data.allDataYaml.edges.map(({node}) => (
               <div className="columns is-multiline">
-                {node.staff.map(member => (
+                {node.staff && node.staff.map(member => (
                   <div className="column is-3">
                     <div className="card">
                       <div className="card-image">

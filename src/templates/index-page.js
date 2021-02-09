@@ -15,7 +15,7 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
+  <div stlye={{ position: "relative" }}>
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -69,28 +69,29 @@ export const IndexPageTemplate = ({
         </h3> */}
       </div>
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
+
+    <section className="section section--gradient" style={{ padding: 0 }}>
+      <div className="container is-fluid" style={{ padding: 0 }}>
+        <div className="section" style={{ padding: 0, margin: 0 }}>
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-24">
               <div className="content">
-                <div className="content">
+                {/* <div className="content">
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
+                </div> */}
+                {/* <div className="columns">
+                  <div className="column is-24 has-background-info-dark">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
                     <p>{description}</p>
                   </div>
-                </div>
+                </div> */}
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
@@ -182,11 +183,12 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 2048, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
+            heading
             text
           }
           heading
