@@ -1,7 +1,13 @@
 content-s:
   - image: /img/home-jumbotron.jpg
     heading: Test
-    text: defaultLayouts takes an object where the key is the `name` key of the
+    text: >-
+      defaultLayouts takes an object where the key is the `name` key of the
       `gatsby-source-filesystem` configuration you want to target. `default`
       applies to any MDX file that doesn’t already have a layout defined, even
       if it’s imported manually using `import MDX from './thing.mdx`.
+
+
+
+
+      Blankspace between please!
