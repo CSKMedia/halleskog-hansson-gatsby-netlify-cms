@@ -25,7 +25,7 @@ const FeatureGrid = ({ gridItems }) => (
           </div>
           <div class="colum is-6 p-6">
             <h2>{item.heading}</h2>
-            <p>{item.text}</p>
+            <div dangerouslySetInnerHTML={{ __html: item.text }} />
           </div>
         </div>
         )
@@ -33,7 +33,7 @@ const FeatureGrid = ({ gridItems }) => (
         <div class="columns is-justify-content-center is-align-items-center">
           <div class="colum is-6 p-6">
           <h2>{item.heading}</h2>
-          <p>{item.text}</p>
+          <div dangerouslySetInnerHTML={{ __html: item.text }} />
         </div>
         <div key={item.text} className="column is-6 ">
           <div className="has-text-centered">
@@ -60,8 +60,8 @@ FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
-      heading: PropTypes.tring,
+      text: PropTypes.HTMLContent,
+      heading: PropTypes.string,
     })
   ),
 }
