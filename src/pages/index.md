@@ -18,7 +18,7 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
 intro:
   blurbs:
     - image: /img/banner-solution.jpg
-      text: >
+      text: >-
         Med Halleskogs som samarbetspartner blir projekteringen lättare och
         kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka
         tillstånd som krävs för att projekten kan utföras på rätt sätt inom
