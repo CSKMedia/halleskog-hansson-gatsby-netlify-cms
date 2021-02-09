@@ -26,8 +26,6 @@ intro:
         utlovad tid.\
 
 
-        \
-
 
 
         Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på.
@@ -40,6 +38,7 @@ intro:
         ta-planer, polistillstånd, schaktlov Ltf-Ansökningar, dispenser m.m. Vi
         kan även erbjuda en helhetslösning genom systerbolaget Halleskog&Hansson
         Rental AB.
+
 
 
 
