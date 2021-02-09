@@ -23,7 +23,12 @@ intro:
         Med Halleskogs som samarbetspartner blir projekteringen lättare och
         kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka
         tillstånd som krävs för att projekten kan utföras på rätt sätt inom
-        utlovad tid.
+        utlovad tid.\
+
+
+        \
+
+
 
         Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på.
 
@@ -35,6 +40,8 @@ intro:
         ta-planer, polistillstånd, schaktlov Ltf-Ansökningar, dispenser m.m. Vi
         kan även erbjuda en helhetslösning genom systerbolaget Halleskog&Hansson
         Rental AB.
+
+
 
         Staden tillhör oss alla och nästan alla platser utomhus i Stockholms stad där allmänheten kan röra sig är offentlig plats: trottoaren, torget och parken. Även en del ytor inomhus är offentlig plats, till exempel passager i inomhusgallerior. Om en offentlig plats skall användas till något annat än vad som sägs i detaljplanen behövs polistillstånd.
 
