@@ -8,6 +8,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     // Caspers to read yml
+    `gatsby-transformer-yaml`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -34,13 +35,6 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data`,
-      },
-    },
-    `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
       },
     },
     'gatsby-plugin-sharp',

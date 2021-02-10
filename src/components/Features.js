@@ -25,7 +25,7 @@ const FeatureGrid = ({ gridItems }) => (
           </div>
           <div class="colum is-6 p-6">
             <h2>{item.heading}</h2>
-            <div dangerouslySetInnerHTML={{ __html: item.text }} />
+            <div dangerouslySetInnerHTML={{__html: item.text}}/>
           </div>
         </div>
         )
@@ -33,7 +33,7 @@ const FeatureGrid = ({ gridItems }) => (
         <div class="columns is-justify-content-center is-align-items-center">
           <div class="colum is-6 p-6">
           <h2>{item.heading}</h2>
-          <div dangerouslySetInnerHTML={{ __html: item.text }} />
+          <p> {item.text} </p>
         </div>
         <div key={item.text} className="column is-6 ">
           <div className="has-text-centered">
