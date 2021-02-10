@@ -70,9 +70,9 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <section className="section section--gradient" style={{ padding: 0 }}>
-      <div className="container is-fluid" style={{ padding: 0 }}>
-        <div className="section" style={{ padding: 0, margin: 0 }}>
+    <section className="section section--gradient" style={{backgroundColor: "#f7f7f7"}}>
+      <div className="container" >
+        <div className="section">
           <div className="columns">
             <div className="column is-24">
               <div className="content">
@@ -83,8 +83,8 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
-                </div> */}
-                {/* <div className="columns">
+                </div>
+                <div className="columns">
                   <div className="column is-24 has-background-info-dark">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
@@ -134,7 +134,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -183,7 +182,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
+                fluid(maxWidth: 240, quality: 64) {
                   ...GatsbyImageSharpFluid
                 }
               }

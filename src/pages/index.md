@@ -18,25 +18,18 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
 intro:
   blurbs:
     - image: /img/banner-solution.jpg
-      heading: Välkommen till Halleskogs!
+      heading: Försäljning & Uthyrning
       text: >-
-        Med Halleskogs som samarbetspartner blir projekteringen lättare och
-        kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka
-        tillstånd som krävs för att projekten kan utföras på rätt sätt inom
-        utlovad tid. Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på.
-
-        Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     - image: /img/front2.jpg
-      heading: Halleskog sköter tillstånden
+      heading: Arbete på Väg
       text: >-
-        Vi på Halleskogs hjälper er med tillståndsansökningar i form av
-        ta-planer, polistillstånd, schaktlov Ltf-Ansökningar, dispenser m.m. Vi
-        kan även erbjuda en helhetslösning genom systerbolaget Halleskog&Hansson
-        Rental AB.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    - image: /img/front2.jpg
+      heading: Ta-Plan
+      text: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-        Staden tillhör oss alla och nästan alla platser utomhus i Stockholms stad där allmänheten kan röra sig är offentlig plats: trottoaren, torget och parken. Även en del ytor inomhus är offentlig plats, till exempel passager i inomhusgallerior. Om en offentlig plats skall användas till något annat än vad som sägs i detaljplanen behövs polistillstånd.
-
-        Halleskogs sköter tillståndsansökningar och upprättar trafikanordnings- och APD-planer för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme, fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation av fastigheter gator m.m.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
