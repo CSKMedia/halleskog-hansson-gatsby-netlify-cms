@@ -25,7 +25,6 @@ intro:
         tillstånd som krävs för att projekten kan utföras på rätt sätt inom
         utlovad tid. Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på.
 
-
         Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
     - image: /img/front2.jpg
       heading: Halleskog sköter tillstånden
