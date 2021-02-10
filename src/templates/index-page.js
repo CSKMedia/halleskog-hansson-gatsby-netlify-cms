@@ -189,6 +189,7 @@ export const pageQuery = graphql`
             }
             heading
             text
+            icon
           }
           heading
           description

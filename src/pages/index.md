@@ -21,17 +21,17 @@ intro:
       heading: Försäljning & Uthyrning
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      icon: faDirections
+      icon: directions
     - image: /img/front2.jpg
       heading: Arbete på Väg
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      icon: faRoad
+      icon: road
     - image: /img/front2.jpg
       heading: Ta-Plan
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      icon: faMap
+      icon: map
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
