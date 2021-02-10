@@ -19,25 +19,25 @@ intro:
   blurbs:
     - image: /img/banner-solution.jpg
       heading: Försäljning & Uthyrning
-      text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      icon: faDirections
     - image: /img/front2.jpg
       heading: Arbete på Väg
-      text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      icon: faRoad
     - image: /img/front2.jpg
       heading: Ta-Plan
-      text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      icon: faMap
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it.
 
-    We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone. This is an edit via identity...
 main:
   heading: Great coffee with no compromises
   description: >
