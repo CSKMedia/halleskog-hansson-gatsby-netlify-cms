@@ -2,8 +2,16 @@
 templateKey: index-page
 title: Helehetslösning för vägavstängningar
 image: /img/jumbo.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande lösning
+  för era vägavstängningar. Vi finns för dig både i det stora och det lilla
+  företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken eller
+  vilka tjänster ni behöver stöd med. Vi erbjuder er även en helhet där de
+  anställda kan koncentrera sig på sitt arbete.
+subheading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande
+  lösning för era vägavstängningar. Vi finns för dig både i det stora och det
+  lilla företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken
+  eller vilka tjänster ni behöver stöd med. Vi erbjuder er även en helhet där de
+  anställda kan koncentrera sig på sitt arbete.
 mainpitch:
   title: Why Kaldi
   description: >
