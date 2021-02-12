@@ -16,59 +16,68 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div stlye={{ position: "relative" }}>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        //backgroundPosition: `top left`,
-        backgroundPosition: `center center`
-        // backgroundAttachment: `fixed`,
-      }}
-    >
+    <div>
       <div
+        className="full-width-image margin-top-0"
         style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          flexDirection: 'column',
-          textTransform: 'uppercase',
-          width: '50vw',
+          backgroundImage: `url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })`,
+          //backgroundPosition: `top left`,
+          backgroundPosition: `center center`
+          // backgroundAttachment: `fixed`,
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        <div
           style={{
-            // boxShadow:
-            //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
-            //backgroundColor: '#b60f1d',
-            fontWeight: 700,
-            textAlign: 'center',
-            color: 'white',
-            lineHeight: '1.5',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        {/* <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            // boxShadow:
-            //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
-            // backgroundColor: '#b60f1d',
-            color: 'white',
+            display: 'flex',
+            height: '300px',
             lineHeight: '1',
-            padding: '0.25em',
+            justifyContent: "flex-start",
+            // alignItems: 'center',
+            // flexDirection: 'column',
+            width: '75vw',
           }}
         >
-          {subheading}
-        </h3> */}
+          <div>
+            <h1
+              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-2-widescreen"
+              style={{
+                // boxShadow:
+                //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
+                //backgroundColor: '#b60f1d',
+                fontWeight: 700,
+                // textAlign: 'left',
+                textTransform: 'uppercase',
+                color: 'white',
+                lineHeight: '1.5',
+                padding: '0.25em',
+                width: '30vw',
+              }}
+            >
+            {title}
+            </h1>
+          <h3
+            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-5-widescreen"
+            style={{
+              // boxShadow:
+              //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
+              // backgroundColor: '#b60f1d',
+              color: 'white',
+              lineHeight: '1',
+              padding: '0.25em',
+            }}
+          >
+            {subheading}
+          </h3>
+        </div>
       </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" style={{marginTop: -400, display: "block"}}>
+        <path fill="#F7F7F7" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path>
+      </svg>
     </div>
+
 
     <section className="section section--gradient" style={{backgroundColor: "#f7f7f7"}}>
       <div className="container" >
