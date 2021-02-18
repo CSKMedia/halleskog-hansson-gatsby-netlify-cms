@@ -1,43 +1,51 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo-white.png'
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-      navBarSubpageClass: window.location.pathname === "/" ? '' : 'navbar-subpage'
-    }
-  }
+const Navbar = () => {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     location,
+  //     active: false,
+  //     navBarActiveClass: '',
+  //     navBarSubpageClass: location.pathname === "/" ? '' : 'navbar-subpage'
+  //   }
+  // }
 
-  toggleHamburger = () => {
+  const [active, setActive] = useState(false)
+  const [navBarActiveClass, setNavBarActiveClass] = useState("")
+
+  const url = typeof window !== 'undefined' ? window.location.pathname : '';
+
+  const toggleHamburger = () => {
     // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
+    setActive(!active)
+    active ? setNavBarActiveClass("is-active") : setNavBarActiveClass("")
+    // this.setState(
+    //   {
+    //     active: !this.state.active,
+    //   },
       // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
+    //   () => {
+    //     // set the class in state for the navbar accordingly
+    //     this.state.active
+    //       ? this.setState({
+    //           navBarActiveClass: 'is-active',
+    //         })
+    //       : this.setState({
+    //           navBarActiveClass: '',
+    //         })
+    //   }
+    // )
   }
 
-  render() {
     return (
       <nav
         id="navbar"
-        className={`navbar is-fixed-top ${this.state.navBarSubpageClass}`}
+        // className={`navbar is-fixed-top ${this.state.navBarSubpageClass}`}
+        className={`navbar is-fixed-top ${url === "/" ? '' : 'navbar-subpage'}`}
         role="navigation"
         aria-label="main-navigation"
       >
@@ -48,9 +56,9 @@ const Navbar = class extends React.Component {
             </Link>
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={`navbar-burger burger ${navBarActiveClass}`}
               data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
+              onClick={() => toggleHamburger()}
             >
               <span />
               <span />
@@ -59,7 +67,7 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`navbar-menu ${navBarActiveClass}`}
           >
 
           <div className="navbar-start has-text-centered">
@@ -135,6 +143,5 @@ const Navbar = class extends React.Component {
     </nav>
     )
   }
-}
 
 export default Navbar
