@@ -27,18 +27,22 @@ intro:
   blurbs:
     - image: /img/banner-solution.jpg
       heading: Försäljning & Uthyrning
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      text: Vi erbjuder ett stort utbud av produkter för försäljning och uthyrning.
+        Exempelvis Barriärer, Ta-balkar, staket, krockdämpare,
+        uställningsmaterial mm.
       icon: directions
     - image: /img/front2.jpg
       heading: Arbete på Väg
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      text: Arbetsplatsen ska alltid vara en trygg plats och ditt arbete ska utföras
+        på ett effektivt och säkert sätt samt tillgodose trafiksäkerhet för
+        omgivningen. Vi är experter på vägarbete!
       icon: road
     - image: /img/front2.jpg
-      heading: Ta-Plan
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      heading: Ta-Plan och andra tillstånd
+      text: Vi tillståndsansökningar och upprättar trafikanordnings- och APD-planer
+        för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme,
+        fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation
+        av fastigheter gator m.m.
       icon: map
   heading: What we offer
   description: >
