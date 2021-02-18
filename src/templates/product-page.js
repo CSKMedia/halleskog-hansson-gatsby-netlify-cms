@@ -182,6 +182,7 @@ export const productPageQuery = graphql`
               }
             }
             text
+            heading
           }
           heading
           description

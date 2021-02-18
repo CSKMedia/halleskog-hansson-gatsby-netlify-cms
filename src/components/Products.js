@@ -15,16 +15,16 @@ const ProductsGrid = ({ gridItems }) => (
       <div key={item.text} className="column is-4-desktop is-12-tablet is-12-mobile">
         <section className="section" style={{backgroundColor: "#f9f9f9", height: "100%"}}>
           <div className="has-text-centered p-3">
-           {item.image && (
-           <div
-              style={{
-                width: '240px',
-                display: 'inline-block',
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
-           )}
+            {item.image && (
+            <div
+                style={{
+                  width: '240px',
+                  display: 'inline-block',
+                }}
+              >
+                <PreviewCompatibleImage imageInfo={item} />
+              </div>
+            )}
             {/* <FontAwesomeIcon icon={item.icon} size="5x" color="#b60f1d"/> */}
             <h2>{item.heading}</h2>
             <p>{item.text}</p>
