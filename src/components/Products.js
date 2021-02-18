@@ -10,32 +10,21 @@ library.add(faMap, faDirections, faRoad)
 
 const ProductsGrid = ({ gridItems }) => (
 
-  <div className="columns is-multiline is-flex pb-6">
-    {gridItems.map((item) => (
-      <div key={item.text} className="column is-4-desktop is-12-tablet is-12-mobile">
-        <section className="section" style={{backgroundColor: "#f9f9f9", height: "100%"}}>
-          <div className="has-text-centered p-3">
-            {item.image && (
-            <div
-                style={{
-                  width: '240px',
-                  display: 'inline-block',
-                }}
-              >
-                <PreviewCompatibleImage imageInfo={item} />
-              </div>
-            )}
-            {/* <FontAwesomeIcon icon={item.icon} size="5x" color="#b60f1d"/> */}
+  // <div className="columns is-multiline is-flex pb-6">
+    <div>
+      {gridItems && gridItems.map((item, index) => (
+        <div id={item.heading} className={`columns p-6 ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse border-top-bottom"}`}>
+          <div className= "column is-5-desktop">
+              <PreviewCompatibleImage imageInfo={item}/>
+          </div>
+          <div className="column is-7-desktop pl-6">
             <h2>{item.heading}</h2>
             <p>{item.text}</p>
-            {/* <button className="button is-primary mt-5 p-5" style={{ fontWeight: "bold",}}>Läs mer</button> */}
+            <a className="btn mt-5" style={{ fontWeight: "bold"}}>Läs mer om {item.heading}</a>
           </div>
-        </section>
-      </div>
-    ))}
-  </div>
-
-
+        </div>
+      ))}
+    </div>
 
   // <div className="columns is-full is-multiline">
   //   {gridItems.map((item ,index) => (

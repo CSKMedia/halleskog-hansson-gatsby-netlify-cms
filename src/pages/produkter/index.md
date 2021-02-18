@@ -1,4 +1,6 @@
 ---
+path: /produkter
+templateKey: product-page
 title: Funkar detta?
 image: /img/front2.jpg
 heading: Test

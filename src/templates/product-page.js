@@ -18,7 +18,7 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <div className="content">
+  <div className="content" style={{marginTop: 70}}>
     <div
       className="full-width-image-container margin-top-0"
       style={{
@@ -30,8 +30,8 @@ export const ProductPageTemplate = ({
       <h2
         className="has-text-weight-bold is-size-1"
         style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
+          // boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+          // backgroundColor: '#f40',
           color: 'white',
           padding: '1rem',
         }}
@@ -39,27 +39,42 @@ export const ProductPageTemplate = ({
         {title}
       </h2>
     </div>
+
+    <div className="container">
+    <nav className="navbar">
+      <div id="navbarExampleTransparentExample" className="navbar-menu">
+        <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center"}}>
+        {intro.products && intro.products.map((p) => (
+          <a className="navbar-item" href={`#${p.heading}`}>
+            {p.heading}
+          </a>
+        ))}
+        </div>
+      </div>
+    </nav>
+    </div>
+
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <div className="columns">
+          {/* <div className="columns">
             <div className="column is-7 is-offset-1">
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
               <p>{description}</p>
             </div>
-          </div>
+          </div> */}
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-12">
               <Products gridItems={intro.products} />
-              <div className="columns">
+              {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
                 </div>
-              </div>
-              <div className="tile is-ancestor">
+              </div> */}
+              {/* <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
@@ -79,9 +94,9 @@ export const ProductPageTemplate = ({
                     </article>
                   </div>
                 </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
-              <div
+              </div> */}
+              {/* <Testimonials testimonials={testimonials} /> */}
+              {/* <div
                 className="full-width-image-container"
                 style={{
                   backgroundImage: `url(${
@@ -90,12 +105,12 @@ export const ProductPageTemplate = ({
                       : fullImage
                   })`,
                 }}
-              />
-              <h2 className="has-text-weight-semibold is-size-2">
+              /> */}
+              {/* <h2 className="has-text-weight-semibold is-size-2">
                 {pricing.heading}
               </h2>
               <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              <Pricing data={pricing.plans} /> */}
             </div>
           </div>
         </div>
@@ -176,7 +191,7 @@ export const productPageQuery = graphql`
           products {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 600, quality: 64) {
                   ...GatsbyImageSharpFluid
                 }
               }
