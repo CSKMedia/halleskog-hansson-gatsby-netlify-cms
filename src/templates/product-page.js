@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+import Products from '../components/Products'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -50,7 +50,7 @@ export const ProductPageTemplate = ({
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
+              <Products gridItems={intro.products} />
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
@@ -110,7 +110,7 @@ ProductPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+    products: PropTypes.array,
   }),
   main: PropTypes.shape({
     heading: PropTypes.string,
@@ -173,7 +173,7 @@ export const productPageQuery = graphql`
         heading
         description
         intro {
-          blurbs {
+          products {
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {

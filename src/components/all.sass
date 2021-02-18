@@ -67,14 +67,29 @@ $family-primary: $family-monts
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: $primary
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px $primary
+    box-shadow: inset 0 0 0 2px $primary
+    -webkit-transition: all .15s ease
+    transition: all .15s ease
+
+.btn-white
+    display: inline-block
+    padding: 15px 20px 15px
+    font-size: 18px
+    font-size: 1rem
+    line-height: 1.25
+    border-radius: .25rem
+    text-decoration: none
+    font-weight: 700
+    color: #fff
+    text-align: center
+    -webkit-box-shadow: inset 0 0 0 2px #fff
+    box-shadow: inset 0 0 0 2px #fff
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -84,10 +99,14 @@ $family-primary: $family-monts
 
 .navbar
   height: 70px
+  transition: background 0.3s ease-in-out;
+
+.navbar-subpage
+  background-color: $primary !important
 
 .navbar-item
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 
@@ -102,22 +121,43 @@ $family-primary: $family-monts
   padding: 0 1rem
 footer.footer
   padding: 3rem 0rem 0rem
-  //background-color: transparent
-  background-color: $primary
+  background-color: transparent
+  // background-color: $primary
+
+.navbar-dropdown
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top: 1px solid#aa0d1a !important;
+
+.navbar-dropdown:after
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  top: 5px;
+  width: 0;
+  height: 0;
+  margin-top: -15px;
+  content: '';
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #aa0d1a;
 
 
 // Navbar overrides
-$navbar-background-color: $primary
-$navbar-item-color: $white-ter
+$navbar-background-color: transparent
+// $navbar-background-color: $primary
+$navbar-item-color: #fff
 $navbar-item-hover-background-color: transparent
-$navbar-item-hover-color: $kaldi-orange
+$navbar-item-hover-color: $white-ter
 
 // dropdown
-$navbar-dropdown-background-color: $primary
+$navbar-dropdown-background-color: #aa0d1a
+$navbar-dropdown-item-hover-background-color: rgba(0,0,0, 0.2)
+$navbar-dropdown-item-hover-color: $white-ter
 
 //Menu overrides
-$menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
+$menu-item-color: #fff
+$menu-item-hover-color: $white-ter !important
 $menu-item-hover-background-color: $black
 $menu-item-active-color: $kaldi-red-invert
 $menu-item-active-background-color:	$kaldi-red-invert
@@ -154,25 +194,77 @@ $menu-label-color: $white-ter
   margin: 0 1.5em 0 0;
 
 
+.svg-shape
+  display: block;
+  width: 100%
+  height: 100%
+  margin-top: -400px;
+
 $card-shadow: 0;
+
+// .arrow-up
+//   position: absolute
+//   top: 0;
+//   left: 0;
+//   border-left: 5px solid transparent;
+//   border-right: 5px solid transparent;
+//   border-bottom: 5px solid black;
 
 @import "~bulma"
 
+
+.navbar-item img
+  max-height: 100%;
+
+.block-hover-effect
+  transition: all .25s ease-in;
+
+.block-hover-effect:hover
+  transform: scale(1.05);
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.1);
+
+
+
+
 body
-  margin-top: 70px;
+  // margin-top: 70px;
 
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
 
+  .front-page-title
+    width: 100% !important;
+
+  .front-page-subheading
+    width: 100% !important;
+
+  .svg-shape
+    margin-top: -200px !important;
+
+
+
 +mobile
 
   .navbar
     height: 52px
+  .navbar-menu
+    background-color: #983d3d
+  .navbar-dropdown:after
+    display: none;
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
+  .front-page-title
+    width: 100% !important;
+
+  .front-page-subheading
+    width: 100% !important;
+
+  .svg-shape
+    margin-top: -100px !important;

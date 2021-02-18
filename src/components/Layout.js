@@ -8,6 +8,7 @@ import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <div>
       <Helmet>
@@ -20,6 +21,8 @@ const TemplateWrapper = ({ children }) => {
         <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css' />
+
+        <script src={withPrefix('navbar-scroll.js')} type="text/javascript" />
 
         <link
           rel="apple-touch-icon"

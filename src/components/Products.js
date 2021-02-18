@@ -8,14 +8,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 library.add(faMap, faDirections, faRoad)
 
 
-const FeatureGrid = ({ gridItems }) => (
+const ProductsGrid = ({ gridItems }) => (
 
   <div className="columns is-multiline is-flex pb-6">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-4-desktop is-12-tablet is-12-mobile">
-        <section className="section block-hover-effect" style={{backgroundColor: "#fff", height: "100%"}}>
+        <section className="section" style={{backgroundColor: "#f9f9f9", height: "100%"}}>
           <div className="has-text-centered p-3">
-           {/* {item.image && (
+           {item.image && (
            <div
               style={{
                 width: '240px',
@@ -24,11 +24,11 @@ const FeatureGrid = ({ gridItems }) => (
             >
               <PreviewCompatibleImage imageInfo={item} />
             </div>
-           )} */}
-            <FontAwesomeIcon icon={item.icon} size="5x" color="#b60f1d"/>
+           )}
+            {/* <FontAwesomeIcon icon={item.icon} size="5x" color="#b60f1d"/> */}
             <h2>{item.heading}</h2>
             <p>{item.text}</p>
-            <button className="button is-primary mt-5 p-5" style={{ fontWeight: "bold",}}>Läs mer</button>
+            {/* <button className="button is-primary mt-5 p-5" style={{ fontWeight: "bold",}}>Läs mer</button> */}
           </div>
         </section>
       </div>
@@ -91,7 +91,7 @@ const FeatureGrid = ({ gridItems }) => (
   // </div>
 )
 
-FeatureGrid.propTypes = {
+ProductsGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -102,4 +102,4 @@ FeatureGrid.propTypes = {
   ),
 }
 
-export default FeatureGrid
+export default ProductsGrid

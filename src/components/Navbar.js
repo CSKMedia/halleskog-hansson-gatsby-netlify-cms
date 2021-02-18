@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import logo from '../img/logo-white.png'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -9,6 +9,7 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      navBarSubpageClass: window.location.pathname === "/" ? '' : 'navbar-subpage'
     }
   }
 
@@ -35,14 +36,15 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-fixed-top"
+        id="navbar"
+        className={`navbar is-fixed-top ${this.state.navBarSubpageClass}`}
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo} alt="Halleskog-Hansson" style={{ height: '70px', marginRight: 30 }} className="logo"/>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -60,7 +62,7 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
 
-          <div className="navbar-end has-text-centered">
+          <div className="navbar-start has-text-centered">
             <Link className="navbar-item" to="/om-foretaget">
               Om företaget
             </Link>
@@ -68,55 +70,64 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/tjanster">
               Tjänster
               </Link>
-              <div className="navbar-dropdown" >
-                <div style={{
-                  padding: 30, //display: "flex"
-                }}>
-                  <div>
-                    <p className="has-text-left has-text-weight-bold">
-                      Tjänster
-                    </p>
-                    <Link className="navbar-item" to="/">
-                      Transporter
-                    </Link>
-                    <Link className="navbar-item" to="/">
-                      Tillsyn av arbetsplats
-                    </Link>
-                  </div>
-
-                  <div>
-                    <p className="has-text-left has-text-weight-bold">
-                      Produkter
-                    </p>
-                    <Link className="navbar-item" to="/">
-                      en bra produkt
-                    </Link>
-                    <Link className="navbar-item" to="/">
-                      en bättre produkt
-                    </Link>
-                  </div>
-
-
-                  <div>
-                    <p className="has-text-left has-text-weight-bold">
-                      Info
-                    </p>
-                    <Link className="navbar-item" to="/">
-                      hjälp
-                    </Link>
-                    <Link className="navbar-item" to="/">
-                      kontakta oss
-                    </Link>
-                  </div>
-
-                </div>
+              <div className="navbar-dropdown">
+                <Link className="navbar-item" to="/">
+                  Transporter
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Utställning efter TA-plan
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Tillsyn av arbetsplats
+                </Link>
+                <Link className="navbar-item" to="/">
+                  TMA
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Måling av väglinjer
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Flaggvakt
+                </Link>
               </div>
             </div>
+
+            <div className="navbar-item has-dropdown is-hoverable">
+              <Link className="navbar-item" to="/tjanster">
+              Produkter
+              </Link>
+              <div className="navbar-dropdown" >
+                <Link className="navbar-item" to="/">
+                  Hyra skyltar
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Skyddsbarriärer
+                </Link>
+                <Link className="navbar-item" to="/">
+                  TrafikBuffert
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Ta-balk
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Trafikreglering
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Områdesskydd
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Markeringsskärmar
+                </Link>
+              </div>
+            </div>
+
             <Link className="navbar-item" to="/blog">
               Blog
             </Link>
-            <Link className="navbar-item" to="/contact">
-              Kontakta oss
+          </div>
+          <div className="navbar-end">
+            <Link className="navbar-item" to="/">
+                kontakta oss
             </Link>
           </div>
         </div>

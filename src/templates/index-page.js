@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
         <div
           style={{
             display: 'flex',
-            height: '300px',
+            // height: '450px',
             lineHeight: '1',
             justifyContent: "flex-start",
             // alignItems: 'center',
@@ -41,7 +41,7 @@ export const IndexPageTemplate = ({
         >
           <div>
             <h1
-              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-2-widescreen"
+              className="has-text-weight-bold is-size-4-mobile is-size-4-tablet is-size-2-widescreen front-page-title"
               style={{
                 // boxShadow:
                 //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
@@ -58,22 +58,26 @@ export const IndexPageTemplate = ({
             {title}
             </h1>
           <h3
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-5-widescreen"
+            className="is-size-5-mobile is-size-5-tablet is-size-5-widescreen mb-4 front-page-subheading"
             style={{
               // boxShadow:
               //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
               // backgroundColor: '#b60f1d',
               color: 'white',
-              lineHeight: '1',
+              lineHeight: '1.3',
               padding: '0.25em',
+              width: '30vw',
             }}
           >
             {subheading}
           </h3>
+          <Link className="btn-white" to="/products">
+            Kontakta oss
+          </Link>
         </div>
       </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" style={{marginTop: -400, display: "block"}}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" className="svg-shape">
         <path fill="#F7F7F7" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path>
       </svg>
     </div>
@@ -82,7 +86,7 @@ export const IndexPageTemplate = ({
     <section className="section section--gradient" style={{backgroundColor: "#f7f7f7"}}>
       <div className="container" >
         <div className="section">
-          <div className="columns">
+          <div className="columns" style={{ marginTop: -200}}>
             <div className="column is-24">
               <div className="content">
                 {/* <div className="content">
@@ -111,12 +115,12 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Nyheter
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
-                      Read more
+                      Fler nyheter
                     </Link>
                   </div>
                 </div>

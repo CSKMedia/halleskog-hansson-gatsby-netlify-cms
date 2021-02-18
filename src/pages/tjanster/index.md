@@ -9,7 +9,7 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 intro:
-  blurbs:
+  products:
     - image: /img/skyltar.jpg
       text: >
         Vi erbjuder skyltar i plast eller plåt beroende på situation. För
