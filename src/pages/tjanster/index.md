@@ -1,13 +1,10 @@
 ---
-heading: Här kan man skriva något om man vill!
+heading: Halleskogs tjänster
 path: /tjanster
 templateKey: product-page
 title: Tjänster
 image: /img/langgatan-fix.jpg
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+description: Här hittar ni de tjänster vi tillhandahåller.
 intro:
   products:
     - image: /img/skyltar.jpg
@@ -19,12 +16,17 @@ intro:
     - text: text här
       heading: tillsyn av arbetsplats
       image: /img/banner-solution.jpg
-  heading: Våra produkter
+  heading: Halleskog sköter tillstånden
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Vi på Halleskogs hjälper er med tillståndsansökningar i form av ta-planer,
+    polistillstånd, schaktlov Ltf-Ansökningar, dispenser m.m. Vi kan även
+    erbjuda en helhetslösning genom systerbolaget Halleskog&Hansson Rental AB.
+
+
+    Staden tillhör oss alla och nästan alla platser utomhus i Stockholms stad där allmänheten kan röra sig är offentlig plats: trottoaren, torget och parken. Även en del ytor inomhus är offentlig plats, till exempel passager i inomhusgallerior. Om en offentlig plats skall användas till något annat än vad som sägs i detaljplanen behövs polistillstånd.
+
+
+    Halleskogs sköter tillståndsansökningar och upprättar trafikanordnings- och APD-planer för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme, fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation av fastigheter gator m.m.
 main:
   heading: What is this?
   description: >
@@ -43,7 +45,9 @@ main:
     image: /img/products-grid1.jpg
 testimonials:
   - author: casper
+    quote: sadasdsa
   - quote: caspers tycker till
+    author: asdsadad
 full_image: /img/flavor_wheel.jpg
 pricing:
   heading: Monthly subscriptions
