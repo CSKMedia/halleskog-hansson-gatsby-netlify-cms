@@ -1,8 +1,8 @@
 ---
-heading: Great coffee with a conscience
+heading: Här kan man skriva något om man vill!
 path: /tjanster
 templateKey: product-page
-title: Our Coffee
+title: Produkter
 image: /img/jumbotron.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
@@ -19,14 +19,26 @@ intro:
         av betongfot. Sugga med en vikt av ca 300kg eller s.k. Sergel med en
         vikt av ca 200kg.
       heading: Skyltar
-  heading: What we offer
+    - text: GP-link 1,5 är en tung barriär tillverkad i betong. Den har en patenterad
+        skarv som ger den förmågan att mjukt och följsamt fånga upp ett
+        påkörande fordon. Godkänd (CE-märkt) för användning i EU och USA.
+        Barriären har testats i klass N2 med en arbetsbredd av W5 < (1,7m)
+      heading: TP-link
+      image: /img/gplink.jpg
+    - text: "Röd/gul. Godkända av trafikverket enl: VVMB351. Består av 3 staplar.
+        Används som skydd för trafiken, kräver en buffertzon för att fungera.
+        (Buffertzon = Hastigheten/2+10) D.v.s på en väg med verklig fart om
+        50km/h behövs 35m buffertzon. Buffert är godkänd upp till just 80km/h"
+      heading: Trafikbuffert
+      image: /img/trafikbuffert.jpg
+  heading: Våra produkter
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Great coffee with no compromises
+  heading: What is this?
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
