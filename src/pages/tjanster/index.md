@@ -41,7 +41,9 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-testimonials: []
+testimonials:
+  - author: casper
+  - quote: caspers tycker till
 full_image: /img/flavor_wheel.jpg
 pricing:
   heading: Monthly subscriptions

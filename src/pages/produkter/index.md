@@ -24,4 +24,7 @@ full_image: /img/chemex.jpg
 pricing:
   heading: QWDWQD
   description: WEEWQE
+testimonials:
+  - author: casper
+  - quote: caspers tycker till
 ---
