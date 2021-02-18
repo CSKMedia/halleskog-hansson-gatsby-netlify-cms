@@ -1,10 +1,13 @@
 ---
-heading: Test
+heading: Produktutbud
 path: /produkter
 templateKey: product-page
 title: Produkter
 image: /img/jumbo.jpg
-description: alhhhksldkglds
+description: Arbetsplatsen ska alltid vara en trygg plats och ditt arbete ska
+  utföras på ett effektivt och säkert sätt samt tillgodose trafiksäkerhet för
+  omgivningen. Vi erbjuder ett stor utbud av avstängningsmaterial för att hjälpa
+  er med kommande eller pågående arbeten.
 intro:
   heading: ssssss
   description: aSAsaS
