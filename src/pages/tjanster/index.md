@@ -2,8 +2,8 @@
 heading: Här kan man skriva något om man vill!
 path: /tjanster
 templateKey: product-page
-title: Produkter
-image: /img/jumbotron.jpg
+title: Tjänster
+image: /img/langgatan-fix.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
@@ -11,26 +11,14 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
 intro:
   products:
     - image: /img/skyltar.jpg
-      text: >
-        Vi erbjuder skyltar i plast eller plåt beroende på situation. För
-        tillfälliga vägarbeten fungerar plastskyltar väldigt bra då de är lätta
-        att ställa ut/ flytta och ändra. Vid längre arbeten eller situationer
-        som kräver mer permanent standard erbjuder vi plåtskylt med 2 varianter
-        av betongfot. Sugga med en vikt av ca 300kg eller s.k. Sergel med en
-        vikt av ca 200kg.
-      heading: Skyltar
-    - text: GP-link 1,5 är en tung barriär tillverkad i betong. Den har en patenterad
-        skarv som ger den förmågan att mjukt och följsamt fånga upp ett
-        påkörande fordon. Godkänd (CE-märkt) för användning i EU och USA.
-        Barriären har testats i klass N2 med en arbetsbredd av W5 < (1,7m)
-      heading: TP-link
-      image: /img/gplink.jpg
-    - text: "Röd/gul. Godkända av trafikverket enl: VVMB351. Består av 3 staplar.
-        Används som skydd för trafiken, kräver en buffertzon för att fungera.
-        (Buffertzon = Hastigheten/2+10) D.v.s på en väg med verklig fart om
-        50km/h behövs 35m buffertzon. Buffert är godkänd upp till just 80km/h"
-      heading: Trafikbuffert
-      image: /img/trafikbuffert.jpg
+      heading: Transporter
+      text: Text om transporter
+    - image: /img/blog-index.jpg
+      heading: Utställning efter Ta-Plan
+      text: text här
+    - text: text här
+      heading: tillsyn av arbetsplats
+      image: /img/banner-solution.jpg
   heading: Våra produkter
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -53,14 +41,8 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
-    quote: Kaldi is the place to go if you want the best quality coffee. I love
-      their stance on empowering farmers and transparency.
-full_image: /img/products-full-width.jpg
+testimonials: []
+full_image: /img/flavor_wheel.jpg
 pricing:
   heading: Monthly subscriptions
   description: We make it easy to make great coffee a part of your life. Choose
