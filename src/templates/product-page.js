@@ -57,12 +57,12 @@ export const ProductPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          {/* <div className="columns">
-            <div className="column is-7 is-offset-1">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
               <p>{description}</p>
             </div>
-          </div> */}
+          </div>
           <div className="columns">
             <div className="column is-12">
               <Products gridItems={intro.products} />
