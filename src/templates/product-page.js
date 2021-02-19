@@ -43,18 +43,18 @@ export const ProductPageTemplate = ({
       </h2>
     </div>
 
-    <div className="container">
-    <nav className="navbar">
-      <div id="navbarExampleTransparentExample" className="navbar-menu">
-        <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center"}}>
-        {intro.products && intro.products.map((p) => (
-          <a className="navbar-item" href={`#${p.heading}`}>
-            {p.heading}
-          </a>
-        ))}
+    <div className="container is-hidden-mobile">
+      <nav className="navbar ">
+        <div id="navbarExampleTransparentExample" className="navbar-menu">
+          <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center"}}>
+          {intro.products && intro.products.map((p) => (
+            <a className="navbar-item" href={`#${p.heading}`}>
+              {p.heading}
+            </a>
+          ))}
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </div>
 
     <section className="section" style={{padding: 0}}>

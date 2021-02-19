@@ -17,7 +17,7 @@ const ProductsGrid = ({ gridItems }) => (
           <div className= "column is-5-desktop">
               <PreviewCompatibleImage imageInfo={item}/>
           </div>
-          <div className="column is-7-desktop pl-6">
+          <div className="column pl-6-desktop is-7-desktop">
             <h2>{item.heading}</h2>
             <p>{item.text}</p>
             <a className="btn mt-5" style={{ fontWeight: "bold"}}>Läs mer om {item.heading}</a>

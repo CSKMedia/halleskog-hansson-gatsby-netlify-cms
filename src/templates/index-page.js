@@ -83,12 +83,13 @@ export const IndexPageTemplate = ({
     </div>
 
 
-    <section className="section section--gradient" style={{backgroundColor: "#f7f7f7"}}>
-      <div className="container" >
-        <div className="section">
-          <div className="columns marginOffset">
-            <div className="column is-24">
-              <div className="content">
+    <section className="section" style={{backgroundColor: "#f7f7f7", paddingLeft:0, paddingRight: 0}}>
+      <div className="container is-fluid" style ={{paddingLeft:0, paddingRight: 0}}>
+        <div className="container">
+          <div className="section">
+            <div className="columns marginOffset">
+              <div className="column is-24">
+                <div className="content">
                 {/* <div className="content">
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
@@ -113,16 +114,27 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Nyheter
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/nyheter">
-                      Fler nyheter
-                    </Link>
-                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className="container is-fluid" style={{ backgroundColor: "white", paddingLeft:0, paddingRight: 0}}>
+          <div className="container">
+            <div class="columns">
+            {/* <div className="column is-gapless">
+              test here
+            </div> */}
+              <div className="column is-12">
+                <h3 className="has-text-weight-semibold is-size-2 pb-3 pt-6">
+                  Nyheter
+                </h3>
+                <BlogRoll />
+                <div className="column is-12 has-text-centered">
+                  <Link className="btn" to="/nyheter">
+                    Fler nyheter
+                  </Link>
                 </div>
               </div>
             </div>
