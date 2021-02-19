@@ -46,7 +46,7 @@ intro:
         fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation
         av fastigheter gator m.m.
       icon: map
-      buttonLink: tjanster#Ta-planer
+      buttonLink: tjanster
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
