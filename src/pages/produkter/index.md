@@ -24,6 +24,25 @@ intro:
       text: TA-balkar kan med fördel användas i stadsmiljö när du vill skydda schakt
         från påhälsning av cykel- eller gångtrafikanter.
       image: /img/ta-balk2.jpg
+    - heading: Trafikreglering
+      image: /img/trafikreglering.jpg
+      text: Vi tillhandahåller trafikregleringsprodukter som ex olika skyttelsignaler,
+        fartgupp, hastighetskameror mm.
+    - text: "Områdesskydd är exempelvis byggstaket för att stänga av in till
+        arbetsområdet eller som avstängning till evenemang. Det kan också vara
+        fordons- eller gånggrindar eller kravallstaket. "
+      heading: Områdesskydd
+      image: /img/byggstaket.jpg
+    - text: >-
+        
+        Skärmarna ger föraren anvisningar som exempel för att markera kurvor och vägskäl.
+      heading: Markeringsskärmar
+      image: /img/banner-solution.jpg
+    - heading: Skyltar
+      text: "Vi erbjuder skyltar i plast eller plåt beroende på situation. För
+        tillfälliga vägarbeten fungerar plastskyltar väldigt bra då de är lätta
+        att ställa ut/ flytta och ändra. "
+      image: /img/skyltar.jpg
 main:
   heading: DDDD
   description: SDASDASD
