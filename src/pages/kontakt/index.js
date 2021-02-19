@@ -37,7 +37,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        <section className="section" style={{marginTop: 70}}>
           <div className="container">
             <div className="content">
               <div className="columns is-desktop">

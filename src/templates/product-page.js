@@ -25,6 +25,9 @@ export const ProductPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
+        alignItems: 'center',
+        flexDirection: 'column',
+        display: 'flex',
       }}
     >
       <h2
@@ -54,15 +57,15 @@ export const ProductPageTemplate = ({
     </nav>
     </div>
 
-    <section className="section section--gradient">
+    <section className="section" style={{padding: 0}}>
       <div className="container">
         <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
+          {/* <div className="columns">
+            <div className="column is-8" style={{ borderBottom: "6px solid #f9f9f9"}}>
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
               <p>{description}</p>
             </div>
-          </div>
+          </div> */}
           <div className="columns">
             <div className="column is-12">
               <Products gridItems={intro.products} />

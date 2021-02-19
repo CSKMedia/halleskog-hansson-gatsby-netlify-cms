@@ -101,6 +101,9 @@ $family-primary: $family-monts
 .margin-top-0
   margin-top: 0 !important
 
+.marginOffset
+  margin-top: -200px !important
+
 
 .navbar
   height: 70px
@@ -123,11 +126,14 @@ $family-primary: $family-monts
 //   height: 1.5rem
 //   fill: currentColor
 .navbar-brand .navbar-item.logo
-  padding: 0 1rem
+  padding: 0 1rem 
 footer.footer
-  padding: 3rem 0rem 0rem
+  padding: 3rem 0rem 3rem
   background-color: transparent
   // background-color: $primary
+
+.logo
+  height: 70px
 
 .navbar-dropdown
   border-top-left-radius: 6px;
@@ -224,6 +230,8 @@ $card-shadow: 0;
 //   border-left: 5px solid transparent;
 //   border-right: 5px solid transparent;
 //   border-bottom: 5px solid black;
+.navbar-burger
+  height: auto !important
 
 @import "~bulma"
 
@@ -263,8 +271,21 @@ body
 
 +mobile
 
+  // .navbar-item
+  //   &.has-dropdown
+  //     .navbar-dropdown
+  //       display: none;
+  //     &.is-active
+  //       .navbar-dropdown
+  //         display: block;
+
+  .marginOffset
+    margin-top: -150px !important
+  .logo
+    height: 50px
   .navbar
-    height: 52px
+    background-color: #aa0d1a !important
+    // height: 52px
   .navbar-menu
     background-color: #983d3d
   .navbar-dropdown:after

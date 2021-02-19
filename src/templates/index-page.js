@@ -86,7 +86,7 @@ export const IndexPageTemplate = ({
     <section className="section section--gradient" style={{backgroundColor: "#f7f7f7"}}>
       <div className="container" >
         <div className="section">
-          <div className="columns" style={{ marginTop: -200}}>
+          <div className="columns marginOffset">
             <div className="column is-24">
               <div className="content">
                 {/* <div className="content">
@@ -108,8 +108,8 @@ export const IndexPageTemplate = ({
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+                    <Link className="btn" to="/produkter">
+                      Se alla produkter
                     </Link>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export const IndexPageTemplate = ({
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
+                    <Link className="btn" to="/nyheter">
                       Fler nyheter
                     </Link>
                   </div>
@@ -203,6 +203,7 @@ export const pageQuery = graphql`
             heading
             text
             icon
+            buttonLink
           }
           heading
           description

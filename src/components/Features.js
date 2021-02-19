@@ -28,7 +28,7 @@ const FeatureGrid = ({ gridItems }) => (
             <FontAwesomeIcon icon={item.icon} size="5x" color="#b60f1d"/>
             <h2>{item.heading}</h2>
             <p>{item.text}</p>
-            <button className="button is-primary mt-5 p-5" style={{ fontWeight: "bold",}}>Läs mer</button>
+            <a className="button is-primary mt-5 p-5" style={{ fontWeight: "bold"}} href={item.buttonLink}>Läs mer</a>
           </div>
         </section>
       </div>
@@ -98,6 +98,7 @@ FeatureGrid.propTypes = {
       text: PropTypes.node,
       heading: PropTypes.string,
       icon: PropTypes.string,
+      buttonLink: PropTypes.string,
     })
   ),
 }
