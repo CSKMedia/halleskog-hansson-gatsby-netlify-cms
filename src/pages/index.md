@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Helehetslösning för vägavstängningar
+title: Helhetslösning för vägavstängningar
 image: /img/jumbo.jpg
 heading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande lösning
   för era vägavstängningar. Vi finns för dig både i det stora och det lilla
