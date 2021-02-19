@@ -31,12 +31,14 @@ intro:
         Exempelvis Barriärer, Ta-balkar, staket, krockdämpare,
         uställningsmaterial mm.
       icon: directions
+      buttonLink: produkter
     - image: /img/front2.jpg
       heading: Arbete på Väg
       text: Arbetsplatsen ska alltid vara en trygg plats och ditt arbete ska utföras
         på ett effektivt och säkert sätt samt tillgodose trafiksäkerhet för
         omgivningen. Vi är experter på vägarbete!
       icon: road
+      buttonLink: tjanster
     - image: /img/front2.jpg
       heading: Ta-Plan och andra tillstånd
       text: Vi tillståndsansökningar och upprättar trafikanordnings- och APD-planer
@@ -44,6 +46,7 @@ intro:
         fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation
         av fastigheter gator m.m.
       icon: map
+      buttonLink: tjanster#Ta-plan
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
