@@ -1,8 +1,9 @@
+
 import React from 'react'
 import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import ServiceRoll from '../../components/ServiceRoll'
 
-export default class BlogIndexPage extends React.Component {
+export default class ServiceIndexPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -23,16 +24,10 @@ export default class BlogIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Nyheter
+            Tjänster
           </h1>
         </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <BlogRoll />
-            </div>
-          </div>
-        </section>
+        <ServiceRoll />
       </Layout>
     )
   }

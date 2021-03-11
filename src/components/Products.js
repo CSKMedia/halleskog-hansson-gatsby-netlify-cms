@@ -12,15 +12,15 @@ const ProductsGrid = ({ gridItems }) => (
 
   // <div className="columns is-multiline is-flex pb-6">
     <div>
-      {gridItems && gridItems.map((item, index) => (
-        <div id={item.heading} className={`columns p-6 ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse border-top-bottom"}`}>
+      {gridItems && gridItems.map(({node: item}, index) => (
+        <div id={item.frontmatter.title} className={`columns p-6 ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse border-top-bottom"}`}>
           <div className= "column is-5-desktop">
-              <PreviewCompatibleImage imageInfo={item}/>
+              <PreviewCompatibleImage imageInfo={item.frontmatter.featuredimage}/>
           </div>
           <div className="column pl-6-desktop is-7-desktop">
-            <h2>{item.heading}</h2>
-            <p>{item.text}</p>
-            <a className="btn mt-5" style={{ fontWeight: "bold"}}>Läs mer om {item.heading}</a>
+            <h2><span style={{ fontSize: 24, fontWeight: "bold"}}>{item.frontmatter.title}</span></h2>
+            <p>{item.excerpt}</p>
+            <a className="btn mt-5" style={{ fontWeight: "bold"}} href={item.fields.slug}>Läs mer om {item.frontmatter.title}</a>
           </div>
         </div>
       ))}

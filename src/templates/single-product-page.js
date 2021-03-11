@@ -6,7 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const SinglePageTemplate = ({
+export const SingleProductPageTemplate = ({
   content,
   contentComponent,
   description,
@@ -46,7 +46,7 @@ export const SinglePageTemplate = ({
   )
 }
 
-SinglePageTemplate.propTypes = {
+SingleProductPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -54,12 +54,12 @@ SinglePageTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const SinglePage = ({ data }) => {
+const SingleProductPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <SinglePageTemplate
+      <SingleProductPageTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
@@ -79,16 +79,16 @@ const SinglePage = ({ data }) => {
   )
 }
 
-SinglePage.propTypes = {
+SingleProductPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default SinglePage
+export default SingleProductPage
 
 export const pageQuery = graphql`
-  query SinglePageByID($id: String!) {
+  query SingleProductPageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
