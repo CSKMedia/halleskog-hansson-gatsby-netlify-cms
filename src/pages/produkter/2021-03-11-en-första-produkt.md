@@ -9,3 +9,15 @@ tags:
   - test
 ---
 Krocktest
+
+**bold** 
+
+*kursivt*\
+\
+Och vi testar :
+
+# heading 1
+
+## heading 2
+
+heading 3
