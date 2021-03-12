@@ -17,7 +17,7 @@ export const SingleServicePageTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section" style={{marginTop: 70}}>
+    <section className="section" style={{marginTop: 70, minHeight: `calc(100vh - 250px)`}}>
       {helmet || ''}
       <div className="container content">
         <div className="columns">

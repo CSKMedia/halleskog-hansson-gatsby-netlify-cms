@@ -9,7 +9,7 @@ export default class ProductsIndexPage extends React.Component {
         <div
           className="full-width-image-container"
           style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
+            backgroundImage: `url('/img/jumbo.jpg')`,
             marginTop: 70
           }}
         >

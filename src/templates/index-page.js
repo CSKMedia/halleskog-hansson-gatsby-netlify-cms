@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import { camelCase } from 'lodash'
 
 export const IndexPageTemplate = ({
   image,
@@ -12,7 +13,7 @@ export const IndexPageTemplate = ({
   subheading,
   intro,
 }) => (
-  <div stlye={{ position: "relative" }}>
+  <div stlye={{ position: "relative"}}>
     <div>
       <div
         className="full-width-image margin-top-0"
