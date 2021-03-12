@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Halleskog & Hanssons nya hemsida
+title: Nyhet 1
 date: 2021-02-18T10:28:02.651Z
 description: "Den nya hemsidan är nu live! "
 featuredpost: true

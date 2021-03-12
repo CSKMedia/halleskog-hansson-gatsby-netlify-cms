@@ -13,68 +13,67 @@ public_folder: /img
 
 collections:
   - name: "blog"
-    label: "nyheter"
+    label: "Nyheter"
     folder: "src/pages/nyheter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Publiceringsdatum", name: "date", widget: "datetime"}
+      - {label: "Meta beskrivning", name: "description", widget: "text"}
+      # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Bild", name: "featuredimage", widget: image}
+      - {label: "Innehåll", name: "body", widget: "markdown"}
+      - {label: "Taggar", name: "tags", widget: "list"}
 
   - name: "tjanster"
     label: "Tjänster"
     folder: "src/pages/tjanster"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-service-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Titel", name: "title", widget: "string"}
+      # - {label: "Publicerat datum", name: "date", widget: "datetime"}
+      # - {label: "Beskrivning", name: "description", widget: "text"}
+      # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Bild", name: "featuredimage", widget: image}
+      - {label: "Innehåll", name: "body", widget: "markdown"}
+      - {label: "Taggar", name: "tags", widget: "list"}
 
 
   - name: "produkter"
     label: "Produkter"
     folder: "src/pages/produkter"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-product-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Titel", name: "title", widget: "string"}
+      # - {label: "Publish Date", name: "date", widget: "datetime"}
+      # - {label: "Description", name: "description", widget: "text"}
+      # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Bild", name: "featuredimage", widget: image}
+      - {label: "Innehåll", name: "body", widget: "markdown"}
+      - {label: "Taggar", name: "tags", widget: "list"}
 
 
   - name: "pages"
-    label: "Pages"
+    label: "Sidor"
     files:
       - file: "src/pages/index.md"
         label: "Startsidan"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
+          - {label: Titel, name: title, widget: string}
+          - {label: Jumbotron bild, name: image, widget: image}
+          - {label: Rubrik, name: heading, widget: string}
+          # - {label: Underrubrik, name: subheading, widget: string}
+          # - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           - {label: Description, name: description, widget: string}
-          - {label: "Intro", name: "intro", widget: "object", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Description", name: "description", widget: text}, {label: Blurbs, name: blurbs, widget: "list", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Rubrik", name: "heading", widget: "string"}, {label: "Text", name: "text", widget: "markdown"}, {label: "ikon", name: "icon", widget: "select", options: ["directions", "road", "map" ]}, {label: "knapplänk", name: "buttonLink", widget: "string" } ]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: "Intro", name: "intro", widget: "object", fields: [{label: info-box, name: blurbs, widget: "list", fields: [{label: "Rubrik", name: "heading", widget: "string"}, {label: "Bild", name: "image", widget: "image"}, {label: "Text", name: "text", widget: "markdown"}, {label: "ikon", name: "icon", widget: "select", options: ["directions", "road", "map" ]}, {label: "knapplänk", name: "buttonLink", widget: "string" } ]}]}
       - file: "src/pages/om-foretaget/index.md"
         label: "Om företaget"
         name: "about"

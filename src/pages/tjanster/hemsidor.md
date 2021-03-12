@@ -1,9 +1,6 @@
 ---
 templateKey: single-service-page
 title: Hemsidor
-date: 2021-03-11T14:06:43.753Z
-description: ASLKdlasjkflafk
-featuredpost: true
 featuredimage: /img/blog-index.jpg
 tags:
   - test

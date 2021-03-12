@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: En till nyhet!
+title: Nyhet 2
 date: 2021-02-19T16:07:59.795Z
 description: Vi erbjuder skyltar i plast eller plåt beroende på situation. För
   tillfälliga vägarbeten fungerar plastskyltar väldigt bra då de är lätta att

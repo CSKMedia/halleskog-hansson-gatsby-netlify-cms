@@ -5,15 +5,11 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-import ServiceRoll from '../components/ServiceRoll'
 
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
   subheading,
-  mainpitch,
-  description,
   intro,
 }) => (
   <div stlye={{ position: "relative" }}>
@@ -44,11 +40,7 @@ export const IndexPageTemplate = ({
             <h1
               className="has-text-weight-bold is-size-4-mobile is-size-4-tablet is-size-2-widescreen front-page-title"
               style={{
-                // boxShadow:
-                //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
-                //backgroundColor: '#b60f1d',
                 fontWeight: 700,
-                // textAlign: 'left',
                 textTransform: 'uppercase',
                 color: 'white',
                 lineHeight: '1.5',
@@ -61,9 +53,6 @@ export const IndexPageTemplate = ({
           <h3
             className="is-size-5-mobile is-size-5-tablet is-size-5-widescreen mb-4 front-page-subheading"
             style={{
-              // boxShadow:
-              //   '#b60f1d 0.5rem 0px 0px, #b60f1d -0.5rem 0px 0px',
-              // backgroundColor: '#b60f1d',
               color: 'white',
               lineHeight: '1.3',
               padding: '0.25em',
@@ -91,22 +80,6 @@ export const IndexPageTemplate = ({
             <div className="columns marginOffset">
               <div className="column is-24">
                 <div className="content">
-                {/* <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-24 has-background-info-dark">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div> */}
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
@@ -124,9 +97,6 @@ export const IndexPageTemplate = ({
         <div className="container is-fluid" style={{ backgroundColor: "white", paddingLeft:0, paddingRight: 0}}>
           <div className="container">
             <div class="columns">
-            {/* <div className="column is-gapless">
-              test here
-            </div> */}
               <div className="column is-12">
                 <h3 className="has-text-weight-semibold is-size-2 pb-3 pt-6">
                   Nyheter
@@ -199,10 +169,6 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
         description
         intro {
           blurbs {

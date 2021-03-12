@@ -25,11 +25,10 @@ export const SingleProductPageTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
+                <h4>Taggar</h4>
                 <ul className="taglist">
                   {tags.map((tag) => (
                     <li key={tag + `tag`}>
@@ -62,9 +61,9 @@ const SingleProductPage = ({ data }) => {
       <SingleProductPageTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
+        // description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Nyheter">
+          <Helmet titleTemplate="%s | Produkter">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
