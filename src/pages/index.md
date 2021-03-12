@@ -1,7 +1,4 @@
 ---
-templateKey: index-page
-title: Helhetslösning för vägavstängningar
-image: /img/jumbo.jpg
 heading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande lösning
   för era vägavstängningar. Vi finns för dig både i det stora och det lilla
   företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken eller
@@ -12,6 +9,7 @@ subheading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande
   lilla företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken
   eller vilka tjänster ni behöver stöd med. Vi erbjuder er även en helhet där de
   anställda kan koncentrera sig på sitt arbete.
+templateKey: index-page
 mainpitch:
   title: Why Kaldi
   description: >
@@ -19,10 +17,9 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+title: Helhetslösning för vägavstängningar
+image: /img/jumbo.jpg
+description: Meta data
 intro:
   blurbs:
     - image: /img/banner-solution.jpg
