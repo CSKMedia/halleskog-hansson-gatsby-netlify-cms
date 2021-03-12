@@ -22,6 +22,14 @@ image: /img/jumbo.jpg
 description: Meta data
 intro:
   blurbs:
+    - image: /img/front2.jpg
+      heading: Ta-Plan och andra tillstånd
+      text: Vi tillståndsansökningar och upprättar trafikanordnings- och APD-planer
+        för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme,
+        fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation
+        av fastigheter gator m.m.
+      icon: map
+      buttonLink: tjanster
     - image: /img/banner-solution.jpg
       heading: Försäljning & Uthyrning
       text: Vi erbjuder ett stort utbud av produkter för försäljning och uthyrning.
@@ -35,14 +43,6 @@ intro:
         på ett effektivt och säkert sätt samt tillgodose trafiksäkerhet för
         omgivningen. Vi är experter på vägarbete!
       icon: road
-      buttonLink: tjanster
-    - image: /img/front2.jpg
-      heading: Ta-Plan och andra tillstånd
-      text: Vi tillståndsansökningar och upprättar trafikanordnings- och APD-planer
-        för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme,
-        fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation
-        av fastigheter gator m.m.
-      icon: map
       buttonLink: tjanster
   heading: What we offer
   description: >
