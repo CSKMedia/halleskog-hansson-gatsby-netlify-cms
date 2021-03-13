@@ -42,9 +42,9 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="content">
               <div className="columns is-desktop">
-              {this.props.data.allDataYaml.nodes.map(obj => (
+              {this.props.data.dataYaml && (
               <>
-                <div className="column is-half"><img src={obj.mapImage} is-square/></div>
+                <div className="column is-half"><img src={this.props.data.dataYaml.mapImage} is-square/></div>
                   <div className="column is-half is-flex is-justify-content-center is-align-items-center">
                     <div>
                       <img
@@ -54,25 +54,25 @@ export default class Index extends React.Component {
                       />
                       <br />
                       <p>
-                        Mail: <a href={`mailto:${obj.mail}`}>{obj.mail}</a> <br />
-                        Kontoret: {obj.phone}
+                        Mail: <a href={`mailto:${this.props.data.dataYaml.mail}`}>{this.props.data.dataYaml.mail}</a> <br />
+                        Kontoret: {this.props.data.dataYaml.phone}
                         <br />
                         <br />
                         <b>Besöksadress:</b>
                         <br />
-                        {obj.visitAddress}
+                        {this.props.data.dataYaml.visitAddress}
                         <br />
                         <br />
                         <b>Postadress:</b>
-                        <br /> {obj.postaddress}
+                        <br /> {this.props.data.dataYaml.postaddress}
                         <br />
                       </p>
                     </div>
                   </div>
               </>
-              ))}
+              )}
             </div>
-            </div>
+          </div>
             <div className="columns is-desktop">
               <div className="column is-half">
                 <div className="content">
@@ -174,15 +174,12 @@ export default class Index extends React.Component {
 }
 export const query = graphql`
   query ContactInfoQuery {
-    allDataYaml(filter: {id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}}) {
-      nodes {
-        mapImage
-        id
-        phone
-        mail
-        postaddress
-        visitAddress
-      }
+    dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
+      mail
+      mapImage
+      phone
+      postAddress
+      visitAddress
     }
   }
 `
