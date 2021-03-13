@@ -20,6 +20,7 @@ export default class Index extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+
   handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
@@ -44,31 +45,33 @@ export default class Index extends React.Component {
               <div className="columns is-desktop">
               {this.props.data.dataYaml && (
               <>
-                <div className="column is-half"><img src={this.props.data.dataYaml.mapImage} is-square/></div>
-                  <div className="column is-half is-flex is-justify-content-center is-align-items-center">
-                    <div>
-                      <img
-                        src={logo}
-                        alt="Halleskog & Hansson AB"
-                        style={{ height: '5em', marginBottom: 20 }}
-                      />
+                <div className="column is-half">
+                  <img src={this.props.data.dataYaml.mapImage} is-square={true} />
+                </div>
+                <div className="column is-half is-flex is-justify-content-center is-align-items-center">
+                  <div>
+                    <img
+                      src={logo}
+                      alt="Halleskog & Hansson AB"
+                      style={{ height: '5em', marginBottom: 20 }}
+                    />
+                    <br />
+                    <p>
+                      Mail: <a href={`mailto:${this.props.data.dataYaml.mail}`}>{this.props.data.dataYaml.mail}</a> <br />
+                      Kontoret: {this.props.data.dataYaml.phone}
                       <br />
-                      <p>
-                        Mail: <a href={`mailto:${this.props.data.dataYaml.mail}`}>{this.props.data.dataYaml.mail}</a> <br />
-                        Kontoret: {this.props.data.dataYaml.phone}
-                        <br />
-                        <br />
-                        <b>Besöksadress:</b>
-                        <br />
-                        {this.props.data.dataYaml.visitAddress}
-                        <br />
-                        <br />
-                        <b>Postadress:</b>
-                        <br /> {this.props.data.dataYaml.postaddress}
-                        <br />
-                      </p>
-                    </div>
+                      <br />
+                      <b>Besöksadress:</b>
+                      <br />
+                      {this.props.data.dataYaml.visitAddress}
+                      <br />
+                      <br />
+                      <b>Postadress:</b>
+                      <br /> {this.props.data.dataYaml.postaddress}
+                      <br />
+                    </p>
                   </div>
+                </div>
               </>
               )}
             </div>
@@ -172,9 +175,10 @@ export default class Index extends React.Component {
     )
   }
 }
+
 export const query = graphql`
   query ContactInfoQuery {
-    dataYaml {
+    dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
       mail
       mapImage
       phone
