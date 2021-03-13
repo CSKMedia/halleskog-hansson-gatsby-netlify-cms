@@ -174,7 +174,7 @@ export default class Index extends React.Component {
 }
 export const query = graphql`
   query ContactInfoQuery {
-    dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
+    dataYaml {
       mail
       mapImage
       phone
