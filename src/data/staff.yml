@@ -49,3 +49,8 @@ staff:
     phone: 666
     email: Kommer
     photo: /img/johnny-holm.jpg
+  - name: Oskar Jansson
+    position: Depåmedarbetare
+    phone: 956
+    email: Kommer
+    photo: /img/oskar.jpg
