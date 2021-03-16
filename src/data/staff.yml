@@ -44,3 +44,8 @@ staff:
     phone: 753
     email: Kommer
     photo: /img/joakim-forss.jpg
+  - name: Johnny Holm
+    position: YA
+    phone: 666
+    email: Kommer
+    photo: /img/johnny-holm.jpg
