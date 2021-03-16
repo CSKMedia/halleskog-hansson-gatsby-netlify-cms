@@ -24,3 +24,8 @@ staff:
     photo: /img/alexander.jpg
     phone: 1212133
     email: mail kommer
+  - name: Victor Hillerström
+    position: Arbetsledare
+    phone: 256
+    email: Mail kommer
+    photo: /img/victor-hillerström.jpg
