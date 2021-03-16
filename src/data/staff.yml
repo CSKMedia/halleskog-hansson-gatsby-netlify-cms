@@ -30,12 +30,12 @@ staff:
     email: Mail kommer
     photo: /img/victor-hillerström.jpg
   - name: Emelie Gustafsson
-    position: YA
+    position: Depåmedarbetare
     phone: 569
     email: Kommer
     photo: /img/emelie-gustafsson.jpg
   - name: Hoshyar Maronesi
-    position: YA
+    position: Depåmedarbetare
     phone: 896
     email: Kommer
     photo: /img/hoss.jpg
@@ -45,7 +45,7 @@ staff:
     email: Kommer
     photo: /img/joakim-forss.jpg
   - name: Johnny Holm
-    position: YA
+    position: Depåmedarbetare
     phone: 666
     email: Kommer
     photo: /img/johnny-holm.jpg
