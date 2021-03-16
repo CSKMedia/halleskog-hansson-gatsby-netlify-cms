@@ -79,3 +79,8 @@ staff:
     phone: 789
     email: Kommer
     photo: /img/elin.jpg
+  - name: Erik Wahlund
+    position: Tillståndskonsult
+    phone: 658
+    email: Kommer
+    photo: /img/erik-wahlund.jpg
