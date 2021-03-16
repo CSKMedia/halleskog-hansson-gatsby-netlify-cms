@@ -59,3 +59,8 @@ staff:
     phone: 845
     email: Kommer
     photo: /img/simon-fägnell.jpg
+  - name: Julia Karström
+    position: Administration
+    phone: 555
+    email: Kommer
+    photo: /img/julia-k.jpg
