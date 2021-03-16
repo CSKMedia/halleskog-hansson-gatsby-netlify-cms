@@ -29,3 +29,8 @@ staff:
     phone: 256
     email: Mail kommer
     photo: /img/victor-hillerström.jpg
+  - name: Emelie Gustafsson
+    position: YA
+    phone: 569
+    email: Kommer
+    photo: /img/emelie-gustafsson.jpg
