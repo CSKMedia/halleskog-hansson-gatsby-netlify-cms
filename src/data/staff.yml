@@ -24,3 +24,73 @@ staff:
     photo: /img/alexander.jpg
     phone: 1212133
     email: mail kommer
+  - name: Victor Hillerström
+    position: Arbetsledare
+    phone: 256
+    email: Mail kommer
+    photo: /img/victor-hillerström.jpg
+  - name: Emelie Gustafsson
+    position: Depåmedarbetare
+    phone: 569
+    email: Kommer
+    photo: /img/emelie-gustafsson.jpg
+  - name: Hoshyar Maronesi
+    position: Depåmedarbetare
+    phone: 896
+    email: Kommer
+    photo: /img/hoss.jpg
+  - name: Joakim Forss
+    position: Kranbilschaufför
+    phone: 753
+    email: Kommer
+    photo: /img/joakim-forss.jpg
+  - name: Johnny Holm
+    position: Depåmedarbetare
+    phone: 666
+    email: Kommer
+    photo: /img/johnny-holm.jpg
+  - name: Oskar Jansson
+    position: Depåmedarbetare
+    phone: 956
+    email: Kommer
+    photo: /img/oskar.jpg
+  - name: Simon Fägnell
+    position: Depåmedarbetare
+    phone: 845
+    email: Kommer
+    photo: /img/simon-fägnell.jpg
+  - name: Julia Karström
+    position: Administration
+    phone: 555
+    email: Kommer
+    photo: /img/julia-k.jpg
+  - name: Anna-Karin Orre
+    position: Tillståndskonsult
+    phone: 8253539
+    email: Kommer
+    photo: /img/anna-karin-orre.jpg
+  - name: Julia Sundqvist
+    position: Tillståndskonsult/Ekonomi
+    phone: 563
+    email: Kommer
+    photo: /img/julia-sundqvist.jpg
+  - name: Elin af Forselles
+    position: Tillståndskonsult
+    phone: 789
+    email: Kommer
+    photo: /img/elin.jpg
+  - name: Erik Wahlund
+    position: Tillståndskonsult
+    phone: 658
+    email: Kommer
+    photo: /img/erik-wahlund.jpg
+  - name: Emelie Wahlberg
+    position: Tillståndskonsult
+    phone: 630
+    email: Kommer
+    photo: /img/emelie-wahlberg.jpg
+  - name: Patrik Kiebach
+    position: Tillståndskonsult
+    phone: 124
+    email: Kommer
+    photo: /img/patrik-kiebach.jpg
