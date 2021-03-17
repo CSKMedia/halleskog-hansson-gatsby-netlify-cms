@@ -46,10 +46,7 @@ const Navbar = () => {
             className={`navbar-menu ${navBarActiveClass}`}
           >
 
-          <div className="navbar-start has-text-centered">
-            <Link className="navbar-item" to="/om-foretaget">
-              Om företaget
-            </Link>
+          <div className="navbar-end has-text-centered">
             <div className="navbar-item has-dropdown is-hoverable">
               <Link className="navbar-item" to="/tjanster">
               Tjänster
@@ -108,9 +105,18 @@ const Navbar = () => {
             <Link className="navbar-item" to="/nyheter">
               Nyheter
             </Link>
-            <Link className="navbar-item" to="/kontakt">
-              Kontakta oss
-            </Link>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">Om oss</a>
+              <div class="navbar-dropdown">
+                <Link className="navbar-item" to="/om-foretaget">
+                  Om företaget
+                </Link>
+                <Link className="navbar-item" to="/kontakt">
+                  Kontakta oss
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="navbar-end">
             <div className="navbar-item is-hidden-mobile">

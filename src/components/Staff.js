@@ -9,7 +9,7 @@ export default () => (
       allDataYaml {
         edges {
           node {
-            staff {
+            teamVallentuna {
               name
               photo
               position
@@ -28,7 +28,7 @@ export default () => (
             <h1>Teamet</h1>
             {data && data.allDataYaml.edges.map(({node}) => (
               <div className="columns is-multiline">
-                {node.staff && node.staff.map(member => (
+                {node.teamVallentuna && node.teamVallentuna.map(member => (
                   <div className="column is-3">
                     <div className="card">
                       <div className="card-image">

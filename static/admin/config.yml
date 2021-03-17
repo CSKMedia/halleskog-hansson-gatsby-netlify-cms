@@ -124,13 +124,13 @@ collections:
   - name:  "staff"
     label: "Anställda"
     files:
-      - file: "src/data/staff.yml"
-        label: "staff"
-        name: "staff"
+      - file: "src/data/teamVallentuna.yml"
+        label: "Team Vallentuna"
+        name: "teamVallentuna"
         fields:
           - {name: templateKey, label: Template Key, widget: hidden, default: staff}
-          - label: Anställda
-            name: "staff"
+          - label: Team Vallentuna
+            name: "teamVallentuna"
             widget: list
             fields:
               - {label: Namn, name: name, widget: string}
@@ -138,3 +138,19 @@ collections:
               - {label: telefon, name: phone, widget: number}
               - {label: email, name: email, widget: string}
               - {label: bild, name: photo, widget: image}
+
+      - file: "src/data/teamSolna.yml"
+        label: "Team Solna"
+        name: "teamSolna"
+        fields:
+          - {name: templateKey, label: Template Key, widget: hidden, default: staff}
+          - label: Team Solna
+            name: "teamSolna"
+            widget: list
+            fields:
+              - {label: Namn, name: name, widget: string}
+              - {label: Roll, name: position, widget: string}
+              - {label: telefon, name: phone, widget: number}
+              - {label: email, name: email, widget: string}
+              - {label: bild, name: photo, widget: image}
+
