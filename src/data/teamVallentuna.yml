@@ -1,14 +1,4 @@
 teamVallentuna:
-  - name: Casper Karlsson
-    position: Webbutvecklare
-    photo: /img/casper.jpeg
-    phone: 1212133
-    email: csk87@live.se
-  - name: Billy Karlsson
-    position: Salesman
-    photo: /img/billy.jpeg
-    email: mail kommer
-    phone: 1235
   - name: Per Halleskog
     position: Grundare
     photo: /img/per.jpg
@@ -64,33 +54,4 @@ teamVallentuna:
     phone: 555
     email: Kommer
     photo: /img/julia-k.jpg
-  - name: Anna-Karin Orre
-    position: Tillståndskonsult
-    phone: 8253539
-    email: Kommer
-    photo: /img/anna-karin-orre.jpg
-  - name: Julia Sundqvist
-    position: Tillståndskonsult/Ekonomi
-    phone: 563
-    email: Kommer
-    photo: /img/julia-sundqvist.jpg
-  - name: Elin af Forselles
-    position: Tillståndskonsult
-    phone: 789
-    email: Kommer
-    photo: /img/elin.jpg
-  - name: Erik Wahlund
-    position: Tillståndskonsult
-    phone: 658
-    email: Kommer
-    photo: /img/erik-wahlund.jpg
-  - name: Emelie Wahlberg
-    position: Tillståndskonsult
-    phone: 630
-    email: Kommer
-    photo: /img/emelie-wahlberg.jpg
-  - name: Patrik Kiebach
-    position: Tillståndskonsult
-    phone: 124
-    email: Kommer
-    photo: /img/patrik-kiebach.jpg
+ 
