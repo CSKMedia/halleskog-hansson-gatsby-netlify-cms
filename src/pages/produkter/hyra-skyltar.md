@@ -5,6 +5,8 @@ featuredimage: /img/20190718-img_4616.jpg
 tags:
   - Skyltar
 ---
+![Vi har egen skylttillverkning och kan ta fram skyltar för de flesta ändamål.](/img/skyltar.jpg "Skyltframtagning")
+
 <!--StartFragment-->
 
 ## Skyltar
