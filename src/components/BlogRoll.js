@@ -38,7 +38,7 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-6 is-block">
+                    <span className="subtitle is-size-6 is-block" style={{ marginTop: "0.5rem"}}>
                       {post.frontmatter.date}
                     </span>
                   </p>
@@ -94,11 +94,11 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "MM/DD/YYYY")
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 250, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
