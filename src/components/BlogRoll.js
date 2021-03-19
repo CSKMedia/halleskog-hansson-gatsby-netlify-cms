@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { kebabCase } from 'lodash'
 
 class BlogRoll extends React.Component {
   render() {
@@ -37,19 +38,28 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    <span className="subtitle is-size-6 is-block">
                       {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
-                <p>
+                {/* <div className="content">
+                  <ul className="taglist">
+                    {post.frontmatter.tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`} style={{fontSize: "0.9rem"}}>{tag}</Link>,
+                    </li>
+                    ))}
+                  </ul>
+                </div> */}
+                {/* <p>
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
+                  <Link className="btn" to={post.fields.slug}>
                     Fortsätt läsa →
                   </Link>
-                </p>
+                </p> */}
               </article>
             </div>
           ))}
@@ -93,6 +103,7 @@ export default () => (
                     }
                   }
                 }
+                tags
               }
             }
           }

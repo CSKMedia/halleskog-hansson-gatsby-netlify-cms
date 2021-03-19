@@ -20,7 +20,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Publiceringsdatum", name: "date", widget: "datetime"}
+      - {label: "Publiceringsdatum", name: "date", widget: "datetime", date_format: "DD.MM.YYYY"}
       - {label: "Meta beskrivning", name: "description", widget: "text"}
       # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Bild", name: "featuredimage", widget: image}

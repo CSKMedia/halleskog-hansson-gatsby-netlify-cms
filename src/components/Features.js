@@ -28,7 +28,7 @@ const FeatureGrid = ({ gridItems }) => (
             <FontAwesomeIcon icon={item.icon} size="5x" color="#b60f1d"/>
             <h2>{item.heading}</h2>
             <p>{item.text}</p>
-            <a className="button is-primary mt-5 p-5" style={{ fontWeight: "bold"}} href={item.buttonLink}>Läs mer</a>
+            <a className="is-primary mt-5 btn" style={{ fontWeight: "bold"}} href={item.buttonLink}>Läs mer</a>
           </div>
         </section>
       </div>
