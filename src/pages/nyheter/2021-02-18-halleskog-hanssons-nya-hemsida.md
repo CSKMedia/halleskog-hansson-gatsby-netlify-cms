@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-title: Nyhet 1
-date: 2021-03-19T15:39:56.544Z
+title: Att halleskog-hansson kan helhetslösningar för vägavstängningar är inget nytt!
+date: 2021-03-19T16:08:18.975Z
 description: "Den nya hemsidan är nu live! "
 featuredpost: true
 featuredimage: /img/pexels-mockupeditorcom-205316.jpg
