@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Nyhet 1
-date: 2021-02-18T10:28:02.651Z
+date: 2021-03-19T15:39:56.544Z
 description: "Den nya hemsidan är nu live! "
 featuredpost: true
 featuredimage: /img/pexels-mockupeditorcom-205316.jpg
