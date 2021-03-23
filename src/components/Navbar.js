@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import logo from '../img/hhlogo-w.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 
 
-const Navbar = () => {
+export default function Navbar () {
 
   const [active, setActive] = useState(false)
   const [navBarActiveClass, setNavBarActiveClass] = useState("")
@@ -18,7 +18,29 @@ const Navbar = () => {
     active ? setNavBarActiveClass("is-active") : setNavBarActiveClass("")
   }
 
-    return (
+  return (
+    <StaticQuery
+      query={graphql`
+        query ContactPhoneQuery {
+          dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
+            phone
+            phone2
+          }
+        }
+      `}
+      render={data => (
+  // const [active, setActive] = useState(false)
+  // const [navBarActiveClass, setNavBarActiveClass] = useState("")
+
+  // const url = typeof window !== 'undefined' ? window.location.pathname : '';
+
+  // const toggleHamburger = () => {
+  //   // toggle the active boolean in the state
+  //   setActive(!active)
+  //   active ? setNavBarActiveClass("is-active") : setNavBarActiveClass("")
+  // }
+
+    // return (
       <nav
         id="navbar"
         className={`navbar is-fixed-top ${url === "/" ? '' : 'navbar-subpage'}`}
@@ -119,14 +141,20 @@ const Navbar = () => {
             </div>
           </div>
           <div className="navbar-end">
-            <div className="navbar-item is-hidden-mobile">
-            <FontAwesomeIcon icon={faMobileAlt} size="2x" color="#b60f1d" style={{marginRight: 5, color: "white"}}/> 072-316 12 10
+            <div className="is-hidden-mobile navbar-item" style={{ display: "flex", fontSize: "0.7rem", color: "white", alignItems: "center"}}>
+              <div style={{marginRight: "2rem"}}>kontor: {data.dataYaml.phone}</div>
+              <div style={{}}>Depå: {data.dataYaml.phone2}</div>
+            {/* <FontAwesomeIcon icon={faMobileAlt} size="2x" color="#b60f1d" style={{marginRight: 5, color: "white"}}/> {data.dataYaml.phone} */}
             </div>
           </div>
         </div>
       </div>
     </nav>
-    )
-  }
+    )}
+  />
+  )
+}
 
-export default Navbar
+
+
+// export default Navbar
