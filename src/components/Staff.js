@@ -29,9 +29,10 @@ export default () => (
     }
     `}
     render={data => (
-      <section className="section">
+      <section className="section" style={{ padding: 0}}>
+        <div className="container-fluid" style={{ padding: "3rem", backgroundColor: "white" }}>
         <div className="container">
-          <div className="content has-text-centered">
+          <div className="content has-text-centered" style={{ borderBottom: "7px solid #f8f9fa"}}>
             <h1 style={{ padding: "10px 0px"}}>Team Vallentuna</h1>
             {data && data.allDataYaml.edges.map(({node}) => (
               <div className="columns is-multiline">
@@ -57,8 +58,8 @@ export default () => (
               </div>
             ))}
           </div>
-          <div className="content has-text-centered" style={{ marginTop: 20}}>
-            <h1 style={{ padding: "10px 0px"}}>Team Solna</h1>
+          <div className="content has-text-centered" style={{ marginTop: "3rem"}}>
+            <h1 style={{ padding: "10px 0px" }}>Team Solna</h1>
             {data && data.allDataYaml.edges.map(({node}) => (
               <div className="columns is-multiline">
                 {node.teamSolna && node.teamSolna.map(member => (
@@ -84,6 +85,7 @@ export default () => (
             ))}
           </div>
         </div>
+      </div>
       </section>
     )}
   />

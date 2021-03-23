@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import { camelCase } from 'lodash'
+import ContactBanner from '../components/ContactBanner'
 
 export const IndexPageTemplate = ({
   image,
@@ -62,7 +63,7 @@ export const IndexPageTemplate = ({
           >
             {subheading}
           </h3>
-          <Link className="btn-white" to="/products">
+          <Link className="btn-white" to="/kontakt">
             Kontakta oss
           </Link>
         </div>
@@ -82,20 +83,13 @@ export const IndexPageTemplate = ({
               <div className="column is-24">
                 <div className="content">
                 <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/produkter">
-                      Se alla produkter
-                    </Link>
-                  </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-        </div>
-        <div className="container is-fluid" style={{ backgroundColor: "white", paddingLeft:0, paddingRight: 0}}>
+        <ContactBanner backgroundColor="white"/>
+        <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0}}>
           <div className="container">
             <div class="columns">
               <div className="column is-12">
