@@ -116,7 +116,8 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact"}
           - {label: E-post, name: mail, widget: string}
-          - {label: Telefon, name: phone, widget: string}
+          - {label: Telefon kontoret, name: phone, widget: string}
+          - {label: Telefon Depå, name: phone2, widget: string}
           - {label: Besöksadress, name: visitAddress, widget: text}
           - {label: Postadress, name: postAddress, widget: text}
           - {label: karta, name: mapImage, widget: image}

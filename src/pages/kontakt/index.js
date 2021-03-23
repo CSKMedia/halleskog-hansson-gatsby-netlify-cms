@@ -67,7 +67,7 @@ export default class Index extends React.Component {
                       <br />
                       <br />
                       <b>Postadress:</b>
-                      <br /> {this.props.data.dataYaml.postaddress}
+                      <br /> {this.props.data.dataYaml.postAddress}
                       <br />
                     </p>
                   </div>
@@ -182,6 +182,7 @@ export const query = graphql`
       mail
       mapImage
       phone
+      phone2
       postAddress
       visitAddress
     }
