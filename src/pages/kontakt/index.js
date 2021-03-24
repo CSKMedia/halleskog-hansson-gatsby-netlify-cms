@@ -171,13 +171,12 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="column is-half is-flex is-justify-content-center is-align-items-center">
-                  {this.props.data.dataYaml ? (
+                  {this.props.data.dataYaml && (
                   <p style={{ backgroundColor: "white", padding: "2rem"}}>
                     <b>Telefon</b>< br />
                     Kontoret: {this.props.data.dataYaml.phone} <br/>
                     Depån: {this.props.data.dataYaml.phone2} <br/>
-                  </p> ) : (<> </>)
-                  }
+                  </p> )}
                 </div>
               </div>
             </div>
