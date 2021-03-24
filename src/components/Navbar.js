@@ -141,11 +141,14 @@ export default function Navbar () {
             </div>
           </div>
           <div className="navbar-end">
+            { data.dataYaml ? (
             <div className="is-hidden-mobile navbar-item" style={{ display: "flex", fontSize: "0.7rem", color: "white", alignItems: "center"}}>
               <div style={{marginRight: "2rem"}}>kontor: {data.dataYaml.phone || ""} </div>
               <div style={{}}>Depå: {data.dataYaml.phone2 || ""}</div>
             {/* <FontAwesomeIcon icon={faMobileAlt} size="2x" color="#b60f1d" style={{marginRight: 5, color: "white"}}/> {data.dataYaml.phone} */}
             </div>
+            ) : (<></>)
+            }
           </div>
         </div>
       </div>
