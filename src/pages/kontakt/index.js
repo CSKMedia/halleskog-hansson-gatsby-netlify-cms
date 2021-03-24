@@ -15,7 +15,6 @@ export default class Index extends React.Component {
     super(props)
     this.state = { isValidated: false }
   }
-
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
@@ -36,17 +35,20 @@ export default class Index extends React.Component {
   }
 
   render() {
-    console.log(this.props.data.dataYaml)
+
+    const {mapImage, phone, phone2, mail, visitAddress, postAddress} = this.props.data.allDataYaml.edges[0].node
+
+    console.log("what is this: ", this.props.data.allDataYaml.edges[0].node)
     return (
       <Layout>
         <section className="section" style={{ padding: 0, backgroundColor: "#f8f9fa"}}>
           <div className="container-fluid" >
               <div className="content" style={{ marginBottom: "0px"}}>
                 <div className="columns is-desktop" style={{ paddingBottom: "0px"}}>
-                {this.props.data.dataYaml && (
+                {this.props.data.allDataYaml.edges[0].node && (
                 <>
                   <div className="column is-half" style={{ padding: "0px"}}>
-                    <img src={this.props.data.dataYaml.mapImage} is-square={true} />
+                    <img src={mapImage} is-square={true} />
                   </div>
                   <div className="column is-half is-flex is-justify-content-center is-align-items-center">
                     <div>
@@ -58,18 +60,18 @@ export default class Index extends React.Component {
                     <br />
                     <p>
                       <b>Telefon</b>< br />
-                      Kontoret: {this.props.data.dataYaml.phone} <br/>
-                      Depån: {this.props.data.dataYaml.phone2} <br/>
+                      Kontoret: {phone} <br/>
+                      Depån: {phone2} <br/>
                       <br />
-                      <a href={`mailto:${this.props.data.dataYaml.mail}`}>{this.props.data.dataYaml.mail}</a> <br />
+                      <a href={`mailto:${mail}`}>{mail}</a> <br />
                       <br />
                       <b>Besöksadress</b>
                       <br />
-                      {this.props.data.dataYaml.visitAddress}
+                      {visitAddress}
                       <br />
                       <br />
                       <b>Postadress</b>
-                      <br /> {this.props.data.dataYaml.postAddress}
+                      <br /> {postAddress}
                       <br />
                       <br />
 
@@ -171,11 +173,11 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="column is-half is-flex is-justify-content-center is-align-items-center">
-                  {this.props.data.dataYaml && (
+                  {this.props.data.allDataYaml.edges[0].node && (
                   <p style={{ backgroundColor: "white", padding: "2rem"}}>
                     <b>Telefon</b>< br />
-                    Kontoret: {this.props.data.dataYaml.phone} <br/>
-                    Depån: {this.props.data.dataYaml.phone2} <br/>
+                    Kontoret: {phone} <br/>
+                    Depån: {phone2} <br/>
                   </p> )}
                 </div>
               </div>
@@ -190,13 +192,17 @@ export default class Index extends React.Component {
 
 export const query = graphql`
   query ContactInfoQuery {
-    dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
-      mail
-      mapImage
-      phone
-      phone2
-      postAddress
-      visitAddress
+    allDataYaml(filter: {id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}}) {
+      edges {
+        node {
+          phone
+          phone2
+          mapImage
+          mail
+          visitAddress
+          postAddress
+        }
+      }
     }
   }
 `
