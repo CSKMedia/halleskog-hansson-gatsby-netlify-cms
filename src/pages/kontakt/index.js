@@ -20,7 +20,6 @@ export default class Index extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-
   handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
@@ -37,6 +36,7 @@ export default class Index extends React.Component {
   }
 
   render() {
+    console.log(this.props.data.dataYaml)
     return (
       <Layout>
         <section className="section" style={{ padding: 0, backgroundColor: "#f8f9fa"}}>
