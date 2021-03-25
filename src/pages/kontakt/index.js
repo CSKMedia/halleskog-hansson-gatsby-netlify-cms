@@ -36,9 +36,9 @@ export default class Index extends React.Component {
 
   render() {
 
-    const {mapImage, phone, phone2, mail, visitAddress, postAddress} = this.props.data.allDataYaml.edges[0].node
+    const {mapImage, phone, phone2, mail, visitAddress, postAddress} = this.props.data.allDataYaml.edges.node
 
-    console.log("what is this: ", this.props.data.allDataYaml.edges[0].node)
+    console.log("what is this: ", this.props.data.allDataYaml.edges)
     return (
       <Layout>
         <section className="section" style={{ padding: 0, backgroundColor: "#f8f9fa"}}>
