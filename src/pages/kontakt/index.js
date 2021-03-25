@@ -35,20 +35,23 @@ export default class Index extends React.Component {
   }
 
   render() {
+    const { data } = this.props
+    const { edges: objs } = data.allDataYaml
 
-    const {mapImage, phone, phone2, mail, visitAddress, postAddress} = this.props.data.allDataYaml.edges.node
-
-    console.log("what is this: ", this.props.data.allDataYaml.edges)
+    console.log("objs is:", objs)
+    // { node: post }
+    // const {mapImage, phone, phone2, mail, visitAddress, postAddress} = this.props.data.allDataYaml.edges[0].node
     return (
       <Layout>
         <section className="section" style={{ padding: 0, backgroundColor: "#f8f9fa"}}>
           <div className="container-fluid" >
               <div className="content" style={{ marginBottom: "0px"}}>
                 <div className="columns is-desktop" style={{ paddingBottom: "0px"}}>
-                {this.props.data.allDataYaml.edges[0].node && (
+                {objs &&
+                  objs.map(({ node: info }) => (
                 <>
                   <div className="column is-half" style={{ padding: "0px"}}>
-                    <img src={mapImage} is-square={true} />
+                    <img src={info.mapImage} is-square={true} />
                   </div>
                   <div className="column is-half is-flex is-justify-content-center is-align-items-center">
                     <div>
@@ -60,18 +63,18 @@ export default class Index extends React.Component {
                     <br />
                     <p>
                       <b>Telefon</b>< br />
-                      Kontoret: {phone} <br/>
-                      Depån: {phone2} <br/>
+                      Kontoret: {info.phone} <br/>
+                      Depån: {info.phone2} <br/>
                       <br />
-                      <a href={`mailto:${mail}`}>{mail}</a> <br />
+                      <a href={`mailto:${info.mail}`}>{info.mail}</a> <br />
                       <br />
                       <b>Besöksadress</b>
                       <br />
-                      {visitAddress}
+                      {info.visitAddress}
                       <br />
                       <br />
                       <b>Postadress</b>
-                      <br /> {postAddress}
+                      <br /> {info.postAddress}
                       <br />
                       <br />
 
@@ -91,7 +94,7 @@ export default class Index extends React.Component {
                     </div>
                   </div>
                 </>
-                )}
+                ))}
               </div>
           </div>
             <Staff />
@@ -172,14 +175,14 @@ export default class Index extends React.Component {
                     </form>
                   </div>
                 </div>
-                <div className="column is-half is-flex is-justify-content-center is-align-items-center">
+                {/* <div className="column is-half is-flex is-justify-content-center is-align-items-center">
                   {this.props.data.allDataYaml.edges[0].node && (
                   <p style={{ backgroundColor: "white", padding: "2rem"}}>
                     <b>Telefon</b>< br />
                     Kontoret: {phone} <br/>
                     Depån: {phone2} <br/>
                   </p> )}
-                </div>
+                </div> */}
               </div>
             </div>
 

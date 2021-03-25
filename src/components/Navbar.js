@@ -128,8 +128,8 @@ export default function Navbar () {
               Nyheter
             </Link>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">Om oss</a>
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">Om oss</a>
               <div class="navbar-dropdown">
                 <Link className="navbar-item" to="/om-foretaget">
                   Om företaget
