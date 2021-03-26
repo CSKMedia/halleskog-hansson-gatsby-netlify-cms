@@ -198,18 +198,18 @@ class Index extends React.Component {
 export default () => (
   <StaticQuery
     query={graphql`
-      query ContactInfoQuery {
-        dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
-          id
-          mail
-          phone
-          postAddress
-          visitAddress
-        }
+    {
+      dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
+        id
+        mail
+        mapImage
+        phone
+        postAddress
+        visitAddress
       }
-    `}
-      render={(data, count) => <Index data={data} count={count} />
     }
+  `}
+    render={(data, count) => <Index data={data} count={count} />}
   />
 )
 
