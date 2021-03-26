@@ -56,7 +56,7 @@ class Index extends React.Component {
                     {this.props.data.dataYaml && (
                     <p>
                       <b>Telefon</b>< br />
-                      Kontoret: {this.props.data.dataYaml.phone} <br/>
+                      Kontoret: {this.props.data.dataYaml.phone && this.props.data.dataYaml.phone} <br/>
                       {/* Depån: {info.phone2} <br/> */}
                       <br />
                       <a href={`mailto:${this.props.data.dataYaml.mail}`}>{this.props.data.dataYaml.mail}</a> <br />
