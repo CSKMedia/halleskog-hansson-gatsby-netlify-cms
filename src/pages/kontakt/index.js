@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { navigate } from 'gatsby-link'
 import logo from '../../img/logo-hh.png'
 import Layout from '../../components/Layout'
