@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import { navigate } from 'gatsby-link'
 import logo from '../../img/logo-hh.png'
 import Layout from '../../components/Layout'
@@ -11,7 +11,7 @@ function encode(data) {
     .join('&')
 }
 
-export default class Index extends React.Component {
+class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = { isValidated: false }
@@ -36,7 +36,6 @@ export default class Index extends React.Component {
   }
 
   render() {
-    console.log(this.props.data.dataYaml)
     return (
       <Layout>
         <section className="section" style={{ padding: 0, backgroundColor: "#f8f9fa"}}>
@@ -184,17 +183,35 @@ export default class Index extends React.Component {
   }
 }
 
-export const query = graphql`
-  query ContactInfoQuery {
-    dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
-      id
-      mail
-      phone
-      postAddress
-      visitAddress
+// export const query = graphql`
+//   query ContactInfoQuery {
+//     dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
+//       id
+//       mail
+//       phone
+//       postAddress
+//       visitAddress
+//     }
+//   }
+// `
+
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query ContactInfoQuery {
+        dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
+          id
+          mail
+          phone
+          postAddress
+          visitAddress
+        }
+      }
+    `}
+      render={(data, count) => <Index data={data} count={count} />
     }
-  }
-`
+  />
+)
 
 
 
