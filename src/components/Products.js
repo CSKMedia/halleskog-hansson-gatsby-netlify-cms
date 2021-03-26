@@ -9,22 +9,29 @@ library.add(faMap, faDirections, faRoad)
 
 
 const ProductsGrid = ({ gridItems }) => (
-
+  gridItems && gridItems.map(({node: item}, index) => (
   // <div className="columns is-multiline is-flex pb-6">
-    <div>
-      {gridItems && gridItems.map(({node: item}, index) => (
-        <div id={item.frontmatter.title} className={`columns p-6 ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse border-top-bottom"}`}>
-          <div className= "column is-5-desktop">
-              <PreviewCompatibleImage imageInfo={item.frontmatter.featuredimage}/>
-          </div>
-          <div className="column pl-6-desktop is-7-desktop">
-            <h2><span style={{ fontSize: 24, fontWeight: "bold"}}>{item.frontmatter.title}</span></h2>
-            <p>{item.excerpt}</p>
-            <a className="btn mt-5" style={{ fontWeight: "bold"}} href={item.fields.slug}>Läs mer om {item.frontmatter.title}</a>
+  <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, backgroundColor: `${index % 2 === 0 ? "#f7f7f7" : "white"}`}}>
+    <div className="container">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-12">
+            <div id={item.frontmatter.title} className={`columns p-6 ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse"}`}>
+              <div className= "column is-5-desktop">
+                  <PreviewCompatibleImage imageInfo={item.frontmatter.featuredimage}/>
+              </div>
+              <div className="column pl-6-desktop is-7-desktop">
+                <h2><span style={{ fontSize: 24, fontWeight: "bold"}}>{item.frontmatter.title}</span></h2>
+                <p>{item.excerpt}</p>
+                <a className="btn mt-5" style={{ fontWeight: "bold"}} href={item.fields.slug}>Läs mer om {item.frontmatter.title}</a>
+              </div>
+            </div>
           </div>
         </div>
-      ))}
+      </div>
     </div>
+  </div>
+  ))
 
   // <div className="columns is-full is-multiline">
   //   {gridItems.map((item ,index) => (

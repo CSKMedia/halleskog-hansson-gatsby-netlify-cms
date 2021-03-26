@@ -55,7 +55,8 @@ export const ProductPageTemplate = ({
     </div>
 
     <section className="section" style={{padding: 0}}>
-      <div className="container">
+    <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0}}>
+      {/* <div className="container"> */}
         <div className="section">
           {/* <div className="columns">
             <div className="column is-8" style={{ borderBottom: "6px solid #f9f9f9"}}>
@@ -66,6 +67,7 @@ export const ProductPageTemplate = ({
           <div className="columns">
             <div className="column is-12">
               <Products gridItems={intro.products} />
+
               {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">

@@ -91,7 +91,7 @@ $family-primary: $family-monts
     border-radius: 2rem
     text-decoration: none !important
     font-weight: 700
-    color: #fff !important
+    color: #fff
     text-align: center
     -webkit-box-shadow: inset 0 0 0 2px #fff
     box-shadow: inset 0 0 0 2px #fff
@@ -146,6 +146,21 @@ footer.footer
 .logo
   height: 70px
 
+
+video
+  position: absolute
+  top: 50%
+  left: 50%
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: 0
+  -ms-transform: translateX(-50%) translateY(-50%)
+  -moz-transform: translateX(-50%) translateY(-50%)
+  -webkit-transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%)
+
 .navbar-dropdown
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -171,8 +186,8 @@ footer.footer
   color: #aa0d1a
 
 .subNav .navbar-item:hover
-  border-top: 6px solid gray
-  color: gray
+  border-top: 6px solid $kaldi-orange
+  color: $kaldi-orange
 
 
 // Navbar overrides

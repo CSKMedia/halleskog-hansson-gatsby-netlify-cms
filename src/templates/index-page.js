@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import video from '../../static/img/halleskog-hansson.mp4'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -27,6 +28,18 @@ export const IndexPageTemplate = ({
           // backgroundAttachment: `fixed`,
         }}
       >
+      {/* <div style={{
+        position: "relative",
+        backgroundColor: "black",
+        height: "95vh",
+        minHeight: "25rem",
+        width: "100%",
+        overflow: "hidden",
+        }}> */}
+        {/* <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" />
+          <source src={video} type="video/mp4" />
+        </video> */}
         <div
           style={{
             display: 'flex',
@@ -34,7 +47,7 @@ export const IndexPageTemplate = ({
             lineHeight: '1',
             justifyContent: "flex-start",
             // alignItems: 'center',
-            // flexDirection: 'column',
+            flexDirection: 'column',
             width: '75vw',
           }}
         >
