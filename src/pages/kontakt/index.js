@@ -201,7 +201,7 @@ export default () => (
   <StaticQuery
     query={graphql`
     {
-      dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
+      dataYaml(mail: {eq: "info@halleskog-hansson.se"}) {
         id
         mail
         mapImage
