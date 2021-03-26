@@ -57,7 +57,7 @@ class Index extends React.Component {
                     <p>
                       <b>Telefon</b>< br />
                       Kontoret: {this.props.data.dataYaml.phone && this.props.data.dataYaml.phone} <br/>
-                      {/* Depån: {info.phone2} <br/> */}
+                      Depån: {this.props.data.dataYaml.phone2} <br/>
                       <br />
                       <a href={`mailto:${this.props.data.dataYaml.mail}`}>{this.props.data.dataYaml.mail}</a> <br />
                       <br />
@@ -167,14 +167,14 @@ class Index extends React.Component {
                     </form>
                   </div>
                 </div>
-                {/* <div className="column is-half is-flex is-justify-content-center is-align-items-center">
-                  {this.props.data.dataYaml.edges[0].node && (
+                <div className="column is-half is-flex is-justify-content-center is-align-items-center">
+                  {this.props.data.dataYaml && (
                   <p style={{ backgroundColor: "white", padding: "2rem"}}>
                     <b>Telefon</b>< br />
-                    Kontoret: {phone} <br/>
-                    Depån: {phone2} <br/>
+                    Kontoret: {this.props.data.dataYaml.phone} <br/>
+                    Depån: {this.props.data.dataYaml.phone2} <br/>
                   </p> )}
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -185,18 +185,6 @@ class Index extends React.Component {
   }
 }
 
-// export const query = graphql`
-//   query ContactInfoQuery {
-//     dataYaml(id: {eq: "bfa59675-a55a-51fa-8db2-0055939c4a93"}) {
-//       id
-//       mail
-//       phone
-//       postAddress
-//       visitAddress
-//     }
-//   }
-// `
-
 export default () => (
   <StaticQuery
     query={graphql`
@@ -206,6 +194,7 @@ export default () => (
         mail
         mapImage
         phone
+        phone2
         postAddress
         visitAddress
       }
