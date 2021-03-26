@@ -53,6 +53,7 @@ class Index extends React.Component {
                         style={{ height: '5em', marginBottom: 20 }}
                       />
                     <br />
+                    {this.props.data.dataYaml && (
                     <p>
                       <b>Telefon</b>< br />
                       Kontoret: {this.props.data.dataYaml.phone} <br/>
@@ -83,6 +84,7 @@ class Index extends React.Component {
                       <a style={{ marginBottom: "1rem"}} href={`mailto:ekonomi@halleskog-hansson.se`}>ekonomi@halleskog-hansson.se</a>
                       <br />
                       </p>
+                    )}
                     </div>
                   </div>
               </div>
