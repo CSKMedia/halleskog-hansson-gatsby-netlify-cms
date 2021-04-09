@@ -52,6 +52,7 @@ export const IndexPageTemplate = ({
           }}
         >
           <div>
+            <h1 style={{color: "#fff", padding: '0.25em' }}>Vägavstängningar | Stockholm</h1>
             <h1
               className="has-text-weight-bold is-size-4-mobile is-size-4-tablet is-size-2-widescreen front-page-title"
               style={{
@@ -59,7 +60,6 @@ export const IndexPageTemplate = ({
                 textTransform: 'uppercase',
                 color: 'white',
                 lineHeight: '1.5',
-                padding: '0.25em',
                 width: '30vw',
               }}
             >
@@ -70,21 +70,23 @@ export const IndexPageTemplate = ({
             style={{
               color: 'white',
               lineHeight: '1.3',
-              padding: '0.25em',
               width: '30vw',
+              marginTop: '1rem',
             }}
           >
             {subheading}
           </h3>
-          <Link className="btn-white" to="/kontakt">
-            Kontakta oss
-          </Link>
+          <div style={{padding: "1rem 0rem"}}>
+            <Link className="btn mr-4" to="/tjanster">
+              Tjänster
+            </Link>
+            <Link className="btn-white" to="/kontakt">
+              Kontakta oss
+            </Link>
+          </div>
         </div>
       </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" className="svg-shape">
-        <path fill="#F7F7F7" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path>
-      </svg>
     </div>
 
 
@@ -92,7 +94,7 @@ export const IndexPageTemplate = ({
       <div className="container is-fluid" style ={{paddingLeft:0, paddingRight: 0}}>
         <div className="container">
           <div className="section">
-            <div className="columns marginOffset">
+            <div className="columns">
               <div className="column is-24">
                 <div className="content">
                 <Features gridItems={intro.blurbs} />
@@ -102,19 +104,11 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <ContactBanner backgroundColor="white"/>
-        <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0}}>
+        <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, marginTop: "3rem", backgroundColor: "white"}}>
           <div className="container">
             <div class="columns">
               <div className="column is-12">
-                <h3 className="has-text-weight-semibold is-size-2 pb-3 pt-6">
-                  Nyheter
-                </h3>
                 <BlogRoll />
-                <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/nyheter">
-                    Fler nyheter
-                  </Link>
-                </div>
               </div>
             </div>
           </div>

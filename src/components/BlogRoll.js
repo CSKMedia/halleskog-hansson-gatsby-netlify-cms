@@ -10,18 +10,28 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-multiline" style={{padding: "3rem 0rem"}}>
+        <div className="column is-4">
+          <h3 className="has-text-weight-semibold is-size-2 pb-3 pt-6">
+            Vad är Nytt?
+          </h3>
+          <Link className="btn" to="/nyheter">
+            Alla nyheter
+          </Link>
+        </div>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6 is-desktop" key={post.id}>
-              <article
+            <div className="is-parent column is-4 is-desktop" key={post.id}>
+              {/* <article
                 className={`blog-list-item tile is-child notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
-              >
-                <header>
+              > */}
+                {/* <header> */}
+                <div style={{ backgroundColor: "#fff", padding: "1rem"}}>
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    // <div className="featured-thumbnail">
+                    <div style={{minWidth: 180}}>
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -30,9 +40,10 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
+                  {/* <p className="post-meta"> */}
+                  <p style={{ padding: "1rem 0rem"}}>
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="title has-text-primary is-size-5"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
@@ -42,7 +53,8 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.date}
                     </span>
                   </p>
-                </header>
+                  </div>
+                {/* </header> */}
                 {/* <div className="content">
                   <ul className="taglist">
                     {post.frontmatter.tags.map((tag) => (
@@ -60,7 +72,7 @@ class BlogRoll extends React.Component {
                     Fortsätt läsa →
                   </Link>
                 </p> */}
-              </article>
+              {/* </article> */}
             </div>
           ))}
       </div>
@@ -95,7 +107,6 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MM/DD/YYYY")
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 250, quality: 100) {
