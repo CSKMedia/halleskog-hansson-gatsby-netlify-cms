@@ -52,7 +52,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-product-page"}
       - {label: "Titel", name: "title", widget: "string"}
       # - {label: "Publish Date", name: "date", widget: "datetime"}
-      # - {label: "Description", name: "description", widget: "text"}
+      - {label: "Description", name: "description", widget: "markdown"}
       # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Bild", name: "featuredimage", widget: image}
       - {label: "Innehåll", name: "body", widget: "markdown"}

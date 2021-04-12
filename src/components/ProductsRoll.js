@@ -53,13 +53,14 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(format: HTML, pruneLength: 500)
               id
               fields {
                 slug
               }
               frontmatter {
                 title
+                description
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {
