@@ -8,6 +8,7 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import { camelCase } from 'lodash'
 import ContactBanner from '../components/ContactBanner'
+import FeaturedProducts from '../components/FeaturedProducts'
 
 export const IndexPageTemplate = ({
   image,
@@ -87,6 +88,10 @@ export const IndexPageTemplate = ({
         </div>
       </div>
       </div>
+    </div>
+
+    <div>
+      <FeaturedProducts />
     </div>
 
 

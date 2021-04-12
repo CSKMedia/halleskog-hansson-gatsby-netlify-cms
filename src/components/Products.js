@@ -12,18 +12,19 @@ const ProductsGrid = ({ gridItems }) => (
   gridItems && gridItems.map(({node: item}, index) => (
   // <div className="columns is-multiline is-flex pb-6">
   <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, backgroundColor: `${index % 2 === 0 ? "#f7f7f7" : "white"}`}}>
-    {/* <div className="container"> */}
-      <div className="section" style={{ padding:0 }} >
+    <div className="container">
+      <div className="section">
         <div className="columns">
           <div className="column is-12">
             <div id={item.frontmatter.title} className={`columns p-6 ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse"}`}>
-              <div className= "column is-6-desktop">
+              <div className= "column is-5-desktop">
                   <PreviewCompatibleImage imageInfo={item.frontmatter.featuredimage}/>
               </div>
-              <div className="column pl-6-desktop is-6-desktop" style={{display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
+              <div className="column pl-6-desktop is-7-desktop" style={{display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
                 <div>
                   <h2 style={{padding: "0rem 0rem 2rem 0rem"}}><span style={{ fontSize: 24, fontWeight: "bold"}}>{item.frontmatter.title}</span></h2>
-                  <div style={{textAlign: "left"}} dangerouslySetInnerHTML={{__html: item.excerpt}}/>
+                  {/* <div style={{textAlign: "left"}} dangerouslySetInnerHTML={{__html: item.excerpt}}/> */}
+                  <p style={{ textAlign: "left"}}>{ item.frontmatter.description }</p>
                   <a className="btn mt-5" style={{ fontWeight: "bold"}} href={item.fields.slug}>Läs mer om {item.frontmatter.title}</a>
                 </div>
               </div>
@@ -31,7 +32,7 @@ const ProductsGrid = ({ gridItems }) => (
           </div>
         </div>
       </div>
-    {/* </div> */}
+    </div>
   </div>
   ))
 

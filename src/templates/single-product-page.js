@@ -5,11 +5,13 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const SingleProductPageTemplate = ({
   content,
   contentComponent,
   description,
+  image,
   tags,
   title,
   helmet,
@@ -25,6 +27,7 @@ export const SingleProductPageTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <PreviewCompatibleImage imageInfo={image}/>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -48,6 +51,7 @@ export const SingleProductPageTemplate = ({
 SingleProductPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -59,6 +63,7 @@ const SingleProductPage = ({ data }) => {
   return (
     <Layout>
       <SingleProductPageTemplate
+        image={post.frontmatter.featuredimage}
         content={post.html}
         contentComponent={HTMLContent}
         // description={post.frontmatter.description}
@@ -96,6 +101,13 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
