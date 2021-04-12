@@ -2,7 +2,7 @@
 templateKey: single-product-page
 title: HYRA SKYLTAR
 description: >-
-  Detta är det en mindre beskrivning av produkten (det som visas när man besäker
+  Detta är det en mindre beskrivning av produkten (det som visas när man besöker
   "produkter" sidan.)
 
 
