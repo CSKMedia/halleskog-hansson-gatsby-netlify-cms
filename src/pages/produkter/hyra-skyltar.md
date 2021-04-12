@@ -1,9 +1,11 @@
 ---
 templateKey: single-product-page
 title: HYRA SKYLTAR
-description: >-
-  Detta är det en mindre beskrivning av produkten (det som visas när man besöker
-  "produkter" sidan.)
+description: Lorem Ipsum is simply dummy text of the printing and typesetting
+  industry. Lorem Ipsum has been the industry's standard dummy text ever since
+  the 1500s, when an unknown printer took a galley of type and scrambled it to
+  make a type specimen book.
+displayOnStartPage: true
 featuredimage: /img/20190718-img_4616.jpg
 tags:
   - Skyltar

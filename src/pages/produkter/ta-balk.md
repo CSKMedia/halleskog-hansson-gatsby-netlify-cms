@@ -1,6 +1,8 @@
 ---
 templateKey: single-product-page
 title: TA-Balk
+description: description
+displayOnStartPage: true
 featuredimage: /img/20190718-img_4663.jpg
 tags:
   - Ta-balk
