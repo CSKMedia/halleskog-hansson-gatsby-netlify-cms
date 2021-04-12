@@ -1,6 +1,10 @@
 ---
 templateKey: single-service-page
 title: Tillsyn av arbetsplats
+description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+displayOnStartPage: true
 featuredimage: /img/ta-balk2.jpg
 tags:
   - tillsyn
