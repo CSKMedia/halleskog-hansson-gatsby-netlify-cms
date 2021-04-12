@@ -1,6 +1,8 @@
 ---
 templateKey: single-product-page
 title: HYRA SKYLTAR
+description: Detta är det en mindre beskrivning av produkten (det som visas när
+  man besäker "produkter" sidan.)
 featuredimage: /img/20190718-img_4616.jpg
 tags:
   - Skyltar
