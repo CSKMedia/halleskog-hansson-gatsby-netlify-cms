@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link, StaticQuery } from 'gatsby'
 
-class FeaturedProducts extends React.Component {
+class FeaturedServices extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    const featuredProducts = posts && posts.map((post) => post)
-    console.log("posts", posts)
+    const featuredServices = posts && posts.map((post) => post)
+
     return (
     <>
       <div className="container is-fluid"
         style={{
           paddingLeft:0,
           paddingRight: 0,
-          // backgroundColor: `${index % 2 === 0 ? "#f7f7f7" : "white"}`
+          // backgroundColor: `${index % 2 === 0 ? "#f7f7f7" : "white"}
         }}>
         <div className="container">
           <div className="section" style={{padding: 0}}>
             <div className="columns">
             {
-              featuredProducts ? featuredProducts.map((post) => (
+              featuredServices ? featuredServices.map((post) => (
               <>
                 <div className="column">
                   <div style={{ backgroundColor: '#b60f1d', padding: "1rem", minHeight: 80, alignItems: "center", justifyContent: "center", display: "flex"}}>
@@ -41,7 +41,7 @@ class FeaturedProducts extends React.Component {
   }
 }
 
-FeaturedProducts.propTypes = {
+FeaturedServices.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -52,10 +52,10 @@ FeaturedProducts.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query FeaturedProducts {
+      query FeaturedServices {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "single-product-page" } } }
+          filter: { frontmatter: { templateKey: { eq: "single-service-page" } } }
         ) {
           edges {
             node {
@@ -81,6 +81,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <FeaturedProducts data={data} count={count} />}
+    render={(data, count) => <FeaturedServices data={data} count={count} />}
   />
 )

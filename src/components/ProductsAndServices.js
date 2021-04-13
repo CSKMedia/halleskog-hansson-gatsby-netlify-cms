@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
-class FeaturedProducts extends React.Component {
+class ProductsAndServices extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    const featuredProducts = posts && posts.map((post) => post)
-    console.log("posts", posts)
+    const allPosts = posts && posts.map((post) => post)
     return (
     <>
       <div className="container is-fluid"
@@ -18,16 +17,16 @@ class FeaturedProducts extends React.Component {
         }}>
         <div className="container">
           <div className="section" style={{padding: 0}}>
-            <div className="columns">
+            <div className="columns is-multiline">
             {
-              featuredProducts ? featuredProducts.map((post) => (
+              allPosts ? allPosts.map((post) => (
               <>
-                <div className="column">
-                  <div style={{ backgroundColor: '#b60f1d', padding: "1rem", minHeight: 80, alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <a href={post.node.fields.slug}>
+                <div className="column is-3">
+                  <a href={post.node.fields.slug}>
+                    <div style={{ backgroundColor: '#b60f1d', padding: "1rem", minHeight: 80, alignItems: "center", justifyContent: "center", display: "flex"}}>
                       <h2 style={{color: "#fff", textAlign: "center", fontWeight: "bold"}}> {post.node.frontmatter.title}</h2>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 </div>
               </>
               )): <></>
@@ -41,7 +40,7 @@ class FeaturedProducts extends React.Component {
   }
 }
 
-FeaturedProducts.propTypes = {
+ProductsAndServices.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -52,10 +51,10 @@ FeaturedProducts.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query FeaturedProducts {
+      query ProductsAndServices {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "single-product-page" } } }
+          filter: { frontmatter: { templateKey: {regex: "/single-/"} } }
         ) {
           edges {
             node {
@@ -81,6 +80,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <FeaturedProducts data={data} count={count} />}
+    render={(data, count) => <ProductsAndServices data={data} count={count} />}
   />
 )

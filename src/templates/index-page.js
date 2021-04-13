@@ -6,16 +6,18 @@ import video from '../../static/img/halleskog-hansson.mp4'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-import { camelCase } from 'lodash'
 import ContactBanner from '../components/ContactBanner'
-import FeaturedProducts from '../components/FeaturedProducts'
+import ProductsAndServices from '../components/ProductsAndServices'
+import ImageTextSection from '../components/ImageTextSection'
 
 export const IndexPageTemplate = ({
   image,
   title,
   subheading,
+  mainpitch,
   intro,
-}) => (
+}) => {
+  return (
   <div stlye={{ position: "relative"}}>
     <div>
       <div
@@ -90,11 +92,6 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div>
-      <FeaturedProducts />
-    </div>
-
-
     <section className="section" style={{backgroundColor: "#f7f7f7", paddingLeft:0, paddingRight: 0}}>
       <div className="container is-fluid" style ={{paddingLeft:0, paddingRight: 0}}>
         <div className="container">
@@ -108,6 +105,20 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
+
+        <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, marginTop: "3rem", backgroundColor: "white"}}>
+            <ImageTextSection sectionItem={mainpitch}/>
+        </div>
+
+          <div className="section">
+            <h2 style={{fontSize: "2rem", fontWeight:"bold", paddingRight: "10px", textAlign: "center", padding: "3rem"}}>Vi hjälper er med</h2>
+            {/* <FeaturedProducts />
+            <FeaturedServices /> */}
+            <ProductsAndServices />
+          </div>
+
+
+
         <ContactBanner backgroundColor="white"/>
         <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, marginTop: "3rem", backgroundColor: "white"}}>
           <div className="container">
@@ -121,7 +132,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+)}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -137,6 +148,7 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  console.log("frontmatter.mainpitch", frontmatter)
   return (
     <Layout>
       <IndexPageTemplate
@@ -171,6 +183,17 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        mainpitch {
+          text
+          title
+          image {
+            childImageSharp {
+              fluid {
+                src
+              }
             }
           }
         }

@@ -11,13 +11,9 @@ templateKey: index-page
 title: Helhetslösning för vägavstängningar
 image: /img/jumbo.jpg
 mainpitch:
-  title: Main pitch titel
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-  text: Testar innehåll för Mainpitch..
+  title: Varför ta hjälp av oss?
+  image: /img/front2.jpg
+  text: Med Halleskogs som samarbetspartner blir projekteringen lättare och kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka tillstånd som krävs för att projekten kan utföras på rätt sätt inom utlovad tid.
 description: Meta data
 intro:
   blurbs:
