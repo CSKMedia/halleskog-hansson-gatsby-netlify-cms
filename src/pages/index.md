@@ -9,15 +9,16 @@ subheading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande
   eller vilka tjänster ni behöver stöd med. Vi erbjuder er även en helhet där de
   anställda kan koncentrera sig på sitt arbete.
 templateKey: index-page
+title: Helhetslösning för vägavstängningar
+image: /img/jumbo.jpg
 mainpitch:
-  title: Why Kaldi
+  title: Main pitch titel
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-title: Helhetslösning för vägavstängningar
-image: /img/jumbo.jpg
+  text: Testar innehåll för Mainpitch..
 description: Meta data
 intro:
   blurbs:
