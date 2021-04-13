@@ -11,9 +11,16 @@ templateKey: index-page
 title: Helhetslösning för vägavstängningar
 image: /img/jumbo.jpg
 mainpitch:
-  title: Varför ta hjälp av oss?
-  image: /img/front2.jpg
-  text: Med Halleskogs som samarbetspartner blir projekteringen lättare och kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka tillstånd som krävs för att projekten kan utföras på rätt sätt inom utlovad tid.
+  title: Ta hjälp av Halleskog & Hansson AB
+  text: >-
+    Med Halleskogs som samarbetspartner blir projekteringen lättare och
+    kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka tillstånd
+    som krävs för att projekten kan utföras på rätt sätt inom utlovad tid.\
+
+    \
+
+    Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på. Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
+  image: /img/jumbo.jpg
 description: Meta data
 intro:
   blurbs:
