@@ -12,13 +12,21 @@ templateKey: index-page
 title: Helhetslösning för vägavstängningar
 image: /img/jumbo.jpg
 mainpitch:
-  title: Main pitch titel
+  title: Ta hjälp av Halleskog & Hansson AB
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-  text: Testar innehåll för Mainpitch..
+  text: >-
+    Med Halleskogs som samarbetspartner blir projekteringen lättare och
+    kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka tillstånd
+    som krävs för att projekten kan utföras på rätt sätt inom utlovad tid.\
+
+    \
+
+    Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på. Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
+  image: /img/jumbo.jpg
 description: Meta data
 intro:
   blurbs:
