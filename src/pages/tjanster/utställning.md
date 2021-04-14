@@ -1,6 +1,6 @@
 ---
 templateKey: single-service-page
-title: Utställning
+title: Schaktlov
 description: sdfsdf
 featuredimage: /img/blog-index.jpg
 tags:
