@@ -61,6 +61,15 @@ $family-primary: $family-monts
     justify-content: center
     align-items: center
 
+.full-width-video-container
+    width: 100%
+    height: 100vh
+    // background-size: cover
+    // background-position: bottom
+    display: flex
+    justify-content: center
+    align-items: center
+
 .btn, .button
     display: inline-block
     padding: 1.1rem 4rem
@@ -117,8 +126,9 @@ $family-primary: $family-monts
   padding-left: 3rem !important;
 
 .navbar
-  height: 70px
+  // height: 70px
   transition: background 0.3s ease-in-out;
+  padding: 0.5rem
 
 .navbar-subpage
   background-color: $primary !important
@@ -144,7 +154,8 @@ footer.footer
   // background-color: $primary
 
 .logo
-  height: 70px
+  height: 60px
+  transition: 0.4s
 
 
 video
@@ -153,6 +164,7 @@ video
   left: 50%
   min-width: 100%
   min-height: 100%
+  max-width: none !important
   width: auto
   height: auto
   z-index: 0
@@ -214,7 +226,6 @@ $menu-item-active-color: $kaldi-red-invert
 $menu-item-active-background-color:	$kaldi-red-invert
 $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
-
 
 .menu-label
   font-size: 1em !important

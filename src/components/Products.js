@@ -12,17 +12,26 @@ const ProductsGrid = ({ gridItems }) => (
   gridItems && gridItems.map(({node: item}, index) => (
   // <div className="columns is-multiline is-flex pb-6">
   <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, backgroundColor: `${index % 2 === 0 ? "#f7f7f7" : "white"}`}}>
-    <div className="container">
-      <div className="section">
+    {/* <div className="container"> */}
+      <div className="section" style={{padding: 0}}>
         <div className="columns">
           <div className="column is-12">
-            <div id={item.frontmatter.title} className={`columns p-6 ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse"}`}>
-              <div className= "column is-5-desktop">
-                  <PreviewCompatibleImage imageInfo={item.frontmatter.featuredimage}/>
+            <div id={item.frontmatter.title} className={`columns ${index % 2 === 0 ? "" : "is-flex-direction-row-reverse"}`}>
+              <div className= "column is-6-desktop" style={{ padding: 0}}>
+                  {/* <PreviewCompatibleImage imageInfo={item.frontmatter.featuredimage}/> */}
+                  <img
+                    src={item.frontmatter.featuredimage.childImageSharp.fluid.src}
+                    style={{
+                      objectFit: "cover",
+                      height: "100%",
+                      width: "100%",
+                      maskImage: `linear-gradient(${index % 2 === 0 ? "to left": "to right"}, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 70%)`,
+                      WebkitMaskImage: `linear-gradient(${index % 2 === 0 ? "to left": "to right"}, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 70%)`
+                  }}/>
               </div>
-              <div className="column pl-6-desktop is-7-desktop" style={{display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
-                <div>
-                  <h2 style={{padding: "0rem 0rem 2rem 0rem"}}><span style={{ fontSize: 24, fontWeight: "bold"}}>{item.frontmatter.title}</span></h2>
+              <div className="column is-6-desktop" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+                <div style={{ width: "70%"}}>
+                  <h2 style={{padding: "0rem 0rem 1rem 0rem"}}><span style={{ fontSize: 24, fontWeight: "bold"}}>{item.frontmatter.title}</span></h2>
                   {/* <div style={{textAlign: "left"}} dangerouslySetInnerHTML={{__html: item.excerpt}}/> */}
                   <p style={{ textAlign: "left"}}>{ item.frontmatter.description }</p>
                   <a className="btn mt-5" style={{ fontWeight: "bold"}} href={item.fields.slug}>Läs mer om {item.frontmatter.title}</a>
@@ -32,7 +41,7 @@ const ProductsGrid = ({ gridItems }) => (
           </div>
         </div>
       </div>
-    </div>
+    {/* </div> */}
   </div>
   ))
 

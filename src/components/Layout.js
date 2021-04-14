@@ -24,6 +24,7 @@ const TemplateWrapper = ({ children }) => {
 
         <script src={withPrefix('navbar-scroll.js')} type="text/javascript" />
         <script src={withPrefix('navbar-dropdown-mobile.js')} type="text/javascript" />
+        <script src={withPrefix('video-speed.js')} type="text/javascript" />
 
         <link
           rel="apple-touch-icon"

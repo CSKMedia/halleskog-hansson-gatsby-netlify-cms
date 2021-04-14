@@ -9,6 +9,7 @@ import BlogRoll from '../components/BlogRoll'
 import ContactBanner from '../components/ContactBanner'
 import ProductsAndServices from '../components/ProductsAndServices'
 import ImageTextSection from '../components/ImageTextSection'
+import NavbarBottom from '../components/NavbarBottom'
 
 export const IndexPageTemplate = ({
   image,
@@ -18,80 +19,61 @@ export const IndexPageTemplate = ({
   intro,
 }) => {
   return (
-  <div stlye={{ position: "relative"}}>
-    <div>
+  <div>
+    <div style={{height: "100%"}}>
+    <div className="full-width-video-container">
+      <video id="introVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src={video} type="video/mp4" />
+      </video>
       <div
-        className="full-width-image margin-top-0"
         style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          //backgroundPosition: `top left`,
-          backgroundPosition: `center center`
-          // backgroundAttachment: `fixed`,
+          display: 'flex',
+          position: "relative",
+          // height: '450px',
+          lineHeight: '1',
+          justifyContent: "flex-start",
+          // alignItems: 'center',
+          flexDirection: 'column',
+          width: '75vw',
         }}
       >
-      {/* <div style={{
-        position: "relative",
-        backgroundColor: "black",
-        height: "95vh",
-        minHeight: "25rem",
-        width: "100%",
-        overflow: "hidden",
-        }}> */}
-        {/* <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" />
-          <source src={video} type="video/mp4" />
-        </video> */}
-        <div
-          style={{
-            display: 'flex',
-            // height: '450px',
-            lineHeight: '1',
-            justifyContent: "flex-start",
-            // alignItems: 'center',
-            flexDirection: 'column',
-            width: '75vw',
-          }}
-        >
-          <div>
-            <h1 style={{color: "#fff", padding: '0.25em' }}>Vägavstängningar | Stockholm</h1>
-            <h1
-              className="has-text-weight-bold is-size-4-mobile is-size-4-tablet is-size-2-widescreen front-page-title"
-              style={{
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                color: 'white',
-                lineHeight: '1.5',
-                width: '30vw',
-              }}
-            >
-            {title}
-            </h1>
-          <h3
-            className="is-size-5-mobile is-size-5-tablet is-size-5-widescreen mb-4 front-page-subheading"
+        <div>
+          <h1 style={{color: "#fff", padding: '0.25em' }}>Vägavstängningar | Stockholm</h1>
+          <h1
+            className="has-text-weight-bold is-size-4-mobile is-size-4-tablet is-size-2-widescreen front-page-title"
             style={{
+              fontWeight: 700,
+              textTransform: 'uppercase',
               color: 'white',
-              lineHeight: '1.3',
+              lineHeight: '1.5',
               width: '30vw',
-              marginTop: '1rem',
             }}
           >
-            {subheading}
-          </h3>
-          <div style={{padding: "1rem 0rem"}}>
-            <Link className="btn mr-4" to="/tjanster">
-              Tjänster
-            </Link>
-            <Link className="btn-white" to="/kontakt">
-              Kontakta oss
-            </Link>
-          </div>
+          {title}
+          </h1>
+        <h3
+          className="is-size-5-mobile is-size-5-tablet is-size-5-widescreen mb-4 front-page-subheading"
+          style={{
+            color: 'white',
+            lineHeight: '1.3',
+            width: '30vw',
+            marginTop: '1rem',
+          }}
+        >
+          {subheading}
+        </h3>
+        <div style={{padding: "1rem 0rem"}}>
+          <Link className="btn mr-4" to="/tjanster">
+            Tjänster
+          </Link>
+          <Link className="btn-white" to="/produkter">
+            Produkter
+          </Link>
         </div>
       </div>
-      </div>
     </div>
-
+    </div>
+  </div>
     <section className="section" style={{backgroundColor: "#f7f7f7", paddingLeft:0, paddingRight: 0}}>
       <div className="container is-fluid" style ={{paddingLeft:0, paddingRight: 0}}>
         <div className="container">
@@ -115,6 +97,7 @@ export const IndexPageTemplate = ({
             {/* <FeaturedProducts />
             <FeaturedServices /> */}
             <ProductsAndServices />
+            
           </div>
 
 
@@ -131,7 +114,20 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
+    <NavbarBottom />
+    {/* <nav className="navbar is-fixed-bottom">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="btn">
+            <strong>Ta kontakt</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+    </nav> */}
   </div>
+
 )}
 
 IndexPageTemplate.propTypes = {

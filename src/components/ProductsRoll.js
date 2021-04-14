@@ -14,9 +14,9 @@ class ProductsRoll extends React.Component {
     return (
     <>
       <div className="container is-hidden-mobile">
-        <nav className="navbar ">
+        <nav className="navbar" style={{ paddingTop: 0}}>
           <div id="navbarExampleTransparentExample" className="navbar-menu">
-            <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center"}}>
+            <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center", paddingBottom: "1rem"}}>
             {posts && posts.map(({node: post }) => (
               <a className="navbar-item" href={`#${post.frontmatter.title}`}>
                 {post.frontmatter.title}
