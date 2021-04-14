@@ -1,13 +1,15 @@
 ---
 templateKey: about-page
 path: /om-foretaget
-title: Vår historia
+title: Om oss
 image: /img/img_5159.jpg
 ---
-I februari 2009 grundades Halleskogs TA-planer och etableringar. Ett företag som snabbt etablerade sig på marknaden och som fortfarande växer!\
+I februari 2009 grundades Halleskogs TA-planer och etableringar. Ett företag som snabbt etablerade sig på Stockholmsmarknaden med ta-plans och tillståndsansökningar och har bidragit med kunskap och kvalité sedan uppstart.\
 \
-Efterfrågan för hyresutrustning kring det material som krävs vid arbete på väg och relaterade arbeten ökade. År 2018 tog Per, VD på Halleskogs TA-planer och Etableringar, vidare frågan med sin vän Joakim som snabbt antog sig utmaningen och tillsammans spånade de ideér och tillslut fanns skapelsen på plats; Dotterbolaget, Halleskog och Hansson Rental AB. Ett företag som både kompletterar det förstnämnda företaget men även ser sig stå sig stark på egen hand.\
+Efterhand har det kommit förfrågningar för helhetslösningar kring det material som krävs vid arbete på väg och relaterade arbeten och tjänster. År 2019 startade därför Per Halleskog och Joakim Hansson systerföretaget Halleskog & Hansson Rental AB för att möta efterfrågan. 
+
+2021 slogs företagen ihop till Halleskog & Hansson AB. I den nya organisationen är vi ett bolag som möter kundernas önskemål och utmaningar tillsammans. Vi är 40 personer som alla har sitt expertisområde och hjälper gärna till med stora som små projekt.\
 \
-Tillsammans har vi en mångårig erfarenhet och en god förståelse för vad ni behöver som kund.\
+Tillsammans har vi en mångårig erfarenhet och en god förståelse för regelverk och vad ni behöver som kund. \
 \
-Halleskogs & Hanssons Rental AB är främst verksamt i Storstockholmsområdet och har sin lokal i Angarn nära E18 (Gillingebanan)
+Halleskogs & Hansson AB är främst verksamt i Storstockholmsområdet och har sina lokaler i Vallentuna och Solna.
