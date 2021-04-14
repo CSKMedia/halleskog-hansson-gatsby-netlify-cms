@@ -1,6 +1,7 @@
 ---
 templateKey: single-service-page
 title: Målning av väglinjer
+description: Skriv en kortare beskrivning om tjänsten!
 featuredimage: /img/ta-balk2.jpg
 tags:
   - målning
