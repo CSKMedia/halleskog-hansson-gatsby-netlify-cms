@@ -25,18 +25,19 @@ description: Meta data
 intro:
   blurbs:
     - image: /img/front2.jpg
-      heading: Ta-Plan och andra tillstånd
-      text: Vi tillståndsansökningar och upprättar trafikanordnings- och APD-planer
-        för entreprenörer inom branscher som vatten och avlopp, gas, fjärrvärme,
-        fjärrkyla, el, tele, renoveringar av fastigheter gator och nybyggnation
-        av fastigheter gator m.m.
+      heading: Ta-planer och tillstånd
+      text: Vi hjälper er med tillståndsansökningar och upprättar trafikanordnings-
+        och APD-planer för entreprenörer inom branscher så som vatten och
+        avlopp, gas, fjärrvärme, fjärrkyla, el, tele, renoveringar och
+        nybyggnation av fastigheter, gator, evenemang m.m.
       icon: map
       buttonLink: tjanster
     - image: /img/banner-solution.jpg
-      heading: Försäljning & Uthyrning
-      text: Vi erbjuder ett stort utbud av produkter för försäljning och uthyrning.
-        Exempelvis Barriärer, Ta-balkar, staket, krockdämpare,
-        uställningsmaterial mm.
+      heading: Ta-material
+      text: Vi erbjuder ett stort utbud av produkter för uthyrning eller försäljning.
+        Exempelvis trafikskyltar, informationsskyltar, staket, barriärer,
+        ta-balkar, krockdämpare m.m. Vi gör även specialskyltar med egen
+        utrustning.
       icon: directions
       buttonLink: produkter
     - image: /img/front2.jpg
