@@ -2,23 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
-import { kebabCase } from 'lodash'
 
-class BlogRoll extends React.Component {
+class AllBlog extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
     return (
       <div className="columns is-multiline" style={{padding: "3rem 0rem"}}>
-        <div className="column is-4">
-          <h3 className="has-text-weight-semibold is-size-2 pb-3 pt-6">
-            Vad är Nytt?
-          </h3>
-          <Link className="btn" to="/nyheter">
-            Alla nyheter
-          </Link>
-        </div>
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-4 is-desktop" key={post.id}>
@@ -80,7 +71,7 @@ class BlogRoll extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+AllBlog.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -91,10 +82,9 @@ BlogRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
+      query AllBlogQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          limit: 2
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
         ) {
           edges {
@@ -122,6 +112,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <AllBlog data={data} count={count} />}
   />
 )

@@ -6,7 +6,8 @@ class ProductsAndServices extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    const allPosts = posts && posts.map((post) => post)
+
+    const allPosts = posts && posts.sort((a, b) => a.node.id - b.node.id)
     return (
     <>
       <div className="container is-fluid"

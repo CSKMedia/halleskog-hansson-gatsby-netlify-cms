@@ -13,6 +13,27 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
+    <div
+          className="full-width-image-container"
+          style={{
+            // backgroundImage: `url('/img/jumbo.jpg')`,
+            backgroundColor: "#333",
+            marginTop: 70
+          }}
+        >
+          <h1
+            className="has-text-weight-bold is-size-1"
+            style={{
+              // boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+              // backgroundColor: '#f40',
+              textTransform: 'uppercase',
+              color: 'white',
+              padding: '1rem',
+            }}
+          >
+            Taggar
+          </h1>
+        </div>
     <section className="section">
       <Helmet title={`Tags | ${title}`} />
       <div className="container content">
@@ -21,7 +42,7 @@ const TagsPage = ({
             className="column is-10 is-offset-1"
             style={{ marginBottom: '6rem' }}
           >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
+            <h1 className="title is-size-2 is-bold-light">Taggar</h1>
             <ul className="taglist">
               {group.map((tag) => (
                 <li key={tag.fieldValue}>

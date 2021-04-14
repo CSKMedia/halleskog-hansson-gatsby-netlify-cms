@@ -5,10 +5,12 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const SingleServicePageTemplate = ({
   content,
   contentComponent,
+  image,
   description,
   tags,
   title,
@@ -25,7 +27,10 @@ export const SingleServicePageTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <PostContent content={content} />
+            <PreviewCompatibleImage imageInfo={image}/>
+            <div style={{ marginTop: "2rem" }}>
+              <PostContent content={content} />
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Taggar</h4>
@@ -48,6 +53,7 @@ export const SingleServicePageTemplate = ({
 SingleServicePageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -59,6 +65,7 @@ const SingleServicePage = ({ data }) => {
   return (
     <Layout>
       <SingleServicePageTemplate
+        image={post.frontmatter.featuredimage}
         content={post.html}
         contentComponent={HTMLContent}
         // description={post.frontmatter.description}
@@ -96,6 +103,13 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

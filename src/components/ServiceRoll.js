@@ -18,7 +18,7 @@ class ServiceRoll extends React.Component {
           <div id="navbarExampleTransparentExample" className="navbar-menu">
             <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center", paddingBottom: "1rem"}}>
             {posts && posts.map(({node: post }) => (
-              <a className="navbar-item" href={`#${post.frontmatter.title}`}>
+              <a className="navbar-item" href={`${post.fields.slug}`}>
                 {post.frontmatter.title}
               </a>
             ))}
@@ -60,6 +60,7 @@ export default () => (
               }
               frontmatter {
                 title
+                description
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {

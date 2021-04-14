@@ -18,12 +18,12 @@ export default function NavbarBottom () {
             { data.dataYaml && (
             <>
               <div className="navbar-item" style={{ display: "flex", fontSize: "0.8rem", color: "white"}}>
-                <div>
+                <div style={{textTransform: "initial"}}>
                   <div style={{backgroundColor: "#333", padding: "1rem", marginBottom: "0.5rem",  lineHeight: 1.8}}>
-                    <div style={{textAlign: "left"}}>kontor: {data.dataYaml.phone || ""} </div>
+                    <div style={{textAlign: "left"}}>Kontor: {data.dataYaml.phone || ""} </div>
                     <div style={{textAlign: "left"}}>Depå: {data.dataYaml.phone2 || ""}</div>
                   </div>
-                    <a className="btn" style={{textTransform: "initial"}}>Ta kontakt</a>
+                    <a className="btn">Ta kontakt</a>
                 </div>
               </div>
             </>

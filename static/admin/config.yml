@@ -38,8 +38,8 @@ collections:
       # - {label: "Publicerat datum", name: "date", widget: "datetime"}
       # - {label: "Beskrivning", name: "description", widget: "text"}
       # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Visa på startsida", name: "displayOnStartPage", widget: "boolean", required: false}
+      - {label: "Beskrivning", name: "description", widget: "text", hint: "En kortare beskrivning som visas på tjänster sidan."}
+      # - {label: "Visa på startsida", name: "displayOnStartPage", widget: "boolean", required: false}
       - {label: "Bild", name: "featuredimage", widget: image}
       - {label: "Innehåll", name: "body", widget: "markdown"}
       - {label: "Taggar", name: "tags", widget: "list"}
@@ -55,7 +55,7 @@ collections:
       - {label: "Titel", name: "title", widget: "string"}
       # - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Visa på startsida", name: "displayOnStartPage", widget: "boolean", required: false}
+      # - {label: "Visa på startsida", name: "displayOnStartPage", widget: "boolean", required: false}
 
       - {label: "Bild", name: "featuredimage", widget: image}
       - {label: "Innehåll", name: "body", widget: "markdown"}

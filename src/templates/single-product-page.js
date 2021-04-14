@@ -28,7 +28,9 @@ export const SingleProductPageTemplate = ({
               {title}
             </h1>
             <PreviewCompatibleImage imageInfo={image}/>
-            <PostContent content={content} />
+            <div style={{ marginTop: "2rem" }}>
+              <PostContent content={content}/>
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Taggar</h4>
