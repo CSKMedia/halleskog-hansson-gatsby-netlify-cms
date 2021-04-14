@@ -1,6 +1,7 @@
 ---
 templateKey: single-service-page
 title: Utställning efter TA-plan
+description: Skriv en kortare beskrivning om tjänsten!
 featuredimage: /img/ta-balk2.jpg
 tags:
   - Utställning
