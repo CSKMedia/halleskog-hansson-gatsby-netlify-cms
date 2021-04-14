@@ -35,9 +35,8 @@ intro:
     - image: /img/banner-solution.jpg
       heading: Ta-material
       text: Vi erbjuder ett stort utbud av produkter för uthyrning eller försäljning.
-        Exempelvis trafikskyltar, informationsskyltar, staket, barriärer,
-        ta-balkar, krockdämpare m.m. Vi gör även specialskyltar med egen
-        utrustning.
+        Exempelvis vägmärken, informationsskyltar, staket, barriärer, ta-balkar,
+        krockdämpare m.m. Vi gör även specialskyltar med egen utrustning.
       icon: directions
       buttonLink: produkter
     - image: /img/front2.jpg
