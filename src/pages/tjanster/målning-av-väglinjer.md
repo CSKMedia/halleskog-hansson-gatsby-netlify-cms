@@ -1,7 +1,10 @@
 ---
 templateKey: single-service-page
 title: Ta-planer
-description: Skriv en kortare beskrivning om tjänsten!
+description: Är en plan över trafikföringen i ett vägarbetsområde. Den visar hur
+  utmärkning med vägmärken, vägmarkeringar samt skydd för trafikantgrupper och
+  andra anordningar ska utföras. Ta-planen skickas in till väghållaren i samband
+  med att ni söker tillstånd för att utföra arbeten på väghållarens väg.
 featuredimage: /img/ta-balk2.jpg
 tags:
   - ta-planer
