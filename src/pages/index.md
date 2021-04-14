@@ -8,7 +8,7 @@ subheading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande
   lilla företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken
   eller vilka tjänster ni behöver stöd med.
 templateKey: index-page
-title: Helhetslösning för trafikavstängningar
+title: Helhetslösningar för tillstånd och trafikavstängningar
 image: /img/jumbo.jpg
 mainpitch:
   title: Ta hjälp av Halleskog & Hansson AB
