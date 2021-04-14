@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /om-foretaget
-title: Om oss
+title: Om företaget
 image: /img/img_5159.jpg
 ---
 I februari 2009 grundades Halleskogs TA-planer och etableringar. Ett företag som snabbt etablerade sig på Stockholmsmarknaden med ta-plans och tillståndsansökningar och har bidragit med kunskap och kvalité sedan uppstart.\
