@@ -1,8 +1,7 @@
 ---
-heading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande lösning
-  för era vägavstängningar. Vi finns för dig både i det stora och det lilla
-  företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken eller
-  vilka tjänster ni behöver stöd med.
+heading: Halleskog & Hansson AB erbjuder en genomtänkt och heltäckande lösning
+  för era tillstånd och trafikavstängningar. Vi anpassar oss efter era behov och
+  ni kan fritt välja vilken eller vilka tjänster ni behöver hjälp med.
 subheading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande
   lösning för era vägavstängningar. Vi finns för dig både i det stora och det
   lilla företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken
