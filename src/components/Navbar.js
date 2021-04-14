@@ -21,7 +21,7 @@ export default function Navbar () {
   return (
     <nav
       id="navbar"
-      className={`navbar is-fixed-top ${url === "/" ? '' : 'navbar-subpage'}`}
+      className={`navbar is-fixed-top ${url === "/" || url === "" ? '' : 'navbar-subpage'}`}
       role="navigation"
       aria-label="main-navigation"
     >
