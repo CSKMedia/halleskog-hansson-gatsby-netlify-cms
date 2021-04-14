@@ -1,6 +1,6 @@
 ---
 templateKey: single-service-page
-title: Ta-planer
+title: Annat
 description: Är en plan över trafikföringen i ett vägarbetsområde, som visar hur
   utmärkning med vägmärken, vägmarkeringar samt skydd för trafikantgrupper och
   andra anordningar ska utföras.
