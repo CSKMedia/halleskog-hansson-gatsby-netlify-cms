@@ -1,19 +1,19 @@
 teamVallentuna:
   - name: Per Halleskog
-    position: Grundare
+    position: VD / Verksamhetschef
     photo: /img/per.jpg
-    phone: 123
-    email: mail kommer
+    phone: 851177740
+    email: per@halleskog-hansson.se
   - name: Joakim Hansson
-    position: Grundare
+    position: CFO / Ekonomichef
     photo: /img/joakim.jpg
-    email: joakim@hhrental.se
+    email: joakim@halleskog-hansson.se
     phone: 723161210
   - name: Alexander Olsson
-    position: Projektledare/Arbetsledare
+    position: Projektledare
     photo: /img/alexander.jpg
-    phone: 1212133
-    email: mail kommer
+    phone: 723101227
+    email: alex@halleskog-hansson.se
   - name: Victor Hillerström
     position: Arbetsledare
     phone: 256
@@ -54,4 +54,3 @@ teamVallentuna:
     phone: 555
     email: Kommer
     photo: /img/julia-k.jpg
- 
