@@ -11,6 +11,7 @@ export default function Navbar () {
   const [navBarActiveClass, setNavBarActiveClass] = useState("")
 
   const url = typeof window !== 'undefined' ? window.location.pathname : '';
+  console.log("current url", url)
 
   const toggleHamburger = () => {
     // toggle the active boolean in the state

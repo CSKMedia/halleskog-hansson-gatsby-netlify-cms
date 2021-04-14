@@ -22,9 +22,22 @@ export const IndexPageTemplate = ({
   <div>
     <div style={{height: "100%"}}>
     <div className="full-width-video-container">
-      <video id="introVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <video className="is-hidden-touch" id="introVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src={video} type="video/mp4" />
       </video>
+
+      <div
+      className="full-width-image"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(${
+          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        })`,
+        // backgroundPosition: `top left`,
+        // backgroundAttachment: `fixed`,
+      }}
+    >
+
+
       <div
         style={{
           display: 'flex',
@@ -63,7 +76,7 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
         <div style={{padding: "1rem 0rem"}}>
-          <Link className="btn mr-4" to="/tjanster">
+          <Link className="btn mr-4 mb-4" to="/tjanster">
             Tjänster
           </Link>
           <Link className="btn-white" to="/produkter">
@@ -71,6 +84,7 @@ export const IndexPageTemplate = ({
           </Link>
         </div>
       </div>
+    </div>
     </div>
     </div>
   </div>

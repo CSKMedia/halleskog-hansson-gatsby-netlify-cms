@@ -13,11 +13,11 @@ export default function NavbarBottom () {
         }
       `}
       render={data => (
-        <nav className="navbar is-fixed-bottom">
+        <nav className="navbar is-fixed-bottom is-hidden-mobile">
           <div className="navbar-end">
             { data.dataYaml && (
             <>
-              <div className="is-hidden-mobile navbar-item" style={{ display: "flex", fontSize: "0.8rem", color: "white"}}>
+              <div className="navbar-item" style={{ display: "flex", fontSize: "0.8rem", color: "white"}}>
                 <div>
                   <div style={{backgroundColor: "#333", padding: "1rem", marginBottom: "0.5rem",  lineHeight: 1.8}}>
                     <div style={{textAlign: "left"}}>kontor: {data.dataYaml.phone || ""} </div>
