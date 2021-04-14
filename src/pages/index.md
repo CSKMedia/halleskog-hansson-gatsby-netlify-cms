@@ -8,15 +8,19 @@ subheading: Halleskog-Hansson AB erbjuder dig en genomtänkt och heltäckande
   lilla företaget. Vi anpassar oss efter ert behov och ni kan fritt välja vilken
   eller vilka tjänster ni behöver stöd med.
 templateKey: index-page
-title: Helhetslösning för vägavstängningar
+title: Helhetslösning för trafikavstängningar
 image: /img/jumbo.jpg
 mainpitch:
   title: Ta hjälp av Halleskog & Hansson AB
-  text: >-
-    Med Halleskogs som samarbetspartner blir projekteringen lättare och
+  text: Med Halleskogs som samarbetspartner blir projekteringen lättare och
     kostnadseffektivare. Vi har goda myndighetskontakter och vet vilka tillstånd
     som krävs för att projekten kan utföras på rätt sätt inom utlovad tid.
-    Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar helt enkelt papperskrånglet till oss och använder tiden till det som du och ditt företag är bäst på. Halleskogs leder projekten snabbaste väg genom labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar och säker med Halleskogs.
+    Halleskogs kunnande om lagens labyrint spar både tid och pengar. Du lämnar
+    helt enkelt papperskrånglet till oss och använder tiden till det som du och
+    ditt företag är bäst på. Halleskogs leder projekten snabbaste väg genom
+    labyrinten, ordnar alla nödvändiga tillstånd, upprättar etablerings- och
+    TA-planer och söker polistillstånd när det behövs. Planeringen blir hållbar
+    och säker med Halleskogs.
   image: /img/jumbo.jpg
 description: Meta data
 intro:
