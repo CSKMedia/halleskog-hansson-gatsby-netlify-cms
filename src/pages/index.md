@@ -41,10 +41,11 @@ intro:
       icon: directions
       buttonLink: produkter
     - image: /img/front2.jpg
-      heading: Arbete på Väg
+      heading: Övriga tjänster
       text: Arbetsplatsen ska alltid vara en trygg plats och ditt arbete ska utföras
         på ett effektivt och säkert sätt samt tillgodose trafiksäkerhet för
-        omgivningen. Vi är experter på vägarbete!
+        omgivningen. Vi kan hjälpa er med transporter, utställning av skyltar
+        och områdesskydd, trafikvakter, tillsyn av arbetsplatsen, m.m.
       icon: road
       buttonLink: tjanster
   heading: What we offer
