@@ -96,14 +96,14 @@ const SingleProductPage = ({ data }) => {
         // description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Produkter">
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>{`${post.frontmatter.title}`} | Stockholm</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
             />
-            <meta property="og:title" content={`${post.frontmatter.title}`} />
+            <meta property="og:title" content={`${post.frontmatter.title} | Stockholm`} />
             <meta property="og:description" content={`${post.frontmatter.description}`} />
-            <meta property="og:image" content={`${post.frontmatter.featuredimage}`} />
+            <meta property="og:image" content={`${post.frontmatter.featuredimage.childImageSharp.fluid.url}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
