@@ -88,7 +88,7 @@ export const IndexPageTemplate = ({
     </div>
     </div>
   </div>
-    <section className="section" style={{backgroundColor: "#f7f7f7", paddingLeft:0, paddingRight: 0}}>
+    <section className="section" style={{backgroundColor: "#f7f7f7", paddingLeft:0, paddingRight: 0, paddingBottom: 0}}>
       <div className="container is-fluid" style ={{paddingLeft:0, paddingRight: 0}}>
         <div className="container">
           <div className="section">
@@ -111,7 +111,6 @@ export const IndexPageTemplate = ({
             {/* <FeaturedProducts />
             <FeaturedServices /> */}
             <ProductsAndServices />
-            
           </div>
 
 
@@ -160,7 +159,7 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   console.log("frontmatter.mainpitch", frontmatter)
   return (
-    <Layout>
+    <Layout id="indexPage">
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

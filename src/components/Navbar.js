@@ -5,13 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 
 
-export default function Navbar () {
+export default function Navbar ({isIndex}) {
 
   const [active, setActive] = useState(false)
   const [navBarActiveClass, setNavBarActiveClass] = useState("")
-
-  const url = typeof window !== 'undefined' ? window.location.pathname : '';
-  console.log("current url", url)
 
   const toggleHamburger = () => {
     // toggle the active boolean in the state
@@ -22,7 +19,7 @@ export default function Navbar () {
   return (
     <nav
       id="navbar"
-      className={`navbar is-fixed-top ${url === "/" || url === "" ? '' : 'navbar-subpage'}`}
+      className={`navbar is-fixed-top ${ isIndex ? '' : 'navbar-subpage'}`}
       role="navigation"
       aria-label="main-navigation"
     >
