@@ -124,6 +124,7 @@ collections:
           - {label: Besöksadress, name: visitAddress, widget: text}
           - {label: Postadress, name: postAddress, widget: text}
           - {label: karta, name: mapImage, widget: image}
+          - {label: "page", name: "page", widget: "hidden", default: "contact"}
 
   - name:  "staff"
     label: "Anställda"
