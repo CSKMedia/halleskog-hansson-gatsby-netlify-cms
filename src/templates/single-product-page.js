@@ -25,13 +25,14 @@ export const SingleProductPageTemplate = ({
         <div
         className="full-width-image-container margin-top-0"
         style={{
-          backgroundImage: `url(${
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
           })`,
           alignItems: 'center',
           flexDirection: 'column',
           display: 'flex',
-          backgroundPosition: 'center center'
+          backgroundPosition: 'center center',
+          marginTop: 70
         }}
       >
         <h1 style={{color: "white"}}>{title} | Stockholm</h1>
@@ -93,15 +94,15 @@ const SingleProductPage = ({ data }) => {
         image={post.frontmatter.featuredimage}
         content={post.html}
         contentComponent={HTMLContent}
-        // description={post.frontmatter.description}
+        description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Produkter">
-            <title>{`${post.frontmatter.title}`} | Stockholm</title>
+          <Helmet titleTemplate="%s | Halleskog & Hansson">
+            <title>{`${post.frontmatter.title}`} Stockholm</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
             />
-            <meta property="og:title" content={`${post.frontmatter.title} | Stockholm`} />
+            <meta property="og:title" content={`${post.frontmatter.title} Stockholm`} />
             <meta property="og:description" content={`${post.frontmatter.description}`} />
             <meta property="og:image" content={`${post.frontmatter.featuredimage.childImageSharp.fluid.url}`} />
           </Helmet>
