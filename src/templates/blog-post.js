@@ -79,7 +79,7 @@ const BlogPost = ({ data }) => {
             />
             <meta property="og:title" content={`${post.frontmatter.title}`} />
             <meta property="og:description" content={`${post.frontmatter.description}`} />
-            <meta property="og:image" content={`${post.frontmatter.image.childImageSharp.fluid.src}`} />
+            <meta property="og:image" content={`${post.frontmatter.featuredimage}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
