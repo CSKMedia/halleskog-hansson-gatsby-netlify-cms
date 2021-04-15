@@ -2,6 +2,7 @@
 templateKey: single-product-page
 title: Trafikbuffert
 featuredimage: /img/buffert-80-km.jpg
+description: Skriv en kortare beskrivning om produkten!
 tags:
   - Trafikbuffert
 ---

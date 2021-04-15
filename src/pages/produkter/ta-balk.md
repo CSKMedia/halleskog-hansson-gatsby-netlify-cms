@@ -1,7 +1,7 @@
 ---
 templateKey: single-product-page
 title: TA-Balk
-description: description
+description: Skriv en kortare beskrivning om produkten!
 displayOnStartPage: true
 featuredimage: /img/20190718-img_4663.jpg
 tags:

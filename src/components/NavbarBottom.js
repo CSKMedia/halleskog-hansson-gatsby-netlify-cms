@@ -13,7 +13,7 @@ export default function NavbarBottom () {
         }
       `}
       render={data => (
-        <nav className="navbar is-fixed-bottom is-hidden-mobile">
+        <nav className="is-hidden-mobile bottom-nav">
           <div className="navbar-end">
             { data.dataYaml && (
             <>
@@ -23,7 +23,7 @@ export default function NavbarBottom () {
                     <div style={{textAlign: "left"}}>Kontor: {data.dataYaml.phone || ""} </div>
                     <div style={{textAlign: "left"}}>Depå: {data.dataYaml.phone2 || ""}</div>
                   </div>
-                    <a className="btn">Ta kontakt</a>
+                    <a className="btn" href="/kontakt">Ta kontakt</a>
                 </div>
               </div>
             </>

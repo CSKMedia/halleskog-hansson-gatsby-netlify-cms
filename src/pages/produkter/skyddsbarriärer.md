@@ -1,6 +1,7 @@
 ---
 templateKey: single-product-page
 title: Skyddsbarriärer
+description: Skriv en kortare beskrivning om produkten!
 featuredimage: /img/gplink.jpg
 tags:
   - gp-link
