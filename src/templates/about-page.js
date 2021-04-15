@@ -4,13 +4,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import ContactBanner from '../components/ContactBanner'
 
 export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient" style={{marginTop: 70}}>
-      <div className="container">
+    <section className="section section--gradient" style={{marginTop: 70, padding: 0}}>
+      <div className="container is-fluid" style={{padding: 0}}>
         <div className="columns">
           <div className="column is-5">
             <div className="section">
@@ -31,6 +32,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
             </div>
           </div>
         </div>
+        <ContactBanner backgroundColor="#f7f7f7"/>
       </div>
     </section>
   )

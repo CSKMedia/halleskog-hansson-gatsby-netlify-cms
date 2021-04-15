@@ -11,7 +11,7 @@ class BlogRoll extends React.Component {
 
     return (
       <div className="columns is-multiline" style={{padding: "3rem 0rem"}}>
-        <div className="column is-4">
+        <div className="column is-4 has-text-centered">
           <h3 className="has-text-weight-semibold is-size-2 pb-3 pt-6">
             Vad är Nytt?
           </h3>

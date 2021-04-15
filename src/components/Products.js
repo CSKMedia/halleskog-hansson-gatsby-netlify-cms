@@ -34,7 +34,7 @@ const ProductsGrid = ({ gridItems }) => (
                   <h2 style={{padding: "0rem 0rem 1rem 0rem"}}><span style={{ fontSize: 24, fontWeight: "bold"}}>{item.frontmatter.title}</span></h2>
                   {/* <div style={{textAlign: "left"}} dangerouslySetInnerHTML={{__html: item.excerpt}}/> */}
                   <p style={{ textAlign: "left"}}>{ item.frontmatter.description }</p>
-                  <a className="btn mt-5" style={{ fontWeight: "bold"}} href={item.fields.slug}>Läs mer om {item.frontmatter.title}</a>
+                  <a className="btn mt-5 mb-4" style={{ fontWeight: "bold"}} href={item.fields.slug}>Läs mer om {item.frontmatter.title}</a>
                 </div>
               </div>
             </div>

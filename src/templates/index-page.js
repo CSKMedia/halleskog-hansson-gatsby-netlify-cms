@@ -107,7 +107,7 @@ export const IndexPageTemplate = ({
         </div>
 
           <div className="section">
-            <h2 style={{fontSize: "2rem", fontWeight:"bold", paddingRight: "10px", textAlign: "center", padding: "3rem"}}>Vi hjälper er med</h2>
+            <h2 className="is-size-2 has-text-weight-bold has-text-centered p-6">Vi hjälper er med</h2>
             {/* <FeaturedProducts />
             <FeaturedServices /> */}
             <ProductsAndServices />

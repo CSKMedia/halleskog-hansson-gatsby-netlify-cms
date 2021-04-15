@@ -8,9 +8,9 @@ const ImageTextSection = ({sectionItem}) => {
   return (
     <div class="columns">
       <div className="column is-6 " style={{ alignItems: "center",  justifyContent: "center", display: "flex"}}>
-        <div style={{ padding: "0rem 2rem", width: "70%" }}>
-          <h1>Helhetslösning för Vägavstängningar</h1>
-          <h2 style={{fontSize: "2rem", fontWeight:"bold", padding: "0rem 0rem 1rem 0rem"}}>{sectionItem.title}</h2>
+        <div className="custom-width-70-100" style={{ padding: "0rem 2rem" }}>
+          <h1>Helhetslösning för vägavstängningar</h1>
+          <h2 className="is-size-2 has-text-weight-bold p-2">{sectionItem.title}</h2>
           <p>
           {sectionItem ? sectionItem.text : "empty"}
           </p>
@@ -29,7 +29,7 @@ const ImageTextSection = ({sectionItem}) => {
         <a
           href="https://www.bisnode.se/om-bisnode/vad-vi-gor/vart-satt-att-se-pa-risk-och-kredit/kreditvarderingsmodell-foretag/"
           target="_blank">
-          <img src="https://ratinglogo.bisnode.com/2564614528200472571494671.svg" style={{ backgroundColor: "white", padding: "2rem 1rem", height: "200px", position: "absolute", top: "40%", left: "50%"}}/>
+          <img src="https://ratinglogo.bisnode.com/2564614528200472571494671.svg" className="aakredit"/>
         </a>
       </div>
     </div>

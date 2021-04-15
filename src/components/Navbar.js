@@ -60,7 +60,7 @@ export default function Navbar ({isIndex}) {
             Nyheter
           </Link>
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">Om oss</a>
+            <a className="navbar-link is-hidden-touch">Om oss</a>
             <div class="navbar-dropdown">
               <Link className="navbar-item" to="/om-foretaget">
                 Om företaget
