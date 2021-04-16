@@ -13,6 +13,8 @@ tags:
   - Polistillstånd
   - Etableringar
   - upplåtelse
+  - markupplåtelse
+  - ordningslagen
 ---
 Om ni exempelvis vill sätta ut bord och stolar utanför din restaurang, eller ställa en container ute på gatan för en vindsröjning, krävs polistillstånd. Polisen är tillståndsmyndigheten. Den som förvaltar marken kan variera, det kan vara trafikkontoret, staten eller privata fastighetsägare.\
 \
