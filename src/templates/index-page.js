@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import video from '../../static/img/halleskog-hansson.mp4'
+import video from '../../static/img/halleskog-hansson-compressed.mp4'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -32,6 +32,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
+        backgroundColor: "#333"
         // backgroundPosition: `top left`,
         // backgroundAttachment: `fixed`,
       }}

@@ -1,2 +1,2 @@
 const vid = document.getElementById("introVideo");
-vid.playbackRate = 0.9;
+// vid.playbackRate = 0.9;
