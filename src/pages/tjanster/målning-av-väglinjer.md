@@ -19,6 +19,8 @@ tags:
 
 Är en plan över trafikföringen i ett vägarbetsområde. Den visar hur utmärkning med vägmärken, vägmarkeringar samt skydd för trafikantgrupper och andra anordningar ska utföras. Trafikanordningsplan skickar man till väghållaren som ger sitt godkännande innan arbetet kan påbörjas. Vissa väghållare tar ut avgifter för trafikanordningsplaner och deras handläggning med dessa. Väghållare kan även i vissa fall ta ut viten om inte trafikanordningsplan finns eller om den inte följs.
 
+![Ta-plan](/img/ta-plan.png)
+
 Exempel på väghållare är Stockholms Stad och Trafikverket.
 
 **Fasta avgifter (Stockholms stad):**
