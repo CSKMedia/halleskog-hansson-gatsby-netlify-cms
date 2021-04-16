@@ -8,11 +8,8 @@ tags:
   - Ta-balk
 files:
   - /img/avgifter_etableringar_stockholm_20200114.pdf
+  - /img/avgifter_etableringar_stockholm_20200114.pdf
 ---
-<!--StartFragment-->
-
 # TA-balk
 
 TA-balkar kan med fördel användas i stadsmiljö när du vill skydda schakt från påhälsning av cykel- eller gångtrafikanter.
-
-<!--EndFragment-->
