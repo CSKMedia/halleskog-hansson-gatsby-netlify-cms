@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import video from '../../static/img/halleskog-hansson-compressed.mp4'
+import video from '../../static/img/halleskog-hansson-video.mp4'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
