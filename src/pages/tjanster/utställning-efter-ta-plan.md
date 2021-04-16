@@ -1,11 +1,18 @@
 ---
 templateKey: single-service-page
 title: Utställning efter TA-plan
-description: Skriv en kortare beskrivning om tjänsten!
+description: >-
+  Oavsett om ni hyr eller köper material så har vi resurserna som krävs för att
+  göra verklighet av ta-planen.
+
+  Ni meddelar tid och plats, vi tillser att ni kan komma igång med ert arbete.
 featuredimage: /img/ta-balk2.jpg
 tags:
   - Utställning
   - Ta-plan
-  - tjänst
+  - utmärkning
+  - trafikanordningar
 ---
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+Utställning av ta-material tar både tid och resurser i anspråk. Vi hjälper gärna till med våra duktiga personal att både planera och utföra såsom skissen säger. 
+
+Alla depåpersonal är utbildad efter de kunskaps och kurskran som kommuner och myndigheter kräver.
