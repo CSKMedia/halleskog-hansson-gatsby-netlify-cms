@@ -4,6 +4,7 @@ title: Hyra skyltar
 description: Skriv en kortare beskrivning om produkten!
 displayOnStartPage: true
 featuredimage: /img/skyltar.jpg
+files: /img/avgifter_etableringar_stockholm_20200114.pdf
 tags:
   - Skyltar
 ---
