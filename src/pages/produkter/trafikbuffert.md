@@ -1,10 +1,15 @@
 ---
 templateKey: single-product-page
 title: Trafikbuffert
-featuredimage: /img/buffert-80-km.jpg
 description: Skriv en kortare beskrivning om produkten!
+featuredimage: /img/buffert-80-km.jpg
 tags:
   - Trafikbuffert
+files:
+  - file: /img/avgifter_etableringar_stockholm_20200114.pdf
+    filename: Etablering
+  - file: /img/avgifter_etableringar_stockholm_20200114.pdf
+    filename: Etablering 2
 ---
 <!--StartFragment-->
 
