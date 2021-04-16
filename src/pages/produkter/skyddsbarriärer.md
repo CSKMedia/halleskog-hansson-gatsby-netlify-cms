@@ -8,6 +8,9 @@ tags:
   - rebloc
   - skyddsbarriär
   - produkt
+files:
+  - file: /img/avgifter_etableringar_stockholm_20200114.pdf
+    filename: Upplåtelseavgifter
 ---
 **GP-link**\
 GP-link 1,5 är en tung barriär tillverkad i betong. Den har en patenterad skarv som ger den förmågan att mjukt och följsamt fånga upp ett påkörande fordon. Godkänd (CE-märkt) för användning i EU och USA. Barriären har testats i klass N2 med en arbetsbredd av W5 < (1,7m)
