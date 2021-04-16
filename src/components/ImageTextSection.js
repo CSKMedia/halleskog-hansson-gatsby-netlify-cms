@@ -7,10 +7,10 @@ const ImageTextSection = ({sectionItem}) => {
 
   return (
     <div class="columns">
-      <div className="column is-6 " style={{ alignItems: "center",  justifyContent: "center", display: "flex"}}>
-        <div className="custom-width-70-100" style={{ padding: "0rem 2rem" }}>
+      <div className="column is-6 " style={{ alignItems: "center",  justifyContent: "flex-end", display: "flex"}}>
+        <div className="custom-width-70-100 imageTextSection-content">
           <h1>Helhetslösning för vägavstängningar</h1>
-          <h2 className="is-size-2 has-text-weight-bold p-2">{sectionItem.title}</h2>
+          <h2 className="is-size-2 has-text-weight-bold py-2">{sectionItem.title}</h2>
           <p>
           {sectionItem ? sectionItem.text : "empty"}
           </p>

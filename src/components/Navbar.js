@@ -22,6 +22,7 @@ export default function Navbar ({isIndex}) {
       className={`navbar is-fixed-top ${ isIndex ? '' : 'navbar-subpage'}`}
       role="navigation"
       aria-label="main-navigation"
+      style={{minHeight: 70}}
     >
       <div className="container">
         <div className="navbar-brand">

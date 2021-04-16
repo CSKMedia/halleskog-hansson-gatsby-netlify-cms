@@ -113,9 +113,6 @@ export const IndexPageTemplate = ({
             <ProductsAndServices />
           </div>
 
-
-
-        <ContactBanner backgroundColor="white"/>
         <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, marginTop: "3rem", backgroundColor: "white"}}>
           <div className="container">
             <div class="columns">
@@ -125,6 +122,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
+        <ContactBanner backgroundColor="#f7f7f7"/>
       </div>
     </section>
     <NavbarBottom />

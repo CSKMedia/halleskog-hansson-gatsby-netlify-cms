@@ -16,6 +16,7 @@ export const SingleServicePageTemplate = ({
   tags,
   title,
   helmet,
+  services
 }) => {
   const PostContent = contentComponent || Content
 
@@ -48,8 +49,9 @@ export const SingleServicePageTemplate = ({
           {title}
         </h2>
       </div>
-        <div className="columns p-6">
-          <div className="column is-10 is-offset-1">
+      <div className="container">
+        <div className="columns py-6">
+          <div className="column is-8">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -58,20 +60,32 @@ export const SingleServicePageTemplate = ({
               <PostContent content={content} />
             </div>
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Taggar</h4>
-                <ul className="taglist">
+              <div style={{ marginTop: `4rem`, borderTop: "7px solid rgb(248, 249, 250)" }}>
+              <h4 style={{fontWeight: "bold", paddingTop: "1rem"}}>Taggar</h4>
+                <ul className="taglist is-flex">
                   {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    <li key={tag + `tag`} style={{ paddingRight: 10}}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>,
                     </li>
                   ))}
                 </ul>
               </div>
             ) : null}
           </div>
+          <div className="column is-3 is-offset-1">
+            <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Tjänster</h2>
+            <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}>
+            {services && services.map((service) =>
+              service.node.frontmatter.title === title ?
+              ( <li style={{paddingBottom: "1.2rem", fontWeight: "bold" }}><Link to={service.node.fields.slug}>{service.node.frontmatter.title}</Link></li>)
+              :
+              (<li style={{paddingBottom: "1.2rem" }}><Link to={service.node.fields.slug}>{service.node.frontmatter.title}</Link></li>)
+            )}
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
     </section>
   )
 }
@@ -83,10 +97,12 @@ SingleServicePageTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  services: PropTypes.array,
 }
 
 const SingleServicePage = ({ data }) => {
   const { markdownRemark: post } = data
+  const { edges: services } = data.allMarkdownRemark
   const { pathname } = useLocation()
 
   return (
@@ -96,6 +112,7 @@ const SingleServicePage = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        services={services}
         helmet={
           <Helmet titleTemplate="%s | Halleskog & Hansson">
             <title>{`${post.frontmatter.title}`} Stockholm</title>
@@ -119,6 +136,9 @@ const SingleServicePage = ({ data }) => {
 SingleServicePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
   }),
 }
 
@@ -139,6 +159,21 @@ export const pageQuery = graphql`
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
+          }
+        }
+      }
+    }
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "single-service-page" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
           }
         }
       }
