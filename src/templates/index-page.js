@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({
           justifyContent: "flex-start",
           // alignItems: 'center',
           flexDirection: 'column',
-          width: '75vw',
+          width: '70vw',
         }}
       >
         <div>

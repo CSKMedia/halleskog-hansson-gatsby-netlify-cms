@@ -15,9 +15,12 @@ export const SingleProductPageTemplate = ({
   tags,
   title,
   helmet,
+  files,
   products
 }) => {
   const PostContent = contentComponent || Content
+
+  console.log("files", files)
 
   return (
     <section className="section" style={{marginTop: 0, minHeight: `calc(100vh - 250px)`}}>
@@ -82,6 +85,17 @@ export const SingleProductPageTemplate = ({
               (<li style={{paddingBottom: "1.2rem" }}><Link to={product.node.fields.slug}>{product.node.frontmatter.title}</Link></li>)
             )}
             </ul>
+
+            {files && (
+            <div className="pt-4">
+              <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Filer</h2>
+              <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}>
+                {files && files.map((file) => (
+                  <li style={{paddingBottom: "1.2rem"}}><a href={file.file.publicURL} target="_blank">{file.filename}</a></li>
+                ))}
+            </ul>
+            </div>
+            )}
           </div>
         </div>
       </div>
@@ -97,6 +111,7 @@ SingleProductPageTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  files: PropTypes.object,
   products: PropTypes.array,
 }
 
@@ -112,6 +127,7 @@ const SingleProductPage = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         products={products}
+        files={post.frontmatter.files}
         helmet={
           <Helmet titleTemplate="%s | Halleskog & Hansson">
             <title>{`${post.frontmatter.title}`} Stockholm</title>
@@ -151,6 +167,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        files {
+          filename
+          file {
+            publicURL
+          }
+        }
         tags
         featuredimage {
           childImageSharp {
