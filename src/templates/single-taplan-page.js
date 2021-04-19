@@ -5,20 +5,22 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import { useLocation } from "@reach/router"
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const SingleServicePageTemplate = ({
+export const SingleTaplanPageTemplate = ({
   content,
   contentComponent,
-  image,
   description,
+  image,
   tags,
   title,
   helmet,
-  services
+  files,
+  products
 }) => {
   const PostContent = contentComponent || Content
+
+  console.log("files", files)
 
   return (
     <section className="section" style={{marginTop: 0, minHeight: `calc(100vh - 250px)`}}>
@@ -28,12 +30,13 @@ export const SingleServicePageTemplate = ({
         className="full-width-image-container margin-top-0"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${
-            image &&!!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
           })`,
           alignItems: 'center',
           flexDirection: 'column',
           display: 'flex',
           backgroundPosition: 'center center',
+          marginTop: 70
         }}
       >
         <h1 style={{color: "white"}}>{title} | Stockholm</h1>
@@ -61,7 +64,7 @@ export const SingleServicePageTemplate = ({
             </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem`, borderTop: "7px solid rgb(248, 249, 250)" }}>
-              <h4 style={{fontWeight: "bold", paddingTop: "1rem"}}>Taggar</h4>
+                <h4 style={{fontWeight: "bold", paddingTop: "1rem"}}>Taggar</h4>
                 <ul className="taglist is-flex">
                   {tags.map((tag) => (
                     <li key={tag + `tag`} style={{ paddingRight: 10}}>
@@ -73,15 +76,26 @@ export const SingleServicePageTemplate = ({
             ) : null}
           </div>
           <div className="column is-3 is-offset-1">
-            <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Tjänster</h2>
+            <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Produkter</h2>
             <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}>
-            {services && services.map((service) =>
-              service.node.frontmatter.title === title ?
-              ( <li style={{paddingBottom: "1.2rem", fontWeight: "bold" }}><Link to={service.node.fields.slug}>{service.node.frontmatter.title}</Link></li>)
+            {products && products.map((product) =>
+              product.node.frontmatter.title === title ?
+              ( <li style={{paddingBottom: "1.2rem", fontWeight: "bold" }}><Link to={product.node.fields.slug}>{product.node.frontmatter.title}</Link></li>)
               :
-              (<li style={{paddingBottom: "1.2rem" }}><Link to={service.node.fields.slug}>{service.node.frontmatter.title}</Link></li>)
+              (<li style={{paddingBottom: "1.2rem" }}><Link to={product.node.fields.slug}>{product.node.frontmatter.title}</Link></li>)
             )}
             </ul>
+
+            {files && (
+            <div className="pt-4">
+              <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Filer</h2>
+              <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}>
+                {files && files.map((file) => (
+                  <li style={{paddingBottom: "1.2rem"}}><a href={file.file.publicURL} target="_blank">{file.filename}</a></li>
+                ))}
+            </ul>
+            </div>
+            )}
           </div>
         </div>
       </div>
@@ -90,29 +104,30 @@ export const SingleServicePageTemplate = ({
   )
 }
 
-SingleServicePageTemplate.propTypes = {
+SingleTaplanPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  services: PropTypes.array,
+  files: PropTypes.object,
+  products: PropTypes.array,
 }
 
-const SingleServicePage = ({ data }) => {
+const SingleTaplanPage = ({ data }) => {
   const { markdownRemark: post } = data
-  const { edges: services } = data.allMarkdownRemark
-  const { pathname } = useLocation()
+  const { edges: products } = data.allMarkdownRemark
 
   return (
     <Layout>
-      <SingleServicePageTemplate
+      <SingleTaplanPageTemplate
         image={post.frontmatter.featuredimage}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        services={services}
+        products={products}
+        files={post.frontmatter.files}
         helmet={
           <Helmet titleTemplate="%s | Halleskog & Hansson">
             <title>{`${post.frontmatter.title}`} Stockholm</title>
@@ -120,10 +135,9 @@ const SingleServicePage = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
             />
-            {/* <meta property="og:url" content={`${pathname}`} /> */}
             <meta property="og:title" content={`${post.frontmatter.title} Stockholm`} />
             <meta property="og:description" content={`${post.frontmatter.description}`} />
-            <meta property="og:image" content={`${post.frontmatter.featuredimage && post.frontmatter.featuredimage.childImageSharp.fluid.url}`} />
+            <meta property="og:image" content={`${post.frontmatter.featuredimage.childImageSharp.fluid.url}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -133,7 +147,7 @@ const SingleServicePage = ({ data }) => {
   )
 }
 
-SingleServicePage.propTypes = {
+SingleTaplanPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
     allMarkdownRemark: PropTypes.shape({
@@ -142,10 +156,10 @@ SingleServicePage.propTypes = {
   }),
 }
 
-export default SingleServicePage
+export default SingleTaplanPage
 
 export const pageQuery = graphql`
-  query SingleServicePageByID($id: String!) {
+  query SingleTaplanPageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -153,6 +167,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        files {
+          filename
+          file {
+            publicURL
+          }
+        }
         tags
         featuredimage {
           childImageSharp {
@@ -165,7 +185,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "single-service-page" } } }
+      filter: { frontmatter: { templateKey: { eq: "single-taplan-page" } } }
     ) {
       edges {
         node {

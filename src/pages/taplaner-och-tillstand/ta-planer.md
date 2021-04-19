@@ -1,5 +1,5 @@
 ---
-templateKey: single-service-page
+templateKey: single-taplan-page
 title: Ta-planer
 description: Är en plan över trafikföringen i ett vägarbetsområde. Den visar hur
   utmärkning med vägmärken, vägmarkeringar samt skydd för trafikantgrupper och

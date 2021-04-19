@@ -1,10 +1,7 @@
 ---
-templateKey: single-service-page
+templateKey: single-taplan-page
 title: Apd-plan
-description: >-
-  APD-plan är en förkortning av arbetsplatsdispositionsplan.
-
-
+description: APD-plan är en förkortning av arbetsplatsdispositionsplan.
   Det är en ritning som visar var t.ex. containrar, bodar, upplag, sopstationer, ledningar, förstahjälpen, samlingsplats, brandsläckare m.m. finns på arbetsplatsen för att man skall få en bra överblick på arbetslandskapet och hitta rätt.
 featuredimage: /img/20190718-img_4616.jpg
 tags:

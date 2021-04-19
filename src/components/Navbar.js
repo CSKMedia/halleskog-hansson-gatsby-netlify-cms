@@ -46,6 +46,14 @@ export default function Navbar ({isIndex}) {
         >
 
         <div className="navbar-end has-text-centered">
+
+        <div className="navbar-item has-dropdown is-hoverable">
+            <Link className="navbar-item" to="/taplaner-och-tillstand">
+            Ta-planer & Tillstånd
+            </Link>
+          </div>
+
+
           <div className="navbar-item has-dropdown is-hoverable">
             <Link className="navbar-item" to="/tjanster">
             Tjänster
@@ -68,6 +76,15 @@ export default function Navbar ({isIndex}) {
               </Link>
               <Link className="navbar-item" to="/kontakt">
                 Kontakta oss
+              </Link>
+              <Link className="navbar-item" to="/allmanna-villkor">
+                Allmänna villkor
+              </Link>
+              <Link className="navbar-item" to="/faktureringsinformation">
+                Faktureringsinformation
+              </Link>
+              <Link className="navbar-item" to="/vardegrund">
+                Värdegrund
               </Link>
             </div>
           </div>

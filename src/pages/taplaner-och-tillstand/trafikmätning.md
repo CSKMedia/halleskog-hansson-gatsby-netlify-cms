@@ -1,5 +1,5 @@
 ---
-templateKey: single-service-page
+templateKey: single-taplan-page
 title: Trafikmätning
 description: >-
   Vi genomför trafikmätningar där ni som kund kan få reda på bl. a. antal
@@ -7,7 +7,7 @@ description: >-
   rätt underlag blir det lättare för den som skall utföra arbetet
 
   att göra en tydlig och säker plan.
-featuredimage: /img/blog-index.jpg
+featuredimage: /img/jumbo.jpg
 tags:
   - Trafikmätning
 ---

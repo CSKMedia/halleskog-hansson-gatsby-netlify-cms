@@ -1,5 +1,5 @@
 ---
-templateKey: single-service-page
+templateKey: single-taplan-page
 title: 3D visualisering
 description: Vi kan hjälpa er att visualisera hur avstängningarna kommer att se
   ut. Kontakta oss för att få veta mer.

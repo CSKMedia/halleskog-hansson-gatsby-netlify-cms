@@ -1,5 +1,5 @@
 ---
-templateKey: single-service-page
+templateKey: single-taplan-page
 title: Schakttillstånd
 description: |
   Schakt i kommunens mark kräver ett så kallat schakttillstånd för att få gräva.

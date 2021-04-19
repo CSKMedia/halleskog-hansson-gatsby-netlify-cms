@@ -6,7 +6,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import ProductsGrid from './Products'
 import ContactBanner from './ContactBanner'
 
-class ProductsRoll extends React.Component {
+class TaplanRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -37,7 +37,7 @@ class ProductsRoll extends React.Component {
   }
 }
 
-ProductsRoll.propTypes = {
+TaplanRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -48,10 +48,10 @@ ProductsRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query ProductsRollQuery {
+      query TaplanRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "single-product-page" } } }
+          filter: { frontmatter: { templateKey: { eq: "single-taplan-page" } } }
         ) {
           edges {
             node {
@@ -78,6 +78,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <ProductsRoll data={data} count={count} />}
+    render={(data, count) => <TaplanRoll data={data} count={count} />}
   />
 )

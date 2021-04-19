@@ -8,7 +8,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 library.add(faMap, faDirections, faRoad)
 
 
-const ProductsGrid = ({ gridItems }) => (
+const ProductsGrid = ({ gridItems }) => {
+  console.log("griditems", gridItems)
+  return (
   gridItems && gridItems.map(({node: item}, index) => (
   // <div className="columns is-multiline is-flex pb-6">
   <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, backgroundColor: `${index % 2 === 0 ? "#f7f7f7" : "white"}`}}>
@@ -20,7 +22,7 @@ const ProductsGrid = ({ gridItems }) => (
               <div className= "column is-6-desktop" style={{ padding: 0}}>
                   {/* <PreviewCompatibleImage imageInfo={item.frontmatter.featuredimage}/> */}
                   <img
-                    src={item.frontmatter.featuredimage.childImageSharp.fluid.src}
+                    src={item.frontmatter.featuredimage && item.frontmatter.featuredimage.childImageSharp.fluid.src}
                     style={{
                       objectFit: "cover",
                       height: "100%",
@@ -97,12 +99,13 @@ const ProductsGrid = ({ gridItems }) => (
   //     </div>
   //   ))}
   // </div>
-)
+)}
+
 
 ProductsGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       text: PropTypes.node,
       description: PropTypes.string,
       heading: PropTypes.string,

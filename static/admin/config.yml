@@ -45,6 +45,24 @@ collections:
       - {label: "Taggar", name: "tags", widget: "list"}
 
 
+  - name: "taplan"
+    label: "Ta-planer & Tillstånd"
+    folder: "src/pages/taplaner-och-tjanster"
+    create: true
+    # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-taplan-page"}
+      - {label: "Titel", name: "title", widget: "string"}
+      # - {label: "Publicerat datum", name: "date", widget: "datetime"}
+      # - {label: "Beskrivning", name: "description", widget: "text"}
+      # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Beskrivning", name: "description", widget: "text", hint: "En kortare beskrivning som visas på tjänster sidan."}
+      # - {label: "Visa på startsida", name: "displayOnStartPage", widget: "boolean", required: false}
+      - {label: "Bild", name: "featuredimage", widget: image}
+      - {label: "Innehåll", name: "body", widget: "markdown"}
+      - {label: "Taggar", name: "tags", widget: "list"}
+
+
   - name: "produkter"
     label: "Produkter"
     folder: "src/pages/produkter"
