@@ -1,6 +1,6 @@
 ---
 templateKey: single-product-page
-title: Hyra skyltar
+title: Vägmärken
 description: Skriv en kortare beskrivning om produkten!
 featuredimage: /img/skyltar.jpg
 tags:
