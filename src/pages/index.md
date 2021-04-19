@@ -33,14 +33,14 @@ intro:
       icon: map
       buttonLink: tjanster
     - image: /img/banner-solution.jpg
-      heading: Ta-material
+      heading: Produkter
       text: Vi erbjuder ett stort utbud av produkter för uthyrning eller försäljning.
         Exempelvis vägmärken, informationsskyltar, staket, barriärer, ta-balkar,
         krockdämpare m.m. Vi gör även specialskyltar med egen utrustning.
       icon: directions
       buttonLink: produkter
     - image: /img/front2.jpg
-      heading: Övriga tjänster
+      heading: Tjänster
       text: Arbetsplatsen ska alltid vara en trygg plats och ditt arbete ska utföras
         på ett effektivt och säkert sätt samt tillgodose trafiksäkerhet för
         omgivningen. Vi kan hjälpa er med transporter, utställning av skyltar
