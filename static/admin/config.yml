@@ -136,11 +136,17 @@ collections:
         name: "contact"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact"}
-          - {label: E-post, name: mail, widget: string}
-          - {label: Telefon kontoret, name: phone, widget: string}
-          - {label: Telefon Depå, name: phone2, widget: string}
-          - {label: Besöksadress, name: visitAddress, widget: text}
-          - {label: Postadress, name: postAddress, widget: text}
+          - {label: E-post Tillstånd, name: mailTillstand, widget: string}
+          - {label: E-post Material och tjänster, name: mailMaterial, widget: string}
+          - {label: E-post Ekonomi, name: mailEkonomi, widget: string}
+
+          - {label: Telefon Tillstånd, name: phoneTillstand, widget: string}
+          - {label: Telefon Material och tjänster, name: phoneMaterial, widget: string}
+          - {label: Telefon Ekonomi, name: phoneEkonomi, widget: string}
+
+          - {label: Besöksadress Tillstånd, name: visitAddressTillstand, widget: text}
+          - {label: Besöksadress Material och tjänster, name: visitAddressMaterial, widget: text}
+
           - {label: karta, name: mapImage, widget: image}
           - {label: "page", name: "page", widget: "hidden", default: "contact"}
 

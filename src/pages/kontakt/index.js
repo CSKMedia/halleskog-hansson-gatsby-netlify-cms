@@ -55,23 +55,29 @@ class Index extends React.Component {
                     <br />
                     {this.props.data.dataYaml && (
                     <p>
-                      <b>Telefon</b>< br />
-                      Kontoret: {this.props.data.dataYaml.phone && this.props.data.dataYaml.phone} <br/>
-                      Depån: {this.props.data.dataYaml.phone2} <br/>
-                      <br />
-                      <a href={`mailto:${this.props.data.dataYaml.mail}`}>{this.props.data.dataYaml.mail}</a> <br />
-                      <br />
-                      <b>Besöksadress</b>
-                      <br />
-                      {this.props.data.dataYaml.visitAddress}
+                      <b>Tillstånd</b>< br />
+                      Kontoret: {this.props.data.dataYaml.phoneTillstand} <br/>
+                      Epost: <a href={`mailto:${this.props.data.dataYaml.mailTillstand}`}>{this.props.data.dataYaml.mailTillstand}</a> <br />
+                      Besöksadress: {this.props.data.dataYaml.visitAddressTillstand}
                       <br />
                       <br />
-                      <b>Postadress</b>
-                      <br /> {this.props.data.dataYaml.postAddress}
+                      <b>Material och tjänster</b>
+                      <br />
+                      Kontoret: {this.props.data.dataYaml.phoneMaterial} <br/>
+                      Epost: <a href={`mailto:${this.props.data.dataYaml.mailMaterial}`}>{this.props.data.dataYaml.mailMaterial}</a> <br />
+
+                      Besöksadress: {this.props.data.dataYaml.visitAddressMaterial}
                       <br />
                       <br />
 
-                      <b>Ta-planer</b>
+                      <b>Ekonomi</b>
+                      <br />
+                      Kontoret: {this.props.data.dataYaml.phoneEkonomi} <br/>
+                      Epost: <a href={`mailto:${this.props.data.dataYaml.mailEkonomi}`}>{this.props.data.dataYaml.mailEkonomi}</a> <br />
+                      <br />
+                      <br />
+
+                      {/* <b>Ta-planer</b>
                       <br />
                       <a style={{ marginBottom: "1rem"}} href={`mailto:taplaner@halleskog-hansson.se`}>taplaner@halleskog-hansson.se</a>
                       <br />
@@ -82,7 +88,7 @@ class Index extends React.Component {
                       <b>Ekonomi</b>
                       <br />
                       <a style={{ marginBottom: "1rem"}} href={`mailto:ekonomi@halleskog-hansson.se`}>ekonomi@halleskog-hansson.se</a>
-                      <br />
+                      <br /> */}
                       </p>
                     )}
                     </div>
@@ -171,8 +177,9 @@ class Index extends React.Component {
                   {this.props.data.dataYaml && (
                   <p style={{ backgroundColor: "white", padding: "2rem"}}>
                     <b>Telefon</b>< br />
-                    Kontoret: {this.props.data.dataYaml.phone} <br/>
-                    Depån: {this.props.data.dataYaml.phone2} <br/>
+                    Tillstånd: {this.props.data.dataYaml.phoneTillstand} <br/>
+                    Material och tjänster: {this.props.data.dataYaml.phoneMaterial} <br/>
+                    Ekonomi: {this.props.data.dataYaml.phoneEkonomi}
                   </p> )}
                 </div>
               </div>
@@ -191,12 +198,15 @@ export default () => (
     {
       dataYaml(page: {eq: "contact"}) {
         id
-        mail
+        mailTillstand
+        mailMaterial
+        mailEkonomi
         mapImage
-        phone
-        phone2
-        postAddress
-        visitAddress
+        phoneTillstand
+        phoneMaterial
+        phoneEkonomi
+        visitAddressTillstand
+        visitAddressMaterial
       }
     }
   `}
