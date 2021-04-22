@@ -1,0 +1,21 @@
+administration:
+  - name: Per Halleskog
+    position: VD / Verksamhetschef
+    photo: /img/per.jpg
+    phone: 851177740
+    email: per@halleskog-hansson.se
+  - name: Joakim Hansson
+    position: CFO / Ekonomichef
+    photo: /img/joakim.jpg
+    email: joakim@halleskog-hansson.se
+    phone: 723161210
+  - name: Julia Karström
+    position: Administration
+    phone: 555
+    email: Kommer
+    photo: /img/julia-k.jpg
+  - name: Julia Sundqvist
+    position: Tillståndskonsult/Ekonomi
+    phone: 563
+    email: Kommer
+    photo: /img/julia-sundqvist.jpg

@@ -9,14 +9,21 @@ export default () => (
       allDataYaml {
         edges {
           node {
-            teamVallentuna {
+            administration {
               name
               photo
               position
               email
               phone
             }
-            teamSolna {
+            tillstand {
+              name
+              photo
+              position
+              email
+              phone
+            }
+            utstallningTransport {
               name
               photo
               position
@@ -33,10 +40,10 @@ export default () => (
         <div className="container-fluid" style={{ padding: "3rem", backgroundColor: "white" }}>
         <div className="container">
           <div className="content has-text-centered" style={{ borderBottom: "7px solid #f8f9fa"}}>
-          <h2 className="is-size-2 has-text-weight-bold has-text-centered p-6">Team Vallentuna</h2>
+          <h2 className="is-size-2 has-text-weight-bold has-text-centered p-6">Administration</h2>
             {data && data.allDataYaml.edges.map(({node}) => (
               <div className="columns is-multiline">
-                {node.teamVallentuna && node.teamVallentuna.map(member => (
+                {node.administration && node.administration.map(member => (
                   <div className="column is-3">
                     <div className="card">
                       <div className="card-image">
@@ -59,10 +66,36 @@ export default () => (
             ))}
           </div>
           <div className="content has-text-centered" style={{ marginTop: "3rem"}}>
-          <h2 className="is-size-2 has-text-weight-bold has-text-centered p-6">Team Solna</h2>
+          <h2 className="is-size-2 has-text-weight-bold has-text-centered p-6">Tillstånd</h2>
             {data && data.allDataYaml.edges.map(({node}) => (
               <div className="columns is-multiline">
-                {node.teamSolna && node.teamSolna.map(member => (
+                {node.tillstand && node.tillstand.map(member => (
+                  <div className="column is-3">
+                    <div className="card">
+                      <div className="card-image">
+                        <figure class="image">
+                          <img className="is-rounded" style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
+                        </figure>
+                      </div>
+                      <div class="card-content is-family-secondary">
+                      <div className="is-size-5 has-text-weight-bold is-family-primary">{member.name}</div>
+                      <div className="is-size-6 has-text-grey has-text-weight-medium">{member.position}</div>
+                      <div className="is-size-6 has-text-grey has-text-weight-medium">{member.phone}</div>
+                      <div className="is-size-6 has-text-weight-medium">
+                        <a href={`mailto:${member.email}`}>{member.email}</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div className="content has-text-centered" style={{ marginTop: "3rem"}}>
+          <h2 className="is-size-2 has-text-weight-bold has-text-centered p-6">Utställning/Transport</h2>
+            {data && data.allDataYaml.edges.map(({node}) => (
+              <div className="columns is-multiline">
+                {node.utstallningTransport && node.utstallningTransport.map(member => (
                   <div className="column is-3">
                     <div className="card">
                       <div className="card-image">

@@ -153,13 +153,13 @@ collections:
   - name:  "staff"
     label: "Anställda"
     files:
-      - file: "src/data/teamVallentuna.yml"
-        label: "Team Vallentuna"
-        name: "teamVallentuna"
+      - file: "src/data/administration.yml"
+        label: "Administration"
+        name: "administration"
         fields:
           - {name: templateKey, label: Template Key, widget: hidden, default: staff}
-          - label: Team Vallentuna
-            name: "teamVallentuna"
+          - label: Administration
+            name: "administration"
             widget: list
             fields:
               - {label: Namn, name: name, widget: string}
@@ -168,13 +168,13 @@ collections:
               - {label: email, name: email, widget: string}
               - {label: bild, name: photo, widget: image}
 
-      - file: "src/data/teamSolna.yml"
-        label: "Team Solna"
-        name: "teamSolna"
+      - file: "src/data/tillstand.yml"
+        label: "Tillstånd"
+        name: "tillstand"
         fields:
           - {name: templateKey, label: Template Key, widget: hidden, default: staff}
-          - label: Team Solna
-            name: "teamSolna"
+          - label: Tillstånd
+            name: "tillstand"
             widget: list
             fields:
               - {label: Namn, name: name, widget: string}
@@ -182,4 +182,21 @@ collections:
               - {label: telefon, name: phone, widget: number}
               - {label: email, name: email, widget: string}
               - {label: bild, name: photo, widget: image}
+
+
+      - file: "src/data/utstallning-transport.yml"
+        label: "Utställning/transport"
+        name: "utstallning-transport"
+        fields:
+          - {name: templateKey, label: Template Key, widget: hidden, default: staff}
+          - label: Utställning/transport
+            name: "utstallning-transport"
+            widget: list
+            fields:
+              - {label: Namn, name: name, widget: string}
+              - {label: Roll, name: position, widget: string}
+              - {label: telefon, name: phone, widget: number}
+              - {label: email, name: email, widget: string}
+              - {label: bild, name: photo, widget: image}
+
 

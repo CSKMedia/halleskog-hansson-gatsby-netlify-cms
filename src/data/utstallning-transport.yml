@@ -1,14 +1,4 @@
-teamVallentuna:
-  - name: Per Halleskog
-    position: VD / Verksamhetschef
-    photo: /img/per.jpg
-    phone: 851177740
-    email: per@halleskog-hansson.se
-  - name: Joakim Hansson
-    position: CFO / Ekonomichef
-    photo: /img/joakim.jpg
-    email: joakim@halleskog-hansson.se
-    phone: 723161210
+utstallningTransport:
   - name: Alexander Olsson
     position: Projektledare
     photo: /img/alexander.jpg
@@ -49,8 +39,3 @@ teamVallentuna:
     phone: 845
     email: Kommer
     photo: /img/simon-fägnell.jpg
-  - name: Julia Karström
-    position: Administration
-    phone: 555
-    email: Kommer
-    photo: /img/julia-k.jpg

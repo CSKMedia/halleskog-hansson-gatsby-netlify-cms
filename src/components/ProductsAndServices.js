@@ -55,7 +55,7 @@ export default () => (
       query ProductsAndServices {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: {regex: "/single-/"} } }
+          filter: { frontmatter: { templateKey: {regex: "/single-/", ne: "single-page"} } }
         ) {
           edges {
             node {

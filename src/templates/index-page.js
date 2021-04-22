@@ -52,7 +52,7 @@ export const IndexPageTemplate = ({
         }}
       >
         <div>
-          <h1 style={{color: "#fff", padding: '0.25em' }}>Vägavstängningar | Stockholm</h1>
+          {/* <h1 style={{color: "#fff", padding: '0.25em' }}>Vägavstängningar | Stockholm</h1> */}
           <h1
             className="has-text-weight-bold is-size-4-mobile is-size-4-tablet is-size-2-widescreen front-page-title"
             style={{
