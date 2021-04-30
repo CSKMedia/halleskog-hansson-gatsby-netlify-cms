@@ -91,7 +91,11 @@ export const SingleProductPageTemplate = ({
               <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Filer</h2>
               <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}>
                 {files && files.map((file) => (
-                  <li style={{paddingBottom: "1.2rem"}}><a href={file.file.publicURL} target="_blank">{file.filename}</a></li>
+                  <li style={{paddingBottom: "1.2rem"}}>
+                    <img src="/img/pdf-icon.png"
+                      style={{ height: 35, verticalAlign: "middle", borderStyle: "none", marginRight: 5}}
+                    />
+                    <a href={file.file.publicURL} target="_blank">{file.filename}</a></li>
                 ))}
             </ul>
             </div>

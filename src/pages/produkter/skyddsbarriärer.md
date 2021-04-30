@@ -3,6 +3,7 @@ templateKey: single-product-page
 title: Skyddsbarriärer
 description: Skriv en kortare beskrivning om produkten!
 featuredimage: /img/gplink.jpg
+priority: 2
 tags:
   - gp-link
   - rebloc

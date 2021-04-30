@@ -18,7 +18,7 @@ export default class ProductsIndexPage extends React.Component {
             display: 'flex',
           }}
         >
-          <h1 style={{textAlign: "center", color:"white", display: "block"}}>Vägavstängningar | Stockholm</h1>
+          <h1 style={{textAlign: "center", color:"white", display: "block"}}>Trafikavstängningar | Stockholm</h1>
           <h2
             className="has-text-weight-bold is-size-1"
             style={{

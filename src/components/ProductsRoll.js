@@ -12,6 +12,7 @@ class ProductsRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     console.log("post", posts)
+    const sortedData = posts.sort((a, b) => a.node.frontmatter.priority - b.node.frontmatter.priority)
 
     return (
     <>
@@ -19,7 +20,7 @@ class ProductsRoll extends React.Component {
         <nav className="navbar" style={{ paddingTop: 0}}>
           <div id="navbarExampleTransparentExample" className="navbar-menu">
             <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center", paddingBottom: "1rem"}}>
-            {posts && posts.map(({node: post }) => (
+            {posts && sortedData.map(({node: post }) => (
               <a className="navbar-item" href={`${post.fields.slug}`}>
                 {post.frontmatter.title}
               </a>
@@ -63,6 +64,7 @@ export default () => (
               frontmatter {
                 title
                 description
+                priority
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {

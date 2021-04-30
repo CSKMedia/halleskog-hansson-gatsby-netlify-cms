@@ -1,6 +1,7 @@
 ---
 templateKey: single-taplan-page
 title: Polistillstånd / upplåtelse
+priority: 2
 description: >+
   Ordningslagen säger att det behövs polistillstånd för den som vill använda
   offentlig plats till något annat än vad som sägs i detaljplanen.

@@ -30,8 +30,8 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/om-foretaget">
-                        Om företaget
+                      <Link className="navbar-item" to="/taplaner-och-tillstand">
+                        Ta-planer & tillstånd
                       </Link>
                     </li>
                     <li>
@@ -42,6 +42,11 @@ const Footer = class extends React.Component {
                     <li>
                       <Link className="navbar-item" to="/produkter">
                         Produkter
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/nyheter">
+                        Nyheter
                       </Link>
                     </li>
                     {/* <li>
@@ -61,13 +66,31 @@ const Footer = class extends React.Component {
                 <section>
                   <ul className="menu-list">
                     <li>
-                      <Link className="navbar-item" to="/nyheter">
-                        Nyheter
+                      <span className="navbar-item" style={{ opacity: 0.5, padding: "0.5em 0.75em"}}>Om oss</span>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/om-foretaget">
+                        Om företaget
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/kontakt">
                         Kontakta oss
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/allmanna-villkor">
+                        Allmänna villkor
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/faktureringsinformation">
+                      faktureringsinformation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/vardegrund">
+                      Värdegrund
                       </Link>
                     </li>
                   </ul>
@@ -79,6 +102,9 @@ const Footer = class extends React.Component {
                 alt="Halleskog & Hansson AB"
                 style={{ height: '5em' }}
               />
+              {/* <a href="https://www.bisnode.se/om-bisnode/vad-vi-gor/vart-satt-att-se-pa-risk-och-kredit/kreditvarderingsmodell-foretag/" target="_blank">
+                <img src="https://ratinglogo.bisnode.com/2564614528200472571494671.svg"/>
+              </a> */}
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 ---
 templateKey: single-taplan-page
 title: 3D visualisering
+priority: 5
 description: Vi kan hjälpa er att visualisera hur avstängningarna kommer att se
   ut. Kontakta oss för att få veta mer.
 featuredimage: /img/langgatan-fix.jpg

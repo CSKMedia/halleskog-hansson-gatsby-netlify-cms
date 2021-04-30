@@ -9,7 +9,7 @@ const ImageTextSection = ({sectionItem}) => {
     <div class="columns">
       <div className="column is-6 " style={{ alignItems: "center",  justifyContent: "flex-end", display: "flex"}}>
         <div className="custom-width-70-100 imageTextSection-content">
-          <h1>Helhetslösning för vägavstängningar</h1>
+          <h1>Helhetslösning för trafikavstängningar</h1>
           <h2 className="is-size-2 has-text-weight-bold py-2">{sectionItem.title}</h2>
           <p>
           {sectionItem ? sectionItem.text : "empty"}
@@ -26,11 +26,6 @@ const ImageTextSection = ({sectionItem}) => {
             maskImage: "linear-gradient(to right, rgba(0,0,0,0) 20%,rgba(0,0,0,1) 80%)",
             WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,0) 20%,rgba(0,0,0,1) 80%)"
         }}/>
-        <a
-          href="https://www.bisnode.se/om-bisnode/vad-vi-gor/vart-satt-att-se-pa-risk-och-kredit/kreditvarderingsmodell-foretag/"
-          target="_blank">
-          <img src="https://ratinglogo.bisnode.com/2564614528200472571494671.svg" className="aakredit"/>
-        </a>
       </div>
     </div>
     )

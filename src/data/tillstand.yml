@@ -29,3 +29,13 @@ tillstand:
     phone: 124
     email: Kommer
     photo: /img/patrik-kiebach.jpg
+  - name: Emma Jutemalm
+    position: Tillståndskonsult
+    phone: 124
+    email: Kommer
+    photo: /img/no-image.jpg
+  - name: Lisa Svensson
+    position: Tillståndskonsult
+    phone: 124
+    email: Kommer
+    photo: /img/no-image.jpg

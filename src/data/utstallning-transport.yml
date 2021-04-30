@@ -39,3 +39,14 @@ utstallningTransport:
     phone: 845
     email: Kommer
     photo: /img/simon-fägnell.jpg
+  - name: Mimmi Stadell
+    position: Depåmedarbetare
+    phone: 000
+    email: Kommer
+    photo: /img/no-image.jpg
+  - name: Thomas Sehlan
+    position: Depåmedarbetare
+    phone: 000
+    email: Kommer
+    photo: /img/no-image.jpg
+

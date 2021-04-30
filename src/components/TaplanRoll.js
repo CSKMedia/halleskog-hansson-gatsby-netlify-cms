@@ -10,8 +10,8 @@ class TaplanRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    const sortedData = posts.sort((a, b) => a.node.frontmatter.priority - b.node.frontmatter.priority)
 
-    console.log("post", posts)
 
     return (
     <>
@@ -19,7 +19,7 @@ class TaplanRoll extends React.Component {
         <nav className="navbar" style={{ paddingTop: 0}}>
           <div id="navbarExampleTransparentExample" className="navbar-menu">
             <div className="navbar-start subNav" style={{flexGrow: 1, justifyContent: "center", paddingBottom: "1rem"}}>
-            {posts && posts.map(({node: post }) => (
+            {posts && sortedData.map(({node: post }) => (
               <a className="navbar-item" href={`${post.fields.slug}`}>
                 {post.frontmatter.title}
               </a>
@@ -62,6 +62,7 @@ export default () => (
               }
               frontmatter {
                 title
+                priority
                 description
                 templateKey
                 date(formatString: "MMMM DD, YYYY")

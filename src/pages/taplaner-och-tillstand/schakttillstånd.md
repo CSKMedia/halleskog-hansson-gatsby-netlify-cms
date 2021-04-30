@@ -1,6 +1,7 @@
 ---
 templateKey: single-taplan-page
 title: Schakttillstånd
+priority: 3
 description: |
   Schakt i kommunens mark kräver ett så kallat schakttillstånd för att få gräva.
   Vi kan hjälpa er söka schaktlovet snabbt och smidigt. 

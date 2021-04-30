@@ -1,6 +1,7 @@
 ---
 templateKey: single-taplan-page
 title: Trafikmätning
+priority: 6
 description: >-
   Vi genomför trafikmätningar där ni som kund kan få reda på bl. a. antal
   passager förbi en korsning, övergångsställe eller förbi ert arbetsområde. Med

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Halleskog-Hansson AB | Vägavstängningar i Stockholm',
+    title: 'Halleskog-Hansson AB | Trafikavstängningar i Stockholm',
     description:
       'Vart hamnar detta?',
   },

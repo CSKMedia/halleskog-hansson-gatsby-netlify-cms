@@ -35,6 +35,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-service-page"}
       - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Prioritet", name: "priority", widget: "number",  default: 1, hint: "Vilken prioritet har sidan?"}
       # - {label: "Publicerat datum", name: "date", widget: "datetime"}
       # - {label: "Beskrivning", name: "description", widget: "text"}
       # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
@@ -44,7 +45,6 @@ collections:
       - {label: "Innehåll", name: "body", widget: "markdown"}
       - {label: "Taggar", name: "tags", widget: "list"}
 
-
   - name: "taplan"
     label: "Ta-planer & Tillstånd"
     folder: "src/pages/taplaner-och-tjanster"
@@ -53,6 +53,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-taplan-page"}
       - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Prioritet", name: "priority", widget: "number",  default: 1, hint: "Vilken prioritet har sidan?"}
       # - {label: "Publicerat datum", name: "date", widget: "datetime"}
       # - {label: "Beskrivning", name: "description", widget: "text"}
       # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
@@ -70,6 +71,7 @@ collections:
     # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-product-page"}
+      - {label: "Prioritet", name: "priority", widget: "number",  default: 1, hint: "Vilken prioritet har sidan?"}
       - {label: "Titel", name: "title", widget: "string"}
       # - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "markdown"}
@@ -98,6 +100,33 @@ collections:
       - file: "src/pages/om-foretaget/index.md"
         label: "Om företaget"
         name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: Image, name: image, widget: image}
+          - {label: "Innehåll", name: "body", widget: "markdown"}
+
+      - file: "src/pages/faktureringsinformation/index.md"
+        label: "Faktureringsinformation"
+        name: "faktureringsinformation"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: Image, name: image, widget: image}
+          - {label: "Innehåll", name: "body", widget: "markdown"}
+
+      - file: "src/pages/allmanna-villkor/index.md"
+        label: "Allmänna villkor"
+        name: "villkor"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: Image, name: image, widget: image}
+          - {label: "Innehåll", name: "body", widget: "markdown"}
+
+      - file: "src/pages/vardegrund/index.md"
+        label: "Värdegrund"
+        name: "vardegrund"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Titel", name: "title", widget: "string"}
