@@ -32,13 +32,6 @@ intro:
         nybyggnation av fastigheter, gator, evenemang m.m.
       icon: map
       buttonLink: tjanster
-    - image: /img/banner-solution.jpg
-      heading: Produkter
-      text: Vi erbjuder ett stort utbud av produkter för uthyrning eller försäljning.
-        Exempelvis vägmärken, informationsskyltar, staket, barriärer, ta-balkar,
-        krockdämpare m.m. Vi gör även specialskyltar med egen utrustning.
-      icon: directions
-      buttonLink: produkter
     - image: /img/front2.jpg
       heading: Tjänster
       text: Arbetsplatsen ska alltid vara en trygg plats och ditt arbete ska utföras
@@ -47,6 +40,13 @@ intro:
         och staket, trafikvakter, tillsyn av arbetsplatsen, m.m.
       icon: road
       buttonLink: tjanster
+    - image: /img/banner-solution.jpg
+      heading: Produkter
+      text: Vi erbjuder ett stort utbud av produkter för uthyrning eller försäljning.
+        Exempelvis vägmärken, informationsskyltar, staket, barriärer, ta-balkar,
+        krockdämpare m.m. Vi gör även specialskyltar med egen utrustning.
+      icon: directions
+      buttonLink: produkter
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
