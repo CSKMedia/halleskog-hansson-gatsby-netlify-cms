@@ -20,7 +20,7 @@ export default class BlogIndexPage extends React.Component {
             style={{
               // boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
               // backgroundColor: '#f40',
-              textTransform: 'uppercase',
+              // textTransform: 'uppercase',
               color: 'white',
               padding: '1rem',
             }}
