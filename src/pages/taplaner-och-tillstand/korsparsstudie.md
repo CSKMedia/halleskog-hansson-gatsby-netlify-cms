@@ -1,6 +1,6 @@
 ---
 templateKey: single-taplan-page
-title: Korsparsstudie
+title: Körspårsstudie
 priority: 2
 description: "Inte allt för sällan ställs vi inför utmaningen att lösa
   utrymmesbegränsningar som uppstår i TA-planer. Med hjälp av avancerad
