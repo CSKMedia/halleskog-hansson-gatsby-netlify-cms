@@ -1,41 +1,41 @@
 tillstand:
   - name: Anna-Karin Orre
     position: Tillståndskonsult
-    phone: 8253539
-    email: Kommer
+    phone: 076-013 12 10
+    email: ak@halleskog-hansson.se
     photo: /img/anna-karin-orre.jpg
   - name: Julia Sundqvist
     position: Tillståndskonsult/Ekonomi
-    phone: 563
-    email: Kommer
+    phone: 076-010 12 10
+    email: julia.s@halleskog-hansson.se
     photo: /img/julia-sundqvist.jpg
   - name: Elin af Forselles
     position: Tillståndskonsult
-    phone: 789
-    email: Kommer
+    phone: 072-331 12 10
+    email: elin@halleskog-hansson.se
     photo: /img/elin.jpg
   - name: Erik Wahlund
     position: Tillståndskonsult
-    phone: 658
-    email: Kommer
+    phone: 076-180 12 10
+    email: erik@halleskog-hansson.se
     photo: /img/erik-wahlund.jpg
   - name: Emelie Wahlberg
     position: Tillståndskonsult
-    phone: 630
-    email: Kommer
+    phone: 076-021 12 10
+    email: emelie.w@halleskog-hansson.se
     photo: /img/emelie-wahlberg.jpg
   - name: Patrik Kiebach
     position: Tillståndskonsult
-    phone: 124
-    email: Kommer
+    phone: 072-323 12 10
+    email: patrik@halleskog-hansson.se
     photo: /img/patrik-kiebach.jpg
   - name: Emma Jutemalm
     position: Tillståndskonsult
-    phone: 124
+    phone: "124"
     email: Kommer
     photo: /img/no-image.jpg
   - name: Lisa Svensson
     position: Tillståndskonsult
-    phone: 124
+    phone: "124"
     email: Kommer
     photo: /img/no-image.jpg

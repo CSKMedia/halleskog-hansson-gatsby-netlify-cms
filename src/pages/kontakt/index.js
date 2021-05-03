@@ -43,13 +43,13 @@ class Index extends React.Component {
               <div className="content" style={{ marginBottom: "0px", marginTop: "90px"}}>
                 <div className="columns is-desktop" style={{ paddingBottom: "0px", marginBottom: 0}}>
                   <div className="column is-half is-flex is-justify-content-center is-align-items-center" style={{ padding: "0px"}}>
-                    {/* <img src="/img/map.jpg" is-square={true} /> */}
+                    <img src="/img/map.jpg" is-square={true} />
 
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1kfBiQChiem2BJnOxF57nYl5_lR_Irrjp&hl=sv"
+                    {/* <iframe src="https://www.google.com/maps/d/embed?mid=1kfBiQChiem2BJnOxF57nYl5_lR_Irrjp&hl=sv"
                     style={{border: "none", width: "100%", minHeight: "600px"}}
                     allowfullscreen=""
                     loading="lazy">
-                    </iframe>
+                    </iframe> */}
                   </div>
                   <div className="column is-half is-flex is-justify-content-center is-align-items-center">
                     <div>

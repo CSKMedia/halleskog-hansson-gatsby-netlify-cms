@@ -44,10 +44,11 @@ collections:
       - {label: "Bild", name: "featuredimage", widget: image}
       - {label: "Innehåll", name: "body", widget: "markdown"}
       - {label: "Taggar", name: "tags", widget: "list"}
+      - {label: "Filer", name: "files", required: false, widget: list, fields: [{label: "fil", name: "file", widget: file}, {label: "filnamn", name: "filename", widget: "string"}]}
 
   - name: "taplan"
     label: "Ta-planer & Tillstånd"
-    folder: "src/pages/taplaner-och-tjanster"
+    folder: "src/pages/taplaner-och-tillstand"
     create: true
     # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -62,6 +63,8 @@ collections:
       - {label: "Bild", name: "featuredimage", widget: image}
       - {label: "Innehåll", name: "body", widget: "markdown"}
       - {label: "Taggar", name: "tags", widget: "list"}
+      - {label: "Filer", name: "files", required: false, widget: list, fields: [{label: "fil", name: "file", widget: file}, {label: "filnamn", name: "filename", widget: "string"}]}
+
 
 
   - name: "produkter"
@@ -192,8 +195,8 @@ collections:
             widget: list
             fields:
               - {label: Namn, name: name, widget: string}
-              - {label: Roll, name: position, widget: string}
-              - {label: telefon, name: phone, widget: number}
+              - {label: Roll, name: position, widget: string }
+              - {label: telefon, name: phone, widget: string }
               - {label: email, name: email, widget: string}
               - {label: bild, name: photo, widget: image}
 
@@ -208,7 +211,7 @@ collections:
             fields:
               - {label: Namn, name: name, widget: string}
               - {label: Roll, name: position, widget: string}
-              - {label: telefon, name: phone, widget: number}
+              - {label: telefon, name: phone, widget: string}
               - {label: email, name: email, widget: string}
               - {label: bild, name: photo, widget: image}
 
@@ -224,7 +227,7 @@ collections:
             fields:
               - {label: Namn, name: name, widget: string}
               - {label: Roll, name: position, widget: string}
-              - {label: telefon, name: phone, widget: number}
+              - {label: telefon, name: phone, widget: string}
               - {label: email, name: email, widget: string}
               - {label: bild, name: photo, widget: image}
 

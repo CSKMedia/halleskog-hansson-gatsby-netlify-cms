@@ -20,8 +20,8 @@ export default function NavbarBottom () {
               <div className="navbar-item" style={{ display: "flex", fontSize: "0.8rem", color: "white"}}>
                 <div style={{textTransform: "initial"}}>
                   <div style={{backgroundColor: "#333", padding: "1rem", marginBottom: "0.5rem",  lineHeight: 1.8}}>
-                    <div style={{textAlign: "left"}}>Kontor: {data.dataYaml.phoneTillstand || ""} </div>
-                    <div style={{textAlign: "left"}}>Depå: {data.dataYaml.phoneMaterial || ""}</div>
+                    <div style={{textAlign: "left"}}>Tillstånd: {data.dataYaml.phoneTillstand || ""} </div>
+                    <div style={{textAlign: "left"}}>Material: {data.dataYaml.phoneMaterial || ""}</div>
                   </div>
                     <a className="btn" href="/kontakt">Ta kontakt</a>
                 </div>

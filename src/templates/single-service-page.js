@@ -16,6 +16,7 @@ export const SingleServicePageTemplate = ({
   tags,
   title,
   helmet,
+  files,
   services
 }) => {
   const PostContent = contentComponent || Content
@@ -82,6 +83,20 @@ export const SingleServicePageTemplate = ({
               (<li style={{paddingBottom: "1.2rem" }}><Link to={service.node.fields.slug}>{service.node.frontmatter.title}</Link></li>)
             )}
             </ul>
+            {files && (
+            <div className="pt-4">
+              <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Filer</h2>
+              <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}>
+                {files && files.map((file) => (
+                  <li style={{paddingBottom: "1.2rem"}}>
+                    <img src="/img/pdf-icon.png"
+                      style={{ height: 35, verticalAlign: "middle", borderStyle: "none", marginRight: 5}}
+                    />
+                    <a href={file.file.publicURL} target="_blank">{file.filename}</a></li>
+                ))}
+            </ul>
+            </div>
+            )}
           </div>
         </div>
       </div>
@@ -110,6 +125,7 @@ const SingleServicePage = ({ data }) => {
       <SingleServicePageTemplate
         image={post.frontmatter.featuredimage}
         content={post.html}
+        files={post.frontmatter.files}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         services={services}
@@ -153,6 +169,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        files {
+          filename
+          file {
+            publicURL
+          }
+        }
         tags
         featuredimage {
           childImageSharp {

@@ -13,6 +13,6 @@ tags:
   - utmärkning
   - trafikanordningar
 ---
-Utställning av ta-material tar både tid och resurser i anspråk. Vi hjälper gärna till med våra duktiga personal att både planera och utföra såsom skissen säger. 
+Utställning av ta-material tar både tid och resurser i anspråk. Vi hjälper gärna till med våra duktiga personal att både planera och utföra såsom skissen säger.
 
 Alla depåpersonal är utbildad efter de kunskaps och kurskran som kommuner och myndigheter kräver.

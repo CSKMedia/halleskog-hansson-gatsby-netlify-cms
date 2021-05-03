@@ -1,6 +1,6 @@
 ---
 templateKey: single-taplan-page
-title: Polistillstånd / upplåtelse
+title: Polistillstånd och upplåtelse
 priority: 2
 description: >+
   Ordningslagen säger att det behövs polistillstånd för den som vill använda

@@ -19,8 +19,9 @@ export const SingleTaplanPageTemplate = ({
   products
 }) => {
   const PostContent = contentComponent || Content
-
-  console.log("files", files)
+  console.log(products)
+  const sortedTitles = products.sort((a, b) => a.node.frontmatter.priority - b.node.frontmatter.priority)
+  console.log("sortedTitles", sortedTitles)
 
   return (
     <section className="section" style={{marginTop: 0, minHeight: `calc(100vh - 250px)`}}>
@@ -76,9 +77,9 @@ export const SingleTaplanPageTemplate = ({
             ) : null}
           </div>
           <div className="column is-3 is-offset-1">
-            <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Produkter</h2>
+            <h2 style={{fontWeight: "bold", paddingBottom: "1.2rem", fontSize: "1.2rem"}}>Ta-planer & tillstånd</h2>
             <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}>
-            {products && products.map((product) =>
+            {products && sortedTitles.map((product) =>
               product.node.frontmatter.title === title ?
               ( <li style={{paddingBottom: "1.2rem", fontWeight: "bold" }}><Link to={product.node.fields.slug}>{product.node.frontmatter.title}</Link></li>)
               :
@@ -166,6 +167,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        priority
         description
         files {
           filename
@@ -194,6 +196,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            priority
           }
         }
       }
