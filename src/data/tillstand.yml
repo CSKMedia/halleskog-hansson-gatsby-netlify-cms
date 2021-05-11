@@ -1,14 +1,14 @@
 tillstand:
+  - name: Julia Sundqvist
+    position: Arbetsledare/Kontorschef Solna
+    phone: 076-010 12 10
+    email: julia.s@halleskog-hansson.se
+    photo: /img/julia-sundqvist.jpg
   - name: Anna-Karin Orre
     position: Tillståndskonsult
     phone: 076-013 12 10
     email: ak@halleskog-hansson.se
     photo: /img/anna-karin-orre.jpg
-  - name: Julia Sundqvist
-    position: Tillståndskonsult/Ekonomi
-    phone: 076-010 12 10
-    email: julia.s@halleskog-hansson.se
-    photo: /img/julia-sundqvist.jpg
   - name: Elin af Forselles
     position: Tillståndskonsult
     phone: 072-331 12 10
@@ -31,11 +31,6 @@ tillstand:
     photo: /img/patrik-kiebach.jpg
   - name: Emma Jutemalm
     position: Tillståndskonsult
-    phone: "124"
-    email: Kommer
-    photo: /img/no-image.jpg
-  - name: Lisa Svensson
-    position: Tillståndskonsult
-    phone: "124"
-    email: Kommer
+    phone: 073-541 12 10
+    email: emma@halleskog-hansson.se
     photo: /img/no-image.jpg
