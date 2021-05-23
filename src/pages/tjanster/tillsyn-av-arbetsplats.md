@@ -1,7 +1,7 @@
 ---
 templateKey: single-service-page
 title: Tillsyn av arbetsplats
-description: Att mäta de faktiska trafikvolymerna ger ett otroligt bra underlag för både planerare och beställare om vilka förutsättningar som råder på platsen. Underlaget kan komma väl till hands vid samordning, säkerhetsfrågor och även arbetsmiljörelaterade diskussioner.  Mätningar kan med fördel även ske under arbetets gång för att se hur regelefterlevnad efterföljs samt vilka åtgärder som kan behövas. Vi hjälper er med tillförlitliga trafikmätningar för alla trafikslag samt analyserar och sammanställer resultatet åt er.
+description: En entreprenör är skyldig att utföra tillsyn över sin arbetsplats och dess utmärkning i form av skyltning och skyddsanordningar. Tillsynen skall dokumenteras med protokoll och bilder enligt väghållarens krav.
 displayOnStartPage: true
 featuredimage: /img/ta-balk2.jpg
 tags:
@@ -9,4 +9,4 @@ tags:
   - arbetsplats
   - tjänst
 ---
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+En entreprenör är skyldig att utföra tillsyn över sin arbetsplats och dess utmärkning i form av skyltning och skyddsanordningar. Tillsynen skall dokumenteras med protokoll och bilder enligt väghållarens krav, detta är en tjänst som vi tillhandahåller. Vi kan hjälpa er med att vara utmärkningsansvariga samt att utföra göra tillsyn efter era önskemål. Vi säkerställer vi att skyltar och avstängning är hela, rena och står enligt TA-planen. I tillsyn ingår det fotografering och protokoll som ni får tillgång till i en databas med inloggning. Vid behov så rekommenderas åtgärder vilka vi även kan utföra. Tjänsten utformas efter era behov och önskemål.

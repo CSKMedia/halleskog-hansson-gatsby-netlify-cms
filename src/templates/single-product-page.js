@@ -20,8 +20,6 @@ export const SingleProductPageTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
-  console.log("files", files)
-
   return (
     <section className="section" style={{marginTop: 0, minHeight: `calc(100vh - 250px)`}}>
       {helmet || ''}

@@ -2,11 +2,14 @@
 templateKey: single-taplan-page
 title: 3D visualisering
 priority: 5
-description: Att mäta de faktiska trafikvolymerna ger ett otroligt bra underlag för både planerare och beställare om vilka förutsättningar som råder på platsen. Underlaget kan komma väl till hands vid samordning, säkerhetsfrågor och även arbetsmiljörelaterade diskussioner.  Mätningar kan med fördel även ske under arbetets gång för att se hur regelefterlevnad efterföljs samt vilka åtgärder som kan behövas. Vi hjälper er med tillförlitliga trafikmätningar för alla trafikslag samt analyserar och sammanställer resultatet åt er.
+description: För att öka samförståelsen mellan olika aktörer och parter kan vi med hjälp av 3D visualisering, åskådliggöra hur arbetet kommer att se ut och hur de olika trafikanterna i stadsrummet påverkas.
 featuredimage: /img/langgatan-fix.jpg
 tags:
   - 3d visualisering
   - ta-plan
   - ta-planer
 ---
-3D visualisering bygger på att man ritar upp arbetsområdet i en verklighetstrogen miljö för presentation till ex. kommunen, beställare eller inför ett anbud.
+För att öka samförståelsen mellan olika aktörer och parter kan vi med hjälp av 3D visualisering, åskådliggöra hur arbetet kommer att se ut och hur de olika trafikanterna i stadsrummet påverkas.
+
+Vi kan sedan skapa korta filmer som panorerar över arbetsområden och olika skeden i byggprocessen. Detta illustrativa underlag skapar en god förståelse för 3:e man, kommuner, beställare, entreprenörer och vid anbudsförfrågan om vad som ska ske och lämnar sällan oklarheter efter sig. Underlaget kan även användas i informationssyfte för ökad acceptans för projektet hos boende, näringsidkare och intressenter.
+Under framtagningsprocessen så ser vi att ett nära samarbete och bra kommunikation är nyckeln till ett lyckat slutresultat som ni ska känna er nöjda med.
