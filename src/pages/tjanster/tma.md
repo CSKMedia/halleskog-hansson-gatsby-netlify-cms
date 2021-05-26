@@ -1,7 +1,7 @@
 ---
 templateKey: single-service-page
 title: TMA
-priority: 1
+priority: 2
 description: TMA - truck mounted attenuator är en bra lösning när du skall
   ställa ut skyddsanordningar eller behöver ha ett tillfälligt skydd i kortare
   perioder.
