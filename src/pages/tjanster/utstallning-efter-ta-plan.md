@@ -1,6 +1,7 @@
 ---
 templateKey: single-service-page
 title: Utställning efter TA-plan
+priority: 1
 description: >-
   Oavsett om ni hyr eller köper material så har vi resurserna som krävs för att
   göra verklighet av ta-planen.
@@ -15,4 +16,4 @@ tags:
 ---
 Utställning av ta-material tar både tid och resurser i anspråk. Vi hjälper gärna till med våra duktiga personal att både planera och utföra såsom skissen säger.
 
-Alla depåpersonal är utbildad efter de kunskaps och kurskran som kommuner och myndigheter kräver.
+Alla depåpersonal är utbildad efter de kunskaps- och kurskrav som kommuner och myndigheter kräver.
