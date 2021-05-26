@@ -1,10 +1,13 @@
 ---
 templateKey: single-service-page
 title: TMA
-description: Skriv en kortare beskrivning om tjänsten!
+priority: 1
+description: TMA - truck mounted attenuator är en bra lösning när du skall
+  ställa ut skyddsanordningar eller behöver ha ett tillfälligt skydd i kortare
+  perioder.
 featuredimage: /img/ta-balk2.jpg
 tags:
   - tma
   - tjänst
 ---
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+TMA används som rullande skyddsbuffert och placeras så att du kan arbeta säkert bakom lastbilen. TMA-kudden fångar upp rörelseenergin om någon skulle tappa kontrollen över sitt fordon och köra in i bilen som bär aggregatet. Används även för att vägleda och varna trafik med stora ljustavlor.
