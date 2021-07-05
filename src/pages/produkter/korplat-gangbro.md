@@ -1,8 +1,9 @@
 ---
 templateKey: single-product-page
+priority: 1
 title: Körplåt / Gångbro
 description: Skriv en kortare beskrivning om produkten!
-featuredimage: /img/20190718-img_4663.jpg
+featuredimage: /img/köplåt-4-6.jpg
 tags:
   - körplåt
 ---
