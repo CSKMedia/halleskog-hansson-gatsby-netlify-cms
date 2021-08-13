@@ -49,3 +49,9 @@ utstallningTransport:
     phone: 072-318 12 10
     email: thomas@halleskog-hansson.se
     photo: /img/no-image.jpg
+utstallning-transport:
+  - name: Casper Karlsson
+    phone: "0735316433"
+    email: casper@cskmedia.se
+    position: testare
+    photo: /img/elin.jpg
