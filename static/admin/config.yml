@@ -215,7 +215,6 @@ collections:
               - {label: email, name: email, widget: string}
               - {label: bild, name: photo, widget: image}
 
-
       - file: "src/data/utstallning-transport.yml"
         label: "Utställning/transport"
         name: "utstallning-transport"
