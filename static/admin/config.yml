@@ -217,11 +217,11 @@ collections:
 
       - file: "src/data/utstallning-transport.yml"
         label: "Utställning/transport"
-        name: "utstallning-transport"
+        name: "utstallningTransport"
         fields:
           - {name: templateKey, label: Template Key, widget: hidden, default: staff}
           - label: Utställning/transport
-            name: "utstallning-transport"
+            name: "utstallningTransport"
             widget: list
             fields:
               - {label: Namn, name: name, widget: string}
