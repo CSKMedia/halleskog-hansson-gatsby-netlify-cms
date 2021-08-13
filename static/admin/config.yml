@@ -197,7 +197,7 @@ collections:
               - {label: Namn, name: name, widget: string}
               - {label: Roll, name: position, widget: string }
               - {label: telefon, name: phone, widget: string }
-              - {label: email, name: email, widget: string}
+              - {label: email, name: email, widget: string, required: false}
               - {label: bild, name: photo, widget: image}
 
       - file: "src/data/tillstand.yml"
@@ -212,7 +212,7 @@ collections:
               - {label: Namn, name: name, widget: string}
               - {label: Roll, name: position, widget: string}
               - {label: telefon, name: phone, widget: string}
-              - {label: email, name: email, widget: string}
+              - {label: email, name: email, widget: string, required: false}
               - {label: bild, name: photo, widget: image}
 
       - file: "src/data/utstallning-transport.yml"
@@ -227,7 +227,7 @@ collections:
               - {label: Namn, name: name, widget: string}
               - {label: Roll, name: position, widget: string}
               - {label: telefon, name: phone, widget: string}
-              - {label: email, name: email, widget: string}
+              - {label: email, name: email, widget: string, required: false}
               - {label: bild, name: photo, widget: image}
 
 
