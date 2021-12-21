@@ -2,7 +2,7 @@
 templateKey: single-page
 path: /allmanna-villkor
 title: Allmänna Villkor
-image: /img/img_5159.jpg
+image: /img/signrityta-1.png
 ---
 **ALLMÄNNA HYRESVILLKOR**\
 \
