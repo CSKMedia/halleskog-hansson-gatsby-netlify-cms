@@ -1,51 +1,46 @@
 utstallningTransport:
   - name: Alexander Olsson
-    position: Projektledare
+    position: Projektchef
     photo: /img/alexander.jpg
     phone: 072-310 12 27
     email: alex@halleskog-hansson.se
-  - name: Victor Hillerström
+  - name: Depåchef Vallentuna
     position: Arbetsledare
     phone: 076-073 12 10
     email: victor@halleskog-hansson.se
     photo: /img/victor-hillerström.jpg
+  - name: Thomas Sehlan
+    position: Projektledare
+    phone: 072-318 12 10
+    email: thomas@halleskog-hansson.se
+    photo: /img/no-image.jpg
   - name: Emelie Gustafsson
     position: Depåmedarbetare
-    phone: 08-511 777 40
+    phone: 076-336 12 10
     email: emelie@halleskog-hansson.se
     photo: /img/emelie-gustafsson.jpg
   - name: Hoshyar Maronesi
     position: Depåmedarbetare
-    phone: 08-511 777 40
+    phone: 070-405 12 10
     email: hoshyar@halleskog-hansson.se
     photo: /img/hoss.jpg
   - name: Joakim Forss
     position: Kranbilschaufför
-    phone: 08-511 777 40
-    email: null
+    phone: 076-165 12 10
+    email: joppe@halleskog-hansson.se
     photo: /img/joakim-forss.jpg
   - name: Johnny Holm
     position: Depåmedarbetare
-    phone: 08-511 777 40
+    phone: 072-316 11 20
     email: johnny@halleskog-hansson.se
     photo: /img/johnny-holm.jpg
-  - name: Oskar Jansson
-    position: Depåmedarbetare
-    phone: 08-511 777 40
-    email: null
-    photo: /img/oskar.jpg
   - name: Simon Fägnell
     position: Depåmedarbetare
-    phone: 08-511 777 40
+    phone: 072-336 12 10
     email: simon@halleskog-hansson.se
     photo: /img/simon-fägnell.jpg
   - name: Mimmi Stadell
     position: Depåmedarbetare
     phone: 072-327 12 10
     email: mimmi@halleskog-hansson.se
-    photo: /img/no-image.jpg
-  - name: Thomas Sehlan
-    position: Depåmedarbetare
-    phone: 072-318 12 10
-    email: thomas@halleskog-hansson.se
     photo: /img/no-image.jpg
