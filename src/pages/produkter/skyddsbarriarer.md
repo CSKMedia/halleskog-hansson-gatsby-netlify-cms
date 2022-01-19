@@ -4,15 +4,15 @@ priority: 2
 title: Skyddsbarriärer
 description: Skyddsbarriär för att skydda arbetsområden på gator och väg.
   Samtliga barriär är CE-märkt och godkänd för användning mot trafik.
-featuredimage: /img/gplink.jpg
+featuredimage: /img/gplink-2-.jpg
 tags:
   - gp-link
   - rebloc
   - skyddsbarriär
   - produkt
 files:
-  - file: /img/avgifter_etableringar_stockholm_20200114.pdf
-    filename: Etableringar
+  - file: /img/180309-varudeklaration-gplink-1.5.pdf
+    filename: Varudeklaration GP-link
 ---
 **GP-link**\
 GP-link 1,5 är en tung barriär tillverkad i betong. Den har en patenterad skarv som ger den förmågan att mjukt och följsamt fånga upp ett påkörande fordon. Godkänd (CE-märkt) för användning i EU och USA. Barriären har testats i klass N2 med en arbetsbredd av W5 < (1,7m)
