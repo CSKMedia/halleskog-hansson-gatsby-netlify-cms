@@ -1,11 +1,11 @@
 administration:
   - name: Per Halleskog
-    position: VD / Verksamhetschef
+    position: Verksamhetsutveckling
     photo: /img/per.jpg
-    phone: 08-51177740
+    phone: "0851177740"
     email: per@halleskog-hansson.se
   - name: Joakim Hansson
-    position: CFO / Ekonomichef
+    position: Verksamhetschef
     photo: /img/joakim.jpg
     email: joakim@halleskog-hansson.se
     phone: 072-3161210
