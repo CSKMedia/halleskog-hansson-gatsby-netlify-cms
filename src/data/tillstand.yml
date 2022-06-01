@@ -34,13 +34,13 @@ tillstand:
     phone: 073-541 12 10
     email: emma@halleskog-hansson.se
     photo: /img/no-image.jpg
-  - name: Kerstin Wännman
-    position: Tillståndskonsult
-    email: kerstin@halleskog-hansson.se
-    photo: /img/no-image.jpg
-    phone: 076-168 12 10
   - name: Julia Hellqvist
     position: Tillståndskonsult
     phone: 076-171 12 10
     email: julia.h@halleskog-hansson.se
     photo: /img/no-image.jpg
+  - name: Amanda Anderström
+    position: Tillståndskonsult
+    email: amanda@halleskog-hansson.se
+    photo: /img/no-image.jpg
+    phone: 076-168 12 10
