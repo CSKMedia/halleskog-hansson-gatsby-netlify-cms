@@ -9,21 +9,21 @@ utstallningTransport:
     phone: 076-073 12 10
     email: victor@halleskog-hansson.se
     photo: /img/victor-hillerström.jpg
-  - name: Thomas Sehlan
+  - name: Conny Gosenius
     position: Projektledare
-    phone: 072-318 12 10
-    email: thomas@halleskog-hansson.se
+    phone: 072-309 12 10
+    email: conny@halleskog-hansson.se
     photo: /img/no-image.jpg
   - name: Johan Gavlevik
     position: Arbetsledare
     phone: 072-334 12 10
     email: johan@halleskog-hansson.se
     photo: /img/no-image.jpg
-  - name: Emelie Gustafsson
+  - name: Milja Steiner
     position: Depåmedarbetare
     phone: 076-336 12 10
-    email: emelie@halleskog-hansson.se
-    photo: /img/emelie-gustafsson.jpg
+    email: milja@halleskog-hansson.se
+    photo: /img/no-image.jpg
   - name: Hoshyar Maronesi
     position: Depåmedarbetare
     phone: 070-405 12 10
@@ -54,8 +54,8 @@ utstallningTransport:
     phone: 076-139 12 10
     email: eric@halleskog-hansson.se
     photo: /img/no-image.jpg
-  - name: Thomas Gebéus
-    position: Entreprenadchef vakt
-    phone: 072-309 12 10
-    email: thomas.g@halleskog-hansson.se
+  - name: Michael Carlson
+    position: Kranbilschaufför
+    phone: 076-177 12 10
+    email: mico@halleskog-hansson.se
     photo: /img/no-image.jpg
