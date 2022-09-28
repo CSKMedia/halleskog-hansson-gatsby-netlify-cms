@@ -1,7 +1,16 @@
 ---
 templateKey: single-product-page
+priority: 2
 title: Vägmärken
-description: Skriv en kortare beskrivning om produkten!
+description: >-
+  Vi använder oss av plastskyltar med nyckelhålsfäste för snabb och enkel
+  etablering. Skylten ska stå stadigt i alla väder tycker vi, därför anpassar vi
+  längden på stolpen med olika vikt på fötterna för att alltid optimera lastvikt
+  med funktion. \
+
+  \
+
+  T﻿ill arbeten som står länge eller LTF (Lokal trafikföreskrift) använder vi oss av traditionella plåtskyltar på stålrör och betongfot. Detta för att minimera risken att någon flyttar på skylten.
 featuredimage: /img/skyltar.jpg
 tags:
   - Skyltar
@@ -12,4 +21,4 @@ Vi erbjuder skyltar i plast eller plåt beroende på situation. För tillfällig
 
 **Skyltframtagning**
 
-Vi har egen skylttillverkning och kan ta fram skyltar för de flesta ändamål.
+Vi har egen skylttillverkning och kan ta fram skyltar för de flesta ändamål. Glöm inte bort infoskylten när du arbetar i Stockholm Stad! Den är även bra att använda i övriga kommuner.
