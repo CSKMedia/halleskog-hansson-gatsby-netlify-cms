@@ -15,7 +15,7 @@ tillstand:
     email: elin@halleskog-hansson.se
     photo: /img/elin.jpg
   - name: Erik Wahlund
-    position: Tillståndskonsult (Tjänsteledig)
+    position: Tillståndskonsult
     phone: 076-180 12 10
     email: erik@halleskog-hansson.se
     photo: /img/erik-wahlund.jpg
@@ -25,7 +25,7 @@ tillstand:
     email: emelie.w@halleskog-hansson.se
     photo: /img/emelie-wahlberg.jpg
   - name: Patrik Kiebach
-    position: Tillståndskonsult (Pappaledig)
+    position: Tillståndskonsult
     phone: 072-323 12 10
     email: patrik@halleskog-hansson.se
     photo: /img/patrik-kiebach.jpg
@@ -46,11 +46,11 @@ tillstand:
     phone: 076-168 12 10
   - name: Maximilian Garcia Persson
     position: Tillståndskonsult
-    phone: 08-25 35 59
+    phone: 072-318 12 10
     email: maximilian@halleskog-hansson.se
     photo: /img/no-image.jpg
   - name: Sofia Hirsch
     position: Tillståndskonsult
-    phone: 08-25 35 59
+    phone: 072-335 12 10
     email: sofia@halleskog-hansson.se
     photo: /img/no-image.jpg
