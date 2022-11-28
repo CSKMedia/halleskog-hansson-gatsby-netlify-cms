@@ -30,6 +30,13 @@ export default () => (
               email
               phone
             }
+            trafikvakt {
+              name
+              photo
+              position
+              email
+              phone
+            }
           }
         }
       }
@@ -96,6 +103,32 @@ export default () => (
             {data && data.allDataYaml.edges.map(({node}) => (
               <div className="columns is-multiline">
                 {node.utstallningTransport && node.utstallningTransport.map(member => (
+                  <div className="column is-3">
+                    <div className="card">
+                      <div className="card-image">
+                        <figure class="image">
+                          <img className="is-rounded" style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
+                        </figure>
+                      </div>
+                      <div class="card-content is-family-secondary">
+                      <div className="is-size-5 has-text-weight-bold is-family-primary">{member.name}</div>
+                      <div className="is-size-6 has-text-grey has-text-weight-medium">{member.position}</div>
+                      <div className="is-size-6 has-text-grey has-text-weight-medium">{member.phone}</div>
+                      <div className="is-size-6 has-text-weight-medium">
+                        <a href={`mailto:${member.email}`}>{member.email}</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div className="content has-text-centered" style={{ marginTop: "3rem"}}>
+          <h2 className="is-size-2 has-text-weight-bold has-text-centered p-6">Trafikvakt</h2>
+            {data && data.allDataYaml.edges.map(({node}) => (
+              <div className="columns is-multiline">
+                {node.trafikvakt && node.trafikvakt.map(member => (
                   <div className="column is-3">
                     <div className="card">
                       <div className="card-image">

@@ -6,7 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import { useLocation } from "@reach/router"
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import TrafikvaktForm from '../components/TrafikvaktForm'
 
 export const SingleServicePageTemplate = ({
   content,
@@ -17,9 +17,11 @@ export const SingleServicePageTemplate = ({
   title,
   helmet,
   files,
-  services
+  services,
 }) => {
   const PostContent = contentComponent || Content
+
+
 
   return (
     <section className="section" style={{marginTop: 0, minHeight: `calc(100vh - 250px)`}}>
@@ -56,6 +58,9 @@ export const SingleServicePageTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            {title === 'Trafikvakter' && (
+               <TrafikvaktForm />
+            )}
             {/* <PreviewCompatibleImage imageInfo={image}/> */}
             <div style={{ marginTop: "2rem" }}>
               <PostContent content={content} />
@@ -113,6 +118,7 @@ SingleServicePageTemplate.propTypes = {
   title: PropTypes.string,
   helmet: PropTypes.object,
   services: PropTypes.array,
+  form: PropTypes.bool,
 }
 
 const SingleServicePage = ({ data }) => {

@@ -20,6 +20,7 @@ class Index extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+
   handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
@@ -81,6 +82,12 @@ class Index extends React.Component {
                       <br />
                       Kontoret: {this.props.data.dataYaml.phoneEkonomi} <br/>
                       Epost: <a href={`mailto:${this.props.data.dataYaml.mailEkonomi}`}>{this.props.data.dataYaml.mailEkonomi}</a> <br />
+                      <br />
+                  
+                      <b>Trafikvakter</b>
+                      <br />
+                      Kontoret: {this.props.data.dataYaml.phoneTrafikvakt} <br/>
+                      Epost: <a href={`mailto:${this.props.data.dataYaml.mailTrafikvakt}`}>{this.props.data.dataYaml.mailTrafikvakt}</a> <br />
                       <br />
                       <br />
 
@@ -186,7 +193,8 @@ class Index extends React.Component {
                     <b>Telefon</b>< br />
                     Tillstånd: {this.props.data.dataYaml.phoneTillstand} <br/>
                     Material och tjänster: {this.props.data.dataYaml.phoneMaterial} <br/>
-                    Ekonomi: {this.props.data.dataYaml.phoneEkonomi}
+                    Ekonomi: {this.props.data.dataYaml.phoneEkonomi} <br />
+                    Trafikvakt: {this.props.data.dataYaml.phoneTrafikvakt}
                   </p> )}
                 </div>
               </div>
@@ -208,10 +216,12 @@ export default () => (
         mailTillstand
         mailMaterial
         mailEkonomi
+        mailTrafikvakt
         mapImage
         phoneTillstand
         phoneMaterial
         phoneEkonomi
+        phoneTrafikvakt
         visitAddressTillstand
         visitAddressMaterial
       }

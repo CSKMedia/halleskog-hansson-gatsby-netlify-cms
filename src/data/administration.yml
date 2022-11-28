@@ -14,8 +14,8 @@ administration:
     phone: 08-51177740
     email: daniel@halleskog-hansson.se
     photo: /img/no-image.jpg
-  - name: Ingrid Rinnbäck
-    position: Administratör Vakt
-    phone: 070-354 12 10
-    email: ingrid@halleskog-hansson.se
-    photo: /img/no-image.jpg
+  # - name: Ingrid Rinnbäck
+  #   position: Administratör Vakt
+  #   phone: 070-354 12 10
+  #   email: ingrid@halleskog-hansson.se
+  #   photo: /img/no-image.jpg

@@ -1,0 +1,17 @@
+trafikvakt:
+  - name: Alexander Olsson
+    position: Depåchef vakt
+    photo: /img/alexander.jpg
+    phone: 072-310 12 27
+    email: alex@halleskog-hansson.se
+  - name: Johan Gavlevik
+    position: Entreprenadchef Vakt
+    phone: 072-334 12 10
+    email: johan@halleskog-hansson.se
+    photo: /img/no-image.jpg
+  - name: Ingrid Rinnbäck
+    position: Administratör Vakt
+    phone: 070-354 12 10
+    email: ingrid@halleskog-hansson.se
+    photo: /img/no-image.jpg
+
