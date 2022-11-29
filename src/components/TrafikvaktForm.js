@@ -18,9 +18,8 @@ const TrafikvaktForm = () => {
   };
 
   useEffect(() => {
-    console.log("state", state)
-  }, [state])
-  
+    state && console.log("upload state", state.upload)
+  }, [state]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -170,6 +169,7 @@ const TrafikvaktForm = () => {
                     Samlingstid
                   </label>
                   <input
+                    onChange={handleChange}
                     className="input"
                     type="time"
                     id={"start-time"}
@@ -183,6 +183,7 @@ const TrafikvaktForm = () => {
                     Sluttid
                   </label>
                   <input
+                    onChange={handleChange}
                     className="input"
                     type="time"
                     id={"end-time"}
@@ -209,28 +210,30 @@ const TrafikvaktForm = () => {
               </div>
 
               <div className="field">
-              <label is-small className="label" htmlFor={"upload"}>
-                 Ladda upp en ta-plan
+                <label is-small className="label" htmlFor={"upload"}>
+                  Ladda upp en ta-plan
                 </label>
-              <div className="file">
-                <label className="file-label">
+                <div className="file has-name control">
+                  <label className="file-label">
                     <input
-                        className="file-input"
-                        type="file"
-                        name="upload"
-                        onChange={handleChange}
-                        />
+                      className="file-input"
+                      type="file"
+                      name="upload"
+                      value={state && state.upload}
+                      onChange={handleChange}
+                    />
                     <span className="file-cta">
-                    <span className="file-icon">
+                      <span className="file-icon">
                         <i className="fas fa-upload"></i>
+                      </span>
+                      <span className="file-label">Välj en fil…</span>
                     </span>
-                    <span className="file-label">
-                        Välj en fil…
+                    <span class="file-name">
+                     { state && state.upload ? state.upload : "Ingen fil vald" }
                     </span>
-                    </span>
-                </label>
-            </div>
-            </div>
+                  </label>
+                </div>
+              </div>
               <div className="field">
                 <label className="label" htmlFor={"email"} is-small>
                   Email
