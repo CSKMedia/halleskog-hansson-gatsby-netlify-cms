@@ -41,7 +41,7 @@ const TrafikvaktForm = () => {
           <div className="content">
             <h1>Bokning vakter</h1>
             <form
-              name="contact"
+              name="trafikvakt-bokning"
               method="post"
               action="/kontakt/tack/"
               data-netlify="true"
