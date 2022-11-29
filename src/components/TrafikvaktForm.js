@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { navigate } from "gatsby-link";
 import "./all.sass";
 
 const TrafikvaktForm = () => {
   const [state, setState] = useState();
-
-  console.log("state", state);
 
   const encode = (data) => {
     return Object.keys(data)
@@ -16,18 +14,24 @@ const TrafikvaktForm = () => {
   };
 
   const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value });
+    setState({ ...state, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    console.log("state", state)
+  }, [state])
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const form = e.target;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...this.state,
+        ...state,
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
