@@ -45,6 +45,7 @@ const TrafikvaktForm = () => {
             <h1>Bokning vakter</h1>
             <form
               name="trafikvakt-bokning"
+              enctype="multipart/form-data"
               method="post"
               action="/kontakt/tack/"
               data-netlify="true"
