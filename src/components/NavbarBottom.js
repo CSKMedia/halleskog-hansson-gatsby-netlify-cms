@@ -9,6 +9,7 @@ export default function NavbarBottom () {
           dataYaml(page: {eq: "contact"}) {
             phoneTillstand
             phoneMaterial
+            phoneTrafikvakt
           }
         }
       `}
@@ -22,6 +23,7 @@ export default function NavbarBottom () {
                   <div style={{backgroundColor: "#333", padding: "1rem", marginBottom: "0.5rem",  lineHeight: 1.8}}>
                     <div style={{textAlign: "left"}}>Tillstånd: {data.dataYaml.phoneTillstand || ""} </div>
                     <div style={{textAlign: "left"}}>Material: {data.dataYaml.phoneMaterial || ""}</div>
+                    <div style={{textAlign: "left"}}>Trafikvakt: {data.dataYaml.phoneTrafikvakt || ""}</div>
                   </div>
                     <a className="btn" href="/kontakt">Ta kontakt</a>
                 </div>

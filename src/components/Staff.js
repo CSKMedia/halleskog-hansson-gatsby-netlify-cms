@@ -55,7 +55,7 @@ export default () => (
                     <div className="card">
                       <div className="card-image">
                         <figure class="image">
-                          <img className="is-rounded" style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
+                          <img className="is-rounded" alt={member.name} style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
                         </figure>
                       </div>
                       <div class="card-content is-family-secondary">
@@ -81,7 +81,7 @@ export default () => (
                     <div className="card">
                       <div className="card-image">
                         <figure class="image">
-                          <img className="is-rounded" style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
+                          <img className="is-rounded" alt={member.name} style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
                         </figure>
                       </div>
                       <div class="card-content is-family-secondary">
@@ -107,7 +107,7 @@ export default () => (
                     <div className="card">
                       <div className="card-image">
                         <figure class="image">
-                          <img className="is-rounded" style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
+                          <img className="is-rounded" alt={member.name} style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
                         </figure>
                       </div>
                       <div class="card-content is-family-secondary">
@@ -133,7 +133,7 @@ export default () => (
                     <div className="card">
                       <div className="card-image">
                         <figure class="image">
-                          <img className="is-rounded" style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
+                          <img className="is-rounded" alt={member.name} style={{ border: "7px solid #f8f9fa", maxWidth: 250}} src={member.photo}/>
                         </figure>
                       </div>
                       <div class="card-content is-family-secondary">

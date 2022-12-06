@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+// import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMap, faDirections, faRoad } from '@fortawesome/free-solid-svg-icons'
 

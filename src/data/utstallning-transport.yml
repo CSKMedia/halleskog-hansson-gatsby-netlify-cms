@@ -1,9 +1,9 @@
 utstallningTransport:
-  # - name: Alexander Olsson
-  #   position: Projektchef
-  #   photo: /img/alexander.jpg
-  #   phone: 072-310 12 27
-  #   email: alex@halleskog-hansson.se
+  - name: Alexander Olsson
+    position: Projektchef
+    photo: /img/alexander.jpg
+    phone: 072-310 12 27
+    email: alex@halleskog-hansson.se
   - name: Victor Hillerström
     position: Depåchef Vallentuna
     phone: 076-073 12 10
@@ -14,11 +14,11 @@ utstallningTransport:
     phone: 072-309 12 10
     email: conny@halleskog-hansson.se
     photo: /img/no-image.jpg
-  # - name: Johan Gavlevik
-  #   position: Entreprenadchef Vakt
-  #   phone: 072-334 12 10
-  #   email: johan@halleskog-hansson.se
-  #   photo: /img/no-image.jpg
+  - name: Johan Gavlevik
+    position: Entreprenadchef Vakt
+    phone: 072-334 12 10
+    email: johan@halleskog-hansson.se
+    photo: /img/no-image.jpg
   - name: Milja Steiner
     position: Depåmedarbetare
     phone: 076-336 12 10

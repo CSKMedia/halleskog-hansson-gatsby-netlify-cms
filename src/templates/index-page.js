@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import video from '../../static/img/halleskog-hansson-video.mp4'
+import video from '../../static/img/halleskog-hansson-video-optimized.mp4'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -22,7 +22,7 @@ export const IndexPageTemplate = ({
   <div>
     <div style={{height: "100%"}}>
     <div className="full-width-video-container">
-      <video className="is-hidden-touch" id="introVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <video className="is-hidden-touch" id="introVideo" playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop">
         <source src={video} type="video/mp4" />
       </video>
 
@@ -116,7 +116,7 @@ export const IndexPageTemplate = ({
 
         <div className="container is-fluid" style={{ paddingLeft:0, paddingRight: 0, marginTop: "3rem", backgroundColor: "white"}}>
           <div className="container">
-            <div class="columns">
+            <div className="columns">
               <div className="column is-12">
                 <BlogRoll />
               </div>
@@ -156,7 +156,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  console.log("frontmatter.mainpitch", frontmatter)
   return (
     <Layout id="indexPage">
       <IndexPageTemplate

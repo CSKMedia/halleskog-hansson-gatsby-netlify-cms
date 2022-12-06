@@ -58,6 +58,7 @@ const TemplateWrapper = ({ children, id }) => {
           content={`${withPrefix('/')}img/logo-hh.png`}
         />
       </Helmet>
+      <script type="text/javascript" src="./CookieBanner.js"></script>
       <Navbar isIndex={id ? true : false}/>
       {children}
       <Footer />

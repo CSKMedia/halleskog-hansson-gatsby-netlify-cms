@@ -41,6 +41,7 @@ const TrafikvaktForm = () => {
 
   return (
     <div className="container">
+      <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}></ul>
       <div className="columns is-desktop">
         <div className="column is-half">
           <div className="content">

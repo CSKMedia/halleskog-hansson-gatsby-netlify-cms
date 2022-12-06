@@ -2,11 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const ImageTextSection = ({sectionItem}) => {
-
   const { src } = sectionItem.image.childImageSharp.fluid
 
   return (
-    <div class="columns">
+    <div className="columns">
       <div className="column is-6 " style={{ alignItems: "center",  justifyContent: "flex-end", display: "flex"}}>
         <div className="custom-width-70-100 imageTextSection-content">
           <h1>Helhetslösning för trafikavstängningar</h1>
@@ -32,13 +31,14 @@ const ImageTextSection = ({sectionItem}) => {
 }
 
 ImageTextSection.propTypes = {
-  sectionItem: PropTypes.arrayOf(
+  // sectionItem: PropTypes.objectOf(
+    sectionItem:
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       title: PropTypes.string,
-      text: PropTypes.node,
+      text: PropTypes.oneOfType([PropTypes.node, PropTypes.string])
     })
-  ),
+  // ),
   // gridItems: PropTypes.arrayOf(
   //   PropTypes.shape({
   //     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

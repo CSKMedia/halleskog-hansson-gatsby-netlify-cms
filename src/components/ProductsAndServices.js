@@ -9,7 +9,6 @@ class ProductsAndServices extends React.Component {
 
     const allPosts = posts && posts.sort((a, b) => a.node.id - b.node.id)
     return (
-    <>
       <div className="container is-fluid"
         style={{
           paddingLeft:0,
@@ -20,23 +19,20 @@ class ProductsAndServices extends React.Component {
           <div className="section" style={{padding: 0}}>
             <div className="columns is-multiline">
             {
-              allPosts ? allPosts.map((post) => (
-              <>
-                <div className="column is-3">
+              allPosts ? allPosts.map((post, index) => (
+                <div className="column is-3" key={index}>
                   <a href={post.node.fields.slug}>
                     <div style={{ backgroundColor: '#b60f1d', padding: "1rem", minHeight: 80, alignItems: "center", justifyContent: "center", display: "flex"}}>
                       <h2 style={{color: "#fff", textAlign: "center", fontWeight: "bold"}}> {post.node.frontmatter.title}</h2>
                     </div>
                   </a>
                 </div>
-              </>
               )): <></>
             }
             </div>
           </div>
         </div>
       </div>
-    </>
     )
   }
 }

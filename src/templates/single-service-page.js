@@ -58,12 +58,14 @@ export const SingleServicePageTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            {title === 'Trafikvakter' && (
-               <TrafikvaktForm />
-            )}
             {/* <PreviewCompatibleImage imageInfo={image}/> */}
             <div style={{ marginTop: "2rem" }}>
               <PostContent content={content} />
+              {title === 'Trafikvakter' && (
+               <div className="pt-4">
+                <TrafikvaktForm />
+              </div>
+            )}
             </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem`, borderTop: "7px solid rgb(248, 249, 250)" }}>
