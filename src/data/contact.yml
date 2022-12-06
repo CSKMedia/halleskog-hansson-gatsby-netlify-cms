@@ -1,4 +1,5 @@
 phone2: 08-511 777 40
+phoneTrafikvakt: 010-300 27 31
 visitAddress: |-
   Gustafsvägen 9,
   169 58 Solna
@@ -6,16 +7,15 @@ mailTillstand: taplaner@halleskog-hansson.se
 phone: 08-25 35 59
 mailMaterial: rental@halleskog-hansson.se
 mailEkonomi: ekonomi@halleskog-hansson.se
-mailTrafikvakt: vakt@halleskog-hansson.se
 phoneTillstand: 08-25 35 59
 phoneMaterial: 08-511 777 40
-phoneEkonomi: 08-511 777 40
-phoneTrafikvakt: 010-300 27 30
-visitAddressTillstand: Greta Garbos väg 11-13, 169 40 Solna
 visitAddressMaterial: Albyvägen 1, 186 91 Vallentuna
-mapImage: /img/map.jpg
 page: contact
+mailTrafikvakt: vakt@halleskog-hansson.se
 postAddress: |-
   Albyvägen 1,
   18691 Vallentuna
 mail: taplaner@halleskog-hansson.se / rental@halleskog-hansson.se
+phoneEkonomi: 08-511 777 40
+visitAddressTillstand: Greta Garbos väg 11-13, 169 40 Solna
+mapImage: /img/map.jpg
