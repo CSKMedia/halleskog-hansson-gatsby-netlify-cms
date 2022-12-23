@@ -17,14 +17,21 @@ const TrafikvaktForm = () => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
+  const handleLinkClick = (e) => {
+    console.log("Link clicked");
+    e.preventDefault();
+    // 👇️ refers to the link element
+    console.log(e.currentTarget);
+  };
+
   useEffect(() => {
-    state && console.log("upload state", state.upload)
+    state && console.log("upload state", state.upload);
   }, [state]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("sending this form data: ", state)
+    console.log("sending this form data: ", state);
 
     const form = e.target;
     fetch("/", {
@@ -41,11 +48,16 @@ const TrafikvaktForm = () => {
 
   return (
     <div className="container">
-      <ul style={{ borderTop: "7px solid rgb(248, 249, 250)", paddingTop: "1rem"}}></ul>
       <div className="columns is-desktop">
-        <div className="column is-half">
+        <div className="column">
           <div className="content">
-            <h1>Bokning vakter</h1>
+            <h1>Bokning trafikvakter</h1>
+            <div
+              style={{
+                borderTop: "7px solid rgb(248, 249, 250)",
+                paddingTop: "1rem",
+              }}
+            ></div>
             <form
               name="trafikvakt-bokning"
               enctype="multipart/form-data"
@@ -76,21 +88,40 @@ const TrafikvaktForm = () => {
                     id={"date"}
                     required={true}
                     dateFormat="YYYY-MM-DD"
+                    isRange={true}
                     is-small
                   />
                 </div>
               </div>
               <div className="field">
                 <label is-small className="label" htmlFor={"name"}>
-                  Namn/Företag
+                  Företag
                 </label>
                 <div className="control">
                   <input
                     className="input"
                     type={"text"}
                     name={"name"}
+                    placeholder="Företagets namn"
                     onChange={handleChange}
                     id={"name"}
+                    required={true}
+                    is-small
+                  />
+                </div>
+              </div>
+              <div className="field">
+                <label className="label" htmlFor={"email"} is-small>
+                  Email
+                </label>
+                <div className="control">
+                  <input
+                    className="input"
+                    type={"email"}
+                    name={"email"}
+                    placeholder="namn@foretag.se"
+                    onChange={handleChange}
+                    id={"email"}
                     required={true}
                     is-small
                   />
@@ -106,7 +137,7 @@ const TrafikvaktForm = () => {
                     className="input"
                     type={"number"}
                     name={"resource"}
-                    placeholder="Antal vakter"
+                    placeholder="Antal vakter - inkl avbytare"
                     onChange={handleChange}
                     id={"resource"}
                     required={true}
@@ -119,12 +150,16 @@ const TrafikvaktForm = () => {
               <div className="field">
                 <label is-small className="label" htmlFor={"work-location"}>
                   Arbetsplats
+                  <span style={{ fontWeight: "lighter", marginLeft: "5px" }}>
+                    (adress + kommun)
+                  </span>
                 </label>
                 <div className="control">
                   <input
                     className="input"
                     type={"text"}
                     name={"work-location"}
+                    placeholder="Albyvägen 1, Vallentuna"
                     onChange={handleChange}
                     id={"work-location"}
                     required={true}
@@ -142,14 +177,24 @@ const TrafikvaktForm = () => {
                     className="input"
                     type={"text"}
                     name={"work-preparation"}
+                    placeholder="Vaktens uppgift"
                     onChange={handleChange}
                     id={"work-preparation"}
                     required={true}
                     is-small
                   />
+                  <span
+                    className="help is-active"
+                    // onClick={(e) => handleLinkClick(e)}
+                    data-tooltip="Tooltip Text"
+                  >
+                  - Digerera skytteltrafik <br />
+                   - Stänga av/vakta vid lastning och lossning vid bygginfart
+                  <br />
+                  - Vakta vid kranmontering
+                  </span>
                 </div>
               </div>
-
               <div className="field">
                 <label is-small className="label" htmlFor={"marking"}>
                   Märkning
@@ -159,6 +204,7 @@ const TrafikvaktForm = () => {
                     className="input"
                     type={"text"}
                     name={"marking"}
+                    placeholder="Märkning på fakturan"
                     onChange={handleChange}
                     id={"marking"}
                     required={true}
@@ -199,6 +245,9 @@ const TrafikvaktForm = () => {
               <div className="field">
                 <label is-small className="label" htmlFor={"contact"}>
                   Kontakt på plats
+                  <span style={{ fontWeight: "lighter", marginLeft: "5px" }}>
+                     (namn + telefon)
+                  </span>
                 </label>
                 <div className="control">
                   <input
@@ -233,30 +282,14 @@ const TrafikvaktForm = () => {
                       <span className="file-label">Välj en fil…</span>
                     </span>
                     <span class="file-name">
-                     { state && state.upload ? state.upload : "Ingen fil vald" }
+                      {state && state.upload ? state.upload : "Ingen fil vald"}
                     </span>
                   </label>
                 </div>
               </div>
               <div className="field">
-                <label className="label" htmlFor={"email"} is-small>
-                  Email
-                </label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type={"email"}
-                    name={"email"}
-                    onChange={handleChange}
-                    id={"email"}
-                    required={true}
-                    is-small
-                  />
-                </div>
-              </div>
-              <div className="field">
                 <label className="label" is-small htmlFor={"message"}>
-                  Meddelande
+                Arbetet som ska utföras
                 </label>
                 <div className="control">
                   <textarea
@@ -266,6 +299,17 @@ const TrafikvaktForm = () => {
                     id={"message"}
                     required={true}
                   />
+                  <span
+                    className="help is-active"
+                    // onClick={(e) => handleLinkClick(e)}
+                    data-tooltip="Tooltip Text"
+                  >
+                    - fräsning / asfaltering 
+                  <br />
+                    - byggnation av flerfamiljs hus
+                  <br />
+                    - Kranmontering
+                  </span>
                 </div>
               </div>
               <div className="field">

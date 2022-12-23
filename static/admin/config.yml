@@ -9,7 +9,7 @@ backend:
     deleteMedia: '[skip ci] Delete “{{path}}”'
 # for testing locally
 # run: npx netlify-cms-proxy-server
-# local_backend: true
+local_backend: true
 media_folder: static/img
 public_folder: /img
 
@@ -137,6 +137,18 @@ collections:
           - {label: "Titel", name: "title", widget: "string"}
           - {label: Image, name: image, widget: image}
           - {label: "Innehåll", name: "body", widget: "markdown"}
+
+
+      # - file: "src/pages/tjanster/trafikvakter.md"
+      #   label: "trafikvakter"
+      #   name: "trafikvakter"
+      #   fields:
+      #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "single-trafikvakter-page"}
+      #     - {label: "Titel", name: "title", widget: "string"}
+      #     - {label: Image, name: image, widget: image}
+      #     - {label: "Innehåll", name: "body", widget: "markdown"}
+      #     - {label: "Titel för bli trafikvakt", name: "title_two", widget: "string"}
+      #     - {label: "Innehåll 2", name: "body_two", widget: "markdown"}
       # - file: "src/pages/tjanster/index.md"
       #   label: "Tjänster"
       #   name: "service"
