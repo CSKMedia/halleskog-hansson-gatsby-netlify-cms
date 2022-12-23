@@ -18,6 +18,7 @@ const ImageTextSection = ({sectionItem}) => {
       <div className="column is-6" style={{padding: 0,  position: "relative"}}>
       <img
           src={src}
+          alt=""
           style={{
             objectFit: "cover",
             height: "100%",
