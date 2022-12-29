@@ -3,17 +3,15 @@ templateKey: single-trafikvakter-page
 title: Trafikvakter
 priority: 1
 image: /img/arbetsplats-hh-rental-5.jpg
-description: Här behöver vi ha en kort beskrivning om Trafikvakter
+description: Våra trafikvakter hjälper er att reglera trafiken vid er arbetsplats!
 featuredimage: /img/arbetsplats-hh-rental-5.jpg
 tags:
   - trafikvakt
   - tjänst
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \
-\
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+V﻿åra trafikvakter är utbildade efter branschens krav och regler samt våra högt ställda krav på oss själva. Förutom att reglera trafik tar vi oss även an projekt som grindvakt vid byggen, vakter vid sprängning och mer därtill. Vi är tillgängliga dygnet runt, året runt för att ni som kund ska känna er trygg.
 
-![](/img/20190718-img_4616.jpg)
+![](/img/img_44081.jpg)
 
 # Är du vår blivande Trafikvakt?
 
