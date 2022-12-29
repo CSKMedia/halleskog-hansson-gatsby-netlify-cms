@@ -2,9 +2,9 @@
 templateKey: single-taplan-page
 title: Körspårsstudie
 priority: 2
-description: Med hjälp av avancerad programvara kan vi utföra körspårsstudier
-  med de allra flesta fordonstyperna och se hur svängradier kan komma att
-  påverkas av barriärer och avspärrningar.
+description: Vill ni veta om det går att passera ett hinder med en lång ledbuss?
+  Med hjälp av avancerad programvara testar vi om det fungerar med ett så kallat
+  körspår.
 featuredimage: /img/ekerövägen-comsa-körspår.jpg
 tags:
   - körspårsstudie
