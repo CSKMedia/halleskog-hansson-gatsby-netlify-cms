@@ -2,7 +2,7 @@
 templateKey: single-service-page
 title: TMA
 priority: 2
-description: TMA - truck mounted attenuator. Vi hjälper dig när du behöver!
+description: TMA - skydd. Vi hjälper dig när och där du behöver!
 featuredimage: /img/tma.jpg
 tags:
   - tma
