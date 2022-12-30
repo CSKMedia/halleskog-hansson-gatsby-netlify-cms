@@ -38,7 +38,11 @@ class BlogRoll extends React.Component {
                         }}
                       />
                     </div>
-                  ) : null}
+                  ) : 
+                  <div style={{minWidth: 180}}>
+                    <img src={'img/jumbo.jpg'} alt="no featured image thumbnail" />
+                  </div>
+                  }
                   {/* <p className="post-meta"> */}
                   <p style={{ padding: "1rem 0rem"}}>
                     <Link

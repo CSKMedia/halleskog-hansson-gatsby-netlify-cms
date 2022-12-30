@@ -12,27 +12,31 @@ class AllBlog extends React.Component {
       <div className="columns is-multiline" style={{padding: "3rem 0rem"}}>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-4 is-desktop" key={post.id}>
+            <div className="is-parent column is-4 is-desktop" key={post.id} style={{ minHeight: 250}}>
               {/* <article
                 className={`blog-list-item tile is-child notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               > */}
                 {/* <header> */}
-                <div style={{ backgroundColor: "#fff", padding: "1rem"}}>
+                <div style={{ backgroundColor: "#fff", padding: "1rem", border: "1px solid #eee", height: "100%"}}>
                   {post.frontmatter.featuredimage ? (
                     // <div className="featured-thumbnail">
-                    <div style={{minWidth: 180}}>
+                    // <div style={{minWidth: 180, backgroundColor: "red"}}>
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
-                    </div>
-                  ) : null}
+                    // </div>
+                  ) : 
+                  <div style={{height: 180}}>
+                    <img src={'img/jumbo.jpg'} alt="no featured image thumbnail" />
+                  </div>
+                  }
                   {/* <p className="post-meta"> */}
-                  <p style={{ padding: "1rem 0rem"}}>
+                  <p style={{ padding: "1rem 0rem",  height: "100%"}}>
                     <Link
                       className="title has-text-primary is-size-5"
                       to={post.fields.slug}

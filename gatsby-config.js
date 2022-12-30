@@ -9,15 +9,15 @@ module.exports = {
     'gatsby-plugin-sass',
     // Caspers to read yml
     `gatsby-transformer-yaml`,
-    {
-      // resolve: require.resolve(`./plugins/gatsby-source-instagram-all`),
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        // access_token: process.env.INSTAGRAM_TOKEN
-        access_token: "IGQVJVNWtzNW10RGNZAVlN5MktaMG5KczJiblFNeW1yVmFmTEdWcDNQdXcxU2ttd010SENhM3BJVEVDQWRlTVh0RHl4dTRuWTZAub1BrQ096ekloRnIzWXhuOEZAPOHFnek5WQjBzT3hfeXAxeTdoVENiYwZDZD",
-        limit: 4,
-      }
-    },
+    // {
+    //   // resolve: require.resolve(`./plugins/gatsby-source-instagram-all`),
+    //   resolve: `gatsby-source-instagram-all`,
+    //   options: {
+    //     // access_token: process.env.INSTAGRAM_TOKEN
+    //     access_token: "IGQVJVNWtzNW10RGNZAVlN5MktaMG5KczJiblFNeW1yVmFmTEdWcDNQdXcxU2ttd010SENhM3BJVEVDQWRlTVh0RHl4dTRuWTZAub1BrQ096ekloRnIzWXhuOEZAPOHFnek5WQjBzT3hfeXAxeTdoVENiYwZDZD",
+    //     limit: 4,
+    //   }
+    // },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',

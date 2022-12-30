@@ -32,8 +32,8 @@ export default class BlogIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <InstagramFeed />
-              {/* <AllBlog /> */}
+              {/* <InstagramFeed /> */}
+              <AllBlog />
             </div>
           </div>
         </section>

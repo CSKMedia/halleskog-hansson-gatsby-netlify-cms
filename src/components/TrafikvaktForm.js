@@ -262,7 +262,7 @@ const TrafikvaktForm = () => {
                 </div>
               </div>
 
-              <div className="field">
+              {/* <div className="field">
                 <label is-small className="label" htmlFor={"upload"}>
                   Ladda upp en ta-plan
                 </label>
@@ -286,7 +286,7 @@ const TrafikvaktForm = () => {
                     </span>
                   </label>
                 </div>
-              </div>
+              </div> */}
               <div className="field">
                 <label className="label" is-small htmlFor={"message"}>
                 Arbetet som ska utföras
