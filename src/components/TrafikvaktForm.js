@@ -188,8 +188,8 @@ const TrafikvaktForm = () => {
                     // onClick={(e) => handleLinkClick(e)}
                     data-tooltip="Tooltip Text"
                   >
-                  - Digerera skytteltrafik <br />
-                   - Stänga av/vakta vid lastning och lossning vid bygginfart
+                  - Dirigera skytteltrafik <br />
+                  - Stänga av/vakta vid lastning och lossning vid bygginfart
                   <br />
                   - Vakta vid kranmontering
                   </span>

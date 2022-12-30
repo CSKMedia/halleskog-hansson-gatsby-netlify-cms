@@ -31,7 +31,7 @@ class AllBlog extends React.Component {
                       />
                     // </div>
                   ) : 
-                  <div style={{height: 180}}>
+                  <div style={{minHeight: 180}}>
                     <img src={'img/jumbo.jpg'} alt="no featured image thumbnail" />
                   </div>
                   }
