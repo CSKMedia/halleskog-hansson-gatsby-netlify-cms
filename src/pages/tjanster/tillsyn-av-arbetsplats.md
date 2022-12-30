@@ -1,9 +1,12 @@
 ---
 templateKey: single-service-page
 title: Tillsyn av arbetsplats
-description: En entreprenör är skyldig att utföra tillsyn över sin arbetsplats och dess utmärkning i form av skyltning och skyddsanordningar. Tillsynen skall dokumenteras med protokoll och bilder enligt väghållarens krav.
+description: En entreprenör är skyldig att utföra tillsyn över sin arbetsplats
+  och dess utmärkning i form av skyltning och skyddsanordningar. Tillsynen skall
+  dokumenteras med protokoll och bilder enligt väghållarens krav.
 displayOnStartPage: true
-featuredimage: /img/ta-balk2.jpg
+priority: 1
+featuredimage: /img/20190718-img_4616.jpg
 tags:
   - tillsyn
   - arbetsplats

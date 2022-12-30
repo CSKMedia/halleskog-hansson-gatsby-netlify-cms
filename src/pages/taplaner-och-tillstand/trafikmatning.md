@@ -1,12 +1,12 @@
 ---
 templateKey: single-taplan-page
 title: Trafikmätning
-priority: 6
-description: >-
-  Att mäta de faktiska trafikvolymerna ger ett otroligt bra underlag för både planerare och beställare om vilka förutsättningar som råder på platsen.
-
-  att göra en tydlig och säker plan.
-featuredimage: /img/jumbo.jpg
+priority: 3
+description: >
+  Behöver ni hjälp med att mäta trafikvolymerna, ge förslag på förbättringar
+  eller skapa ett otroligt bra underlag för både planerare och beställare om
+  vilka förutsättningar som råder på platsen? Vi hjälper till med det också!
+featuredimage: /img/trafikmätning.jpg
 tags:
   - Trafikmätning
 ---

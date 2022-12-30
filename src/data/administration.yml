@@ -2,7 +2,7 @@ administration:
   - name: Per Halleskog
     position: Verksamhetsutveckling
     photo: /img/per.jpg
-    phone: "0851177740"
+    phone: 070-483 12 10
     email: per@halleskog-hansson.se
   - name: Joakim Hansson
     position: Verksamhetschef
@@ -18,4 +18,9 @@ administration:
     position: Administratör Vakt
     phone: 070-354 12 10
     email: ingrid@halleskog-hansson.se
+    photo: /img/no-image.jpg
+  - name: Catharina Dahlin
+    position: Administratör
+    phone: 072-319 12 10
+    email: catharina@halleskog-hansson.se
     photo: /img/no-image.jpg
