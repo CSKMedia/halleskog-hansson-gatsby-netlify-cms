@@ -23,7 +23,7 @@ Trafikvakt går i korthet ut på att genomföra trafikregleringar. Du kommer att
 
 Tjänsten är behovsstyrd per timme. Arbetstidens förläggning anpassas efter situationer vilket kan innebära kvällar och nätter.
 
-Vi ordnar utbildning som ger dig rätt kompetenser för att arbeta som trafikvakt hos oss. Vi bekostar kurserna, du står för tiden.
+Vi ordnar utbildning som ger dig rätt kompetenser för att arbeta som trafikvakt hos oss. 
 
 * Safe Construction Training (online, ca 2 timmar) – Ger intyg. 
 * Arbete på väg, steg 1.1 – 1.3 inkl flaggvaktsutbildning (Arlandastad, ca 8 tim) Ger intyg. 
