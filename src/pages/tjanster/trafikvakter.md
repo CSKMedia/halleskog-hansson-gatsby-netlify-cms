@@ -9,7 +9,7 @@ tags:
   - trafikvakt
   - tjänst
 ---
-V﻿åra trafikvakter är utbildade efter branschens krav och regler samt våra högt ställda krav på oss själva. Förutom att reglera trafik tar vi oss även an projekt som grindvakt vid byggen, vakter vid sprängning och mer därtill. Vi är tillgängliga dygnet runt, året runt för att ni som kund ska känna er trygg.
+V﻿åra trafikvakter är utbildade efter branschens krav och regler samt våra högt ställda krav på oss själva. Förutom att reglera trafik tar vi oss även an projekt som grindvakt vid byggen, vakter vid sprängning och mer därtill. Vi är tillgängliga dygnet runt, året runt för att ni som kund ska känna er trygga.
 
 ![](/img/img_44081.jpg)
 
