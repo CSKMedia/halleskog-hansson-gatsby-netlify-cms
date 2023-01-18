@@ -16,6 +16,8 @@ Efterhand har förfrågningar för helhetslösningar kommit in kring det materia
 \
 Halleskogs & Hansson AB är främst verksamt i Storstockholmsområdet och har sina lokaler i Vallentuna och Solna.
 
+
+
 ## **V﻿i är ISO-certifierade!**
 
 ![ISO 9001,14001,45001](/img/iso-certifikat_halleskog-och-hansson-ab_2023.jpg "ISO-certifikat")
