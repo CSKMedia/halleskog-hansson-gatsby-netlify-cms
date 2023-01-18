@@ -18,6 +18,6 @@ Halleskogs & Hansson AB är främst verksamt i Storstockholmsområdet och har si
 
 
 
-## **V﻿i är ISO-certifierade!**
+## **V﻿i är ISO certifierade!**
 
 ![ISO 9001,14001,45001](/img/iso-certifikat_halleskog-och-hansson-ab_2023.jpg "ISO-certifikat")
