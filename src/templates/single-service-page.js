@@ -59,6 +59,9 @@ export const SingleServicePageTemplate = ({
               {title}
             </h1>
             {/* <PreviewCompatibleImage imageInfo={image}/> */}
+            <div style={{ marginTop: "2rem" }}>
+              <PostContent content={content} />
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem`, borderTop: "7px solid rgb(248, 249, 250)" }}>
               <h4 style={{fontWeight: "bold", paddingTop: "1rem"}}>Taggar</h4>
