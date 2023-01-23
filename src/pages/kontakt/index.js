@@ -4,6 +4,7 @@ import { navigate } from 'gatsby-link'
 import logo from '../../img/logo-hh.png'
 import Layout from '../../components/Layout'
 import Staff from '../../components/Staff'
+import NavbarBottom from '../../components/NavbarBottom'
 
 function encode(data) {
   return Object.keys(data)
@@ -202,6 +203,7 @@ class Index extends React.Component {
 
           </div>
         </section>
+        <NavbarBottom />
       </Layout>
     )
   }

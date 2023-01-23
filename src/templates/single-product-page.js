@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import NavbarBottom from '../components/NavbarBottom'
 
 export const SingleProductPageTemplate = ({
   content,
@@ -102,6 +103,7 @@ export const SingleProductPageTemplate = ({
         </div>
       </div>
     </div>
+    <NavbarBottom />
     </section>
   )
 }

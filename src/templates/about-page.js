@@ -6,6 +6,7 @@ import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ContactBanner from '../components/ContactBanner'
 import ProductsAndServices from '../components/ProductsAndServices'
+import NavbarBottom from '../components/NavbarBottom'
 
 export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -67,6 +68,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
           </div>
         <ContactBanner backgroundColor="#f7f7f7"/>
       </div>
+      <NavbarBottom />
     </section>
   )
 }

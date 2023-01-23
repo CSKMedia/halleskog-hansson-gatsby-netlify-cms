@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import { useLocation } from "@reach/router"
 import TrafikvaktForm from '../components/TrafikvaktForm'
+import NavbarBottom from '../components/NavbarBottom'
 
 export const SingleServicePageTemplate = ({
   content,
@@ -103,6 +104,7 @@ export const SingleServicePageTemplate = ({
         </div>
       </div>
     </div>
+    <NavbarBottom />
     </section>
   )
 }

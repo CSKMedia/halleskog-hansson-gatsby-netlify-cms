@@ -1,6 +1,7 @@
 
 import React from 'react'
 import Layout from '../../components/Layout'
+import NavbarBottom from '../../components/NavbarBottom'
 import ServiceRoll from '../../components/ServiceRoll'
 
 export default class ServiceIndexPage extends React.Component {
@@ -34,6 +35,7 @@ export default class ServiceIndexPage extends React.Component {
           </h2>
         </div>
         <ServiceRoll />
+        <NavbarBottom />
       </Layout>
     )
   }

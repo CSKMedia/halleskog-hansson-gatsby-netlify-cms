@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+import NavbarBottom from '../../components/NavbarBottom'
 import ProductsRoll from '../../components/ProductsRoll'
 import TaplanRoll from '../../components/TaplanRoll'
 
@@ -34,6 +35,7 @@ export default class TaplanIndexPage extends React.Component {
           </h2>
         </div>
         <TaplanRoll />
+        <NavbarBottom />
       </Layout>
     )
   }

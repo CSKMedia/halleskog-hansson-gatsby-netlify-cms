@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
 import AllBlog from '../../components/AllBlog'
+import NavbarBottom from '../../components/NavbarBottom'
 // import InstagramFeed from '../../components/instagramFeed'
 
 export default class BlogIndexPage extends React.Component {
@@ -36,6 +37,7 @@ export default class BlogIndexPage extends React.Component {
               <AllBlog />
             </div>
           </div>
+          <NavbarBottom />
         </section>
       </Layout>
     )

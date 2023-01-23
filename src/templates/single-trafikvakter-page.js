@@ -9,6 +9,7 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import TrafikvaktForm from "../components/TrafikvaktForm";
 import SpecificContactAndStaff from "../components/SpecificContactAndStaff";
 import Markdown from "markdown-to-jsx";
+import NavbarBottom from "../components/NavbarBottom";
 
 export const SingleTrafikvakterPageTemplate = ({
   content,
@@ -80,6 +81,7 @@ export const SingleTrafikvakterPageTemplate = ({
         </div>
       </div>
       <SpecificContactAndStaff />
+      <NavbarBottom />
     </section>
   );
 };

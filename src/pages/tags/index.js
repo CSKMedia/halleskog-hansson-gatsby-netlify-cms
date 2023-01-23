@@ -3,6 +3,7 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import NavbarBottom from '../../components/NavbarBottom'
 
 const TagsPage = ({
   data: {
@@ -55,6 +56,7 @@ const TagsPage = ({
           </div>
         </div>
       </div>
+      <NavbarBottom />
     </section>
   </Layout>
 )
