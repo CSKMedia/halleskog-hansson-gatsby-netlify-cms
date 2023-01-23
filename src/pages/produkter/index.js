@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+import NavbarBottom from '../../components/NavbarBottom'
 import ProductsRoll from '../../components/ProductsRoll'
 
 export default class ProductsIndexPage extends React.Component {
@@ -33,6 +34,7 @@ export default class ProductsIndexPage extends React.Component {
           </h2>
         </div>
         <ProductsRoll />
+        <NavbarBottom />
       </Layout>
     )
   }
