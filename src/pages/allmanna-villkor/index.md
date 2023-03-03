@@ -100,3 +100,69 @@ Om Part önskar åberopa befriande omständighet ska Parten omedelbart underrät
 Skiljeförfarande som påkallats med hänvisning till denna skiljeklausul ska omfattas av sekretess. Sekretessen omfattar all information som framkommer under förfarandet liksom beslut eller skiljedom som meddelas i anledning därav. Information som omfattas av sekretess får inte utan den andra partens föregående skriftliga sam-tycke vidarebefordras till tredje man. Part ska emellertid inte vara förhindrad att vidarebefordra sådan information för att på bästa sätt tillvarata sin rätt mot den andra parten med anledning av tvisten eller om en part enligt författning, föreskrift, myndighetsbeslut, börskontrakt eller motsvarande är skyldig att lämna sådan information.
 \
 Oberoende av vad som framgår i denna punkt har Halleskog & Hansson när som helst rätt att väcka talan vid valfri domstol för återtagande av Hyresobjektet.
+
+
+
+#### Allmänna villkor 1.3
+Tjänster och Försäljning
+
+**1.Tillämpning.** Dessa allmänna villkor tillämpas när Halleskog & Hansson utför tjänster för Kundens räkning. Dessa allmänna villkor utgör en integrerad del av Avtalet, och avvikelser från dessa allmänna villkor måste avtalas skriftligen för att bli gällande.
+
+**2.Definitioner.** I dessa allmänna villkor har följande begrepp den innebörd som anges nedan:
+”Avtalet” avser avtalet mellan Halleskog & Hansson
+och Kunden om tillhandahållande av Tjänsten (oavsett om avtalet är i skriftlig, muntlig eller annan form).
+”Kunden” avser den part med vilken Halleskog & Hansson ingått Avtalet.
+”Halleskog & Hansson” avser Halleskog & Hansson AB, org. nr 559180-4538, eller sådant annat bolag inom koncernen som är angivet som part till Avtalet.
+”Tjänsten” avser de aktiviteter och tjänster som Halleskog & Hansson i enlighet med Avtalet utför för Kundens räkning, såsom t.ex. transport, inbärning, montage och installation av hyresobjekt, TA-planering, flaggvakt och lotstjänster, utbildning samt dimensionering och annan rådgivning innan eller i samband med uthyrning eller i andra sammanhang.
+
+**3.Tolkning.** Hänvisningar till ”Avtalet” innefattar även dessa allmänna villkor. Om Avtalet omfattar flera separata Tjänster avser hänvisningar till ”Tjänsten” varje Tjänst för sig om inget annat anges.
+
+**4.Kundens åtaganden.** Kunden ska ge Halleskog & Hansson tillgång till de lokaler, den information, den utrustning och det material som erfordras för Tjänstens tillhandahållande och i övrigt utföra överenskomna åtgärder. Kunden ansvarar för att den information som Kunden lämnar till Halleskog & Hansson för utförandet av Tjänsten är riktig, fullständig och otvetydig.
+
+**5.Utförande.** Halleskog & Hansson ska utföra Tjänsten fackmässigt, i enlighet med gällande författningar och i övrigt på det sätt och enligt den tidplan som framgår av Avtalet. Om ingen tidplan framgår av Avtalet ska Tjänsten utföras med den skyndsamhet som omständigheterna skäligen påkallar.
+
+**6.Slutförande.** När Halleskog & Hansson har fullgjort samtliga tjänsteåtaganden enligt Avtalet anses Tjänsten slutförd. Tjänstens slutförande är inte villkorat av leveranstest eller liknande godkännande om inte detta särskilt avtalats.
+
+**7.Tidsförlängning.** Vid försening som beror på Kunden eller något förhållande på dennes sida har Halleskog & Hansson rätt till motsvarande förlängning av överenskommen utförandetid. Halleskog & Hansson har också rätt till motsvarande förlängning om: (a) omfattningen av Tjänsten förändras, (b) förlängning fordras för att personal ska erhålla i lag eller annan författning föreskriven ledighet eller semester, eller (c) väder eller andra förhållanden på platsen där Tjänsten ska utföras innebär att kvaliteten på utförandet av Tjänsten riskerar att påverkas negativt, riskerar att innebära en säkerhetsrisk för Halleskog & Hanssons personal eller Halleskog & Hansson av annan personalhänsyn har anledning att senarelägga Tjänstens utförande.
+
+**8.Försening.** Om särskild tidplan för Tjänstens utförande har avtalats, och Halleskog & Hansson inte utför Tjänsten enligt den tidplanen, har Kunden rätt till förseningsvite om 0,5% av Vitesbasen för varje påbörjad vecka som förseningen pågår, dock högst 5% av Vitesbasen. Med ”Vitesbasen” avses den del av Halleskog & Hanssons ersättning som är hänförlig till den försenade delen av Tjänsten. Är Kunden berättigad till maximalt vite enligt det föregående får Kunden genom skriftligt meddelande till Halleskog & Hansson kräva att denne slutför den försenade delen av Tjänsten inom en sista skälig frist som inte får vara kortare än en vecka. Underlåter Halleskog & Hansson att slutföra Tjänsten inom den fristen får Kunden säga upp Avtalet såvitt avser återstående del av Tjänsten genom skriftligt meddelande till Halleskog & Hansson. Halleskog & Hansson ansvarar inte för försening utöver vad som framgår av denna punkt.
+
+**9.Försening orsakad av Kunden.** Om en försening orsakas av Kunden eller förhållande för vilket Kunden ansvarar får Halleskog & Hansson efter skriftligt meddelande till Kunden avbryta sitt arbete till dess att Kunden undanröjt de hinder som orsakat förseningen. Kunden ska ersätta Halleskog & Hansson för sådana kostnader och skador som Halleskog & Hansson drabbas av på grund av sådan försening.\
+
+**10.Fel och avhjälpande.**
+(a) Om Tjänsten inte uppfyller de krav som framgår av Avtalet föreligger fel i Tjänsten. Om Kunden vill åberopa fel i Tjänsten ska Kunden genom skriftligt meddelande informera Halleskog & Hansson om detta (reklamation) inom 14 dagar från att Kunden upptäckt eller borde ha upptäckt felet. Därefter förlorar Kunden sin rätt att åberopa felet. Halleskog & Hansson ansvarar inte för fel i Tjänsten som reklameras senare än tre månader från utförandet av den del av Tjänsten som Kunden anser är felaktig.
+(b) Efter Kundens reklamation av ett fel som Halleskog & Hansson ansvarar för ska Halleskog & Hansson efter eget val antingen: (i) avhjälpa felet inom skälig tid från Kundens reklamation, eller (ii) bevilja Kunden ett prisavdrag. Halleskog & Hansson ska därutöver ersätta de direkta kostnader som Kunden drabbas av i samband med felet, dock högst 25% av priset för Tjänsten.
+(c) Halleskog & Hansson ansvarar inte för fel som beror på omständigheter som tillkommit efter det att Tjänsten slutförts (t.ex. att Kunden har ändrat eller flyttat skyddsanordningar som Halleskog & Hansson ställt ut), att Kunden lämnat felaktiga, tvetydiga eller ofullständiga uppgifter, försummelse av Kunden eller tredje man eller\
+andra omständigheter utom Halleskog & Hanssons kontroll.
+(d) Om Kunden reklamerat ett fel i Tjänsten, och det senare visar sig att det inte föreligger något fel som Halleskog & Hansson ansvarar för, har Halleskog & Hansson rätt till ersättning för arbetet med att avhjälpa det reklamerade felet enligt samma grunder som för Tjänsten i övrigt.
+(e) Halleskog & Hansson ansvarar inte för fel i Tjänsten utöver vad som framgår av denna punkt 10.
+
+**11.Pris.** Samtliga priser, avgifter och andra ersättningar är exklusive mervärdesskatt.
+
+**12.Fakturering och betalning.** Halleskog & Hansson får fakturera Kunden varannan vecka i efterskott. Kunden ska betala Halleskog & Hanssons fakturor senast 30 dagar från fakturadatum. Vid försenad betalning har Halleskog & Hansson rätt till dröjsmålsränta med referensränta +10% samt ersättning för utfärdad betalningspåminnelse samt förseningsavgifter med det belopp som medges enligt lag (för närvarande 60 SEK). Halleskog & Hansson får därutöver stoppa fortsatt utförande av sina förpliktelser enligt Avtalet fram till att full betalning mottas.
+
+**13.Force Majeure.** Part är befriad från påföljd för underlåtenhet att fullgöra förpliktelse enligt Avtalet om underlåtenheten har sin grund i sådan befriande omständighet som ligger utanför Parts kontroll och som förhindrar fullgörandet därav, såsom t.ex. extrema väderförhållanden (t.ex. brand, torka, översvämning, extrem kyla och ras), krig, rekvisition, beslag, valutarestriktioner, upplopp, knapphet på råvaror och resurser, allmän knapphet samt inskränkningar i tillförsel av drivkraft, arbetskonflikt, långvariga störningar i transporter, data eller telekommunikation eller strömförsörjning.
+Om Part önskar åberopa befriande omständighet ska Parten omedelbart underrätta den andra Parten om när händelsen påbörjades samt när den beräknas upphöra. Om Part underlåter lämna sådant meddelande äger Parten inte rätt att åberopa omständigheten som befrielsegrund.
+Tiden för fullgörande av den relevanta förpliktelsen ska förlängas med den tid som den befriande omständigheten fortgick. Oavsett vad som i övrigt gäller enligt Avtalet, får vardera Part säga upp Avtalet till omedelbart upphörande genom skriftligt meddelande till den andra Parten om Avtalets fullgörande förskjuts med mer än 6 månader på grund av befriande omständighet.
+
+**14.Ansvarsbegränsningar.** 
+(a) Halleskog & Hansson ansvarar endast för direkt skada som uppkommer till följd Halleskog & Hanssons vårdslöshet, och Halleskog & Hansson svarar därmed inte för indirekt skada såsom leveransförseningar, stillestånd, driftsavbrott, produktionsbortfall, förlorad användning, förlust av uppgifter, förlust av avtal, utebliven vinst, eller annan ekonomisk följdförlust.
+(b) Halleskog & Hanssons totala ansvar under Avtalet ska inte överstiga det lägre av (i) det sammanlagda belopp som Kunden betalat till Halleskog & Hansson under Avtalet vid tidpunkten för skadans uppkomst, och (i) 2 000 000 SEK.
+(c) Kunden har inte rätt att göra gällande andra påföljder vid Halleskog & Hanssons avtalsbrott än de som uttryckligen framgår av Avtalet. 
+
+**15.Avbeställning.** Kunden får när som helst avbeställa de delar Tjänsten som ännu inte utförts. Om Kunden avbeställer får dock Halleskog & Hansson debitera Kunden för kostnader som blivit onyttiga på grund av avbeställningen (t.ex. förberedelsearbete samt kostnad för underleverantörer och material som beställts utan möjlighet till kostnadsfri avbeställning) samt utebliven vinst.
+\
+**16.Förtida uppsägning.** Halleskog & Hansson får säga upp Avtalet till omedelbart upphörande om Kunden:
+(a) bryter mot Avtalet eller gällande lag och inte vidtar rättelse (om rättelse är möjlig) inom 10 dagar från Halleskog & Hanssons skriftliga begäran om rättelse, eller inte betalar inom avtalad tid, inställer sina betalningar, påbörjar förhandlingar om uppgörelse med sina borgenärer, blir föremål för ansökan om konkurs, ger in ansökan om företagsrekonstruktion eller ackord eller dylikt, upphör med sin verksamhet, träder i likvidation eller det enligt Halleskog & Hanssons bedömning av annat skäl föreligger risk att Kunden inte kommer att fullgöra sina förpliktelser enligt detta Avtal.
+
+**17.Immateriella rättigheter.**
+(a) Bakgrundsrättigheter. Kunden är införstådd i att Halleskog & Hansson för utförandet av Tjänsten kan komma att använda produkter, material eller metoder i vilka Halleskog & Hansson eller tredje man äger immateriella rättigheter. Avtalet innebär inte att sådana immateriella rättigheter övergår till Kunden eller att Kunden på annat sätt förvärvar rätten att använda sådana immateriella rättigheter.
+(b) Äganderätten till resultatet. Halleskog & Hansson har äganderätten (inklusive de immateriella rättigheterna) i och till alla rapporter, beskrivningar, specifikationer, handlingar, illustrationer, modeller, förteckningar, marknadsföringsmaterial och annan dokumentation (oavsett medium) som upprättas eller levereras av Halleskog & Hansson inom ramen för Tjänsten.
+(c) Kundens nyttjanderätt till resultatet. Villkorat av att Kunden erlägger full betalning enligt Avtalet upplåter Halleskog & Hansson till Kunden en icke exklusiv och begränsad licens att nyttja handlingar som överlämnats av Halleskog & Hansson till Kunden för de ändamål som tillåts enligt Avtalet och tillämplig lag. Kunden får inte överlåta, vidarelicensiera, publicera, eller på annat sätt tillgängliggöra sådana handlingar utan att först ha erhållit Halleskog & Hanssons skriftliga samtycke. Sådant medgivande ska inte oskäligen nekas under förutsättning att parterna träffar en överenskommelse om villkoren avseende Kundens disponering över de av Halleskog & Hansson överlämnade handlingarna.
+\
+**18.Överlevande bestämmelser.** Bestämmelser i Avtalet som till sin natur eller vad som särskilt angetts är avsedda att fortsätta att tillämpas efter Avtalets upphörande ska göra det, inklusive (men inte begränsat till) punkterna 17 och 19 i dessa allmänna villkor.
+
+**19.Tillämplig lag och tvistlösning.** Svensk lag ska tillämpas på Avtalet. Tvist som uppstår i anledning av detta\
+Avtal ska slutligt avgöras genom skiljedomsförfarande administrerat av Stockholms Handelskammares Skiljedomsinstitut (”SCC”). Regler för förenklat skiljeförfarande ska tillämpas om inte SCC med beaktande av målets svårighetsgrad, tvisteföremålets värde och övriga omständigheter bestämmer att Skiljedomsregler ska tillämpas. I sistnämnda fall ska SCC också bestämma om skiljenämnden ska bestå av en eller tre skiljemän. Skiljeförfarandets säte ska vara Stockholm. Språket för förfarandet ska vara svenska.
+\
+Skiljeförfarande som påkallats med hänvisning till denna skiljeklausul ska omfattas av sekretess. Sekretessen omfattar all information som framkommer under förfarandet liksom beslut eller skiljedom som meddelas i anledning därav. Information som omfattas av sekretess får inte utan den andra partens föregående skriftliga samtycke vidarebefordras till tredje man. Part ska emellertid inte vara förhindrad att vidarebefordra sådan information för att på bästa sätt tillvarata sin rätt mot den andra parten med anledning av tvisten eller om en part enligt författning, föreskrift, myndighetsbeslut, börskontrakt eller motsvarande är skyldig att lämna sådan information.
