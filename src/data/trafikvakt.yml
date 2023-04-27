@@ -1,18 +1,18 @@
 trafikvakt:
-  - name: Per halleskog
-    position: Tillfällig Depåchef vakt
-    photo: /img/per.jpg
-    phone: 070-483 12 10
-    email: per@halleskog-hansson.se
+  # - name: Per halleskog
+  #   position: Tillfällig Depåchef vakt
+  #   photo: /img/per.jpg
+  #   phone: 070-483 12 10
+  #   email: per@halleskog-hansson.se
   # - name: Alexander Olsson
   #   position: Depåchef vakt
   #   photo: /img/alexander.jpg
   #   phone: 072-310 12 27
   #   email: alex@halleskog-hansson.se
-  - name: Johan Gavlevik
+  - name: Patrik Bolander
     position: Entreprenadchef Vakt
     phone: 072-334 12 10
-    email: johan@halleskog-hansson.se
+    email: patrik.b@halleskog-hansson.se
     photo: /img/no-image.jpg
   - name: Ingrid Rinnbäck
     position: Administratör Vakt
