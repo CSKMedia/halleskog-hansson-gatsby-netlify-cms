@@ -245,4 +245,18 @@ collections:
               - {label: email, name: email, widget: string, required: false}
               - {label: bild, name: photo, widget: image}
 
+      - file: "src/data/trafikvakt.yml"
+        label: "Trafikvakter"
+        name: "trafikvakt"
+        fields:
+          - {name: templateKey, label: Template Key, widget: hidden, default: staff}
+          - label: Trafikvakter
+            name: "trafikvakt"
+            widget: list
+            fields:
+              - {label: Namn, name: name, widget: string}
+              - {label: Roll, name: position, widget: string}
+              - {label: telefon, name: phone, widget: string}
+              - {label: email, name: email, widget: string, required: false}
+              - {label: bild, name: photo, widget: image}
 
